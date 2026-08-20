@@ -15,7 +15,7 @@ export default function TeamSection() {
           <h2 className="font-['Menbere'] text-[50px] md:text-[85px] font-bold text-white capitalize leading-none mb-6">
             {team.title}
           </h2>
-          <p className="font-['Menbere'] text-[14px] md:text-[18px] text-[#b0b0b0] max-w-2xl mx-auto">
+          <p className="font-['Menbere'] text-[14px] md:text-[18px] text-gray-700 max-w-2xl mx-auto">
             {team.subtitle}
           </p>
         </div>

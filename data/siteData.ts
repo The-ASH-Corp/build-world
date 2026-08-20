@@ -13,6 +13,7 @@ export const siteData = {
     button1: { text: "More\nAbout Us", link: "/about" },
     button2: { text: "Download\nCompany Profile", link: "#" },
     images: [
+      "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png",
       "/images/huW5kybTw53dpOEUqem1TSexsY.png",
       "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
     ]
@@ -25,7 +26,7 @@ export const siteData = {
         name: "Er. Feroz Kalathil",
         role: "CEO & CO-FOUNDER",
         description: "Eng. Feroz Kalathil, the visionary leader at the helm of Build World Constructions Pvt. Ltd., is a seasoned engineer with a stellar 25-year track record that speaks volumes about his expertise and dedication to the construction industry. His illustrious portfolio includes iconic projects like the Makkah Haram Masjid and the American Consulate in Jeddah, KSA, where his unwavering commitment to precision and meticulous attention to detail have set new standards of excellence. Eng. Feroz Kalathil's contributions extend to renowned endeavors such as the Shifa Al-Jazeera Medical Center in Sharjah, UAE, reaffirming his status as a trailblazer in the field. His leadership inspires the entire Build World team to uphold international construction standards, fostering a culture of innovation, sustainability, and unwavering dedication to quality that sets the company apart in the industry.",
-        image: "/images/F1JKxW2JJHKwcH4AT1sDrZRro.png" // Real CEO photo
+        image: "/images/laShQCkW1gKUyFZ61FN0jwJXQ.png" // Real CEO photo
       }
     ]
   },
