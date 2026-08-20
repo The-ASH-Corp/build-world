@@ -17,3 +17,13 @@ body {
   font-family: "Menbere", "Archivo", Arial, Helvetica, sans-serif;
   overflow-x: hidden; /* Framer sites usually prevent horizontal scroll */
 }
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+  }
+  .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+}

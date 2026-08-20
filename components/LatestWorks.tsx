@@ -24,7 +24,7 @@ export default function LatestWorks() {
       <div className="max-w-[1533px] mx-auto px-6 xl:px-24">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
+        <div className="mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -34,22 +34,6 @@ export default function LatestWorks() {
           >
             {latestWorks.title}
           </motion.h2>
-          
-          <motion.a 
-            href="/projects"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="group flex items-center justify-between min-w-[200px] h-[60px] border border-white rounded-[32px] px-6 hover:bg-white/10 transition-all"
-          >
-            <span className="font-['Menbere'] font-bold text-[14px] text-white uppercase tracking-wider">
-              {latestWorks.buttonText}
-            </span>
-            <div className="text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
-               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-            </div>
-          </motion.a>
         </div>
 
         {/* Carousel */}
@@ -68,7 +52,7 @@ export default function LatestWorks() {
             >
               {/* Background Image */}
               <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                className="absolute -inset-5 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                 style={{ backgroundImage: `url(${work.bg})` }}
               />
               
@@ -77,7 +61,7 @@ export default function LatestWorks() {
               
               {/* Status Badge */}
               <div className="absolute top-6 left-6 right-6">
-                <div className="inline-flex items-center justify-center border border-[#2991ce] bg-white backdrop-blur-md rounded-full px-5 py-2 text-black font-['Menbere'] text-[12px] capitalize overflow-hidden relative shadow-lg">
+                <div className="inline-flex items-center justify-center border border-[#2991ce] bg-gray-100/10 backdrop-blur-md rounded-full px-5 py-2 text-white font-['Menbere'] text-[12px] capitalize overflow-hidden relative shadow-lg">
                   <span className="relative z-10 font-bold">{work.status}</span>
                 </div>
               </div>
@@ -93,6 +77,27 @@ export default function LatestWorks() {
               </div>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Bottom Button */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex justify-center mt-8"
+        >
+          <a 
+            href="/projects"
+            className="group flex items-center justify-between min-w-[200px] h-[60px] border border-[#333] rounded-[32px] px-8 hover:border-white transition-all"
+          >
+            <span className="font-['Menbere'] font-bold text-[14px] text-white uppercase tracking-wider mr-4">
+              {latestWorks.buttonText}
+            </span>
+            <div className="text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+            </div>
+          </a>
         </motion.div>
       </div>
     </section>

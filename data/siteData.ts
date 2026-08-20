@@ -34,9 +34,9 @@ export const siteData = {
     title: "Latest Works",
     buttonText: "EXPLORE MORE",
     works: [
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png" }
+      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png" },
+      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png" },
+      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png" }
     ]
   },
   testimonials: {
@@ -46,7 +46,7 @@ export const siteData = {
         name: "Er. Feroz Kalathil",
         role: "CEO & CO-FOUNDER",
         text: "Lorem ipsum dolor sit amet consectetur. Sed prLorem ipsum dolor sit amet consectetur. Sed praesent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.esent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.",
-        avatar: "/images/HDHU2O4nPLmVeFa8e6E4l4RWL4I.png",
+        avatar: "/images/R456YeJfTbiHierJd8bZpvMlK8.png",
         largeImage: "/images/tGMwHkexN2Q8eJWTaxoqj3X8o.png"
       },
       {
@@ -60,7 +60,7 @@ export const siteData = {
         name: "Client 3",
         role: "CLIENT",
         text: "Lorem ipsum dolor sit amet consectetur. Sed prLorem ipsum dolor sit amet consectetur. Sed praesent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.esent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.",
-        avatar: "/images/tEnd1qHzR0WFFdeDnkabeYjJk.png",
+        avatar: "/images/R456YeJfTbiHierJd8bZpvMlK8.png",
         largeImage: "/images/tEnd1qHzR0WFFdeDnkabeYjJk.png"
       }
     ]
