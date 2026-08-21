@@ -11,21 +11,23 @@ export default function Partners() {
     { name: "CONCETTO", img: "/images/xf1KVhd5mSnEPZmJKk1lycYyUc.png" }
   ];
 
+  // Duplicate logos multiple times for a seamless infinite loop
+  const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
+
   return (
-    <section className="py-12 bg-[#0a2e42] border-y border-white/10">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-wrap justify-between items-center gap-8 md:gap-4 overflow-hidden opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-        {logos.map((logo, i) => (
-          <motion.div 
-            key={i} 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="flex-1 flex justify-center min-w-[120px]"
-          >
-             <div className="h-16 w-32 md:w-40 bg-center bg-no-repeat bg-contain" style={{ backgroundImage: `url(${logo.img})` }} />
-          </motion.div>
-        ))}
+    <section className="py-12 bg-[#0a2e42] border-y border-white/10 overflow-hidden relative">
+      <div className="opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500 flex w-full">
+        <motion.div 
+          className="flex whitespace-nowrap items-center w-max"
+          animate={{ x: ["0%", "-25%"] }}
+          transition={{ ease: "linear", duration: 15, repeat: Infinity }}
+        >
+          {duplicatedLogos.map((logo, i) => (
+            <div key={i} className="flex justify-center px-8 md:px-16 min-w-[200px]">
+               <div className="h-16 w-32 md:w-40 bg-center bg-no-repeat bg-contain" style={{ backgroundImage: `url(${logo.img})` }} />
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
