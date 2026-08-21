@@ -24,12 +24,12 @@ export default function WhyChooseUs() {
       <div className="max-w-[1533px] mx-auto px-6 xl:px-24">
         
         {/* Top Content */}
-        <div className="flex flex-col xl:flex-row justify-between items-start gap-12 xl:gap-24 mb-24">
+        <div className="flex flex-col xl:flex-row justify-between items-center gap-12 xl:gap-24 mb-24">
           <motion.h2 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="font-['Menbere'] text-[50px] md:text-[85px] font-bold text-white capitalize leading-[1.1] tracking-tight xl:w-1/2 whitespace-pre-line"
+            className="font-['Menbere'] text-[50px] md:text-[90px] font-bold text-white capitalize leading-[1.1] tracking-tight xl:w-[40%] whitespace-pre-line"
           >
             {whyChooseUs.title}
           </motion.h2>
@@ -38,9 +38,9 @@ export default function WhyChooseUs() {
              initial={{ opacity: 0, x: 30 }}
              whileInView={{ opacity: 1, x: 0 }}
              viewport={{ once: true }}
-             className="xl:w-1/2"
+             className="xl:w-[60%] border-l border-white/20 pl-6 md:pl-10 py-2"
           >
-            <p className="font-['Menbere'] text-[#d0d0d0] text-[16px] md:text-[18px] leading-[1.8]">
+            <p className="font-['Menbere'] text-[#aaa] text-[15px] md:text-[16px] leading-[1.8]">
               {whyChooseUs.description}
             </p>
           </motion.div>
@@ -52,19 +52,23 @@ export default function WhyChooseUs() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 mb-32"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-32"
         >
           {whyChooseUs.items.map((item, index) => (
-            <motion.div key={index} variants={itemVariants} className="flex flex-col gap-4">
-              <div className="flex items-center gap-4">
-                <div className="text-white w-8 h-8 rounded-full border border-white/20 flex items-center justify-center bg-white/5 shrink-0">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                </div>
-                <h3 className="font-['Menbere'] font-bold text-white text-[20px] md:text-[24px] capitalize">
+            <motion.div 
+              key={index} 
+              variants={itemVariants} 
+              className={`flex flex-col gap-3 py-10 px-4 md:px-6 lg:px-8 border-white/10 ${index < 5 ? 'border-b' : ''} ${index < 4 ? 'md:border-b' : 'md:border-b-0'} ${index < 3 ? 'lg:border-b' : 'lg:border-b-0'} ${index % 2 === 0 ? 'md:border-r' : 'md:border-r-0'} ${index % 3 !== 2 ? 'lg:border-r' : 'lg:border-r-0'}`}
+            >
+              <div className="flex items-center gap-3">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7 text-[#2a8ed2] shrink-0">
+                  <path d="M23 11.99l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 11.99zm-12.53 4.28l-3.81-3.81 1.42-1.42 2.39 2.39 6.03-6.03 1.42 1.42-7.45 7.45z"/>
+                </svg>
+                <h3 className="font-['Menbere'] font-bold text-[#2a8ed2] text-[18px] md:text-[20px] capitalize">
                   {item.title}
                 </h3>
               </div>
-              <p className="font-['Menbere'] text-[#7b7a7a] text-[16px] leading-[1.6] capitalize pl-12">
+              <p className="font-['Menbere'] text-[#999] text-[14px] md:text-[15px] leading-[1.6] capitalize mt-1">
                 {item.text}
               </p>
             </motion.div>
@@ -96,15 +100,15 @@ export default function WhyChooseUs() {
               </div>
 
               {/* Top Text */}
-              <div className="absolute top-8 left-8 right-8 flex items-center gap-4">
-                 <div className="w-12 h-12 shrink-0 rounded-full bg-white flex items-center justify-center overflow-hidden">
+              <div className="absolute top-6 left-6 right-6 flex items-center gap-3">
+                 <div className="w-10 h-10 shrink-0 rounded-full bg-white flex items-center justify-center overflow-hidden">
                     <img src={video.img} className="w-full h-full object-cover opacity-80" alt="Channel" />
                  </div>
                  <div className="flex flex-col">
-                   <p className="font-['Menbere'] text-white font-bold text-[16px] md:text-[20px] leading-tight line-clamp-1 drop-shadow-md">
+                   <p className="font-['Menbere'] text-white font-bold text-[15px] md:text-[18px] leading-tight line-clamp-1 drop-shadow-md">
                      {video.title}
                    </p>
-                   <p className="font-['Menbere'] text-[#cfcfcf] text-[14px]">
+                   <p className="font-['Menbere'] text-[#cfcfcf] text-[13px]">
                      {video.channel}
                    </p>
                  </div>
