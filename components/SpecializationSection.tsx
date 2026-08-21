@@ -21,7 +21,15 @@ export default function SpecializationSection() {
 
   return (
     <section className="w-full bg-[#050505] py-32 overflow-hidden relative">
-      <div className="max-w-[1533px] mx-auto px-6 xl:px-24 flex flex-col items-center">
+      
+      {/* Background Thick Swoosh */}
+      <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+        <svg viewBox="0 0 1440 1000" className="w-full h-full" preserveAspectRatio="none">
+          <path fill="none" stroke="#0c0c0c" strokeWidth="300" strokeLinecap="round" d="M1540,-100 C1000,200 900,800 -100,900"></path>
+        </svg>
+      </div>
+
+      <div className="max-w-[1533px] mx-auto px-6 xl:px-24 flex flex-col items-center relative z-10">
         
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
@@ -37,16 +45,16 @@ export default function SpecializationSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"
+          className="w-full flex flex-col gap-6 max-w-[1200px] mx-auto relative z-10"
         >
           {specializations.items.map((item, index) => (
             <motion.div 
               key={index}
               variants={itemVariants}
-              className="flex flex-col xl:flex-row bg-[#080808] rounded-[32px] overflow-hidden items-center xl:items-stretch min-h-[250px] border border-white/10 group shadow-lg"
+              className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} bg-[#111] rounded-[32px] overflow-hidden items-stretch min-h-[240px] w-full p-4 gap-6 lg:gap-12 group border border-white/5 shadow-2xl`}
             >
               {/* Image */}
-              <div className="w-full xl:w-5/12 h-[200px] xl:h-auto relative overflow-hidden shrink-0">
+              <div className="w-full lg:w-[400px] shrink-0 h-[240px] relative overflow-hidden rounded-[24px]">
                   <div 
                     className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                     style={{ backgroundImage: `url(${item.img})` }}
@@ -54,11 +62,11 @@ export default function SpecializationSection() {
               </div>
 
               {/* Text Content */}
-              <div className="w-full xl:w-7/12 p-8 xl:p-10 flex flex-col justify-center">
-                <h3 className="font-['Menbere'] text-[24px] font-bold text-white mb-4 uppercase">
+              <div className="flex-1 py-6 lg:py-10 px-4 lg:px-8 flex flex-col justify-center">
+                <h3 className="font-['Menbere'] text-[20px] lg:text-[22px] font-bold text-white mb-4 uppercase">
                   {item.title}
                 </h3>
-                <p className="font-['Menbere'] text-[#7b7a7a] text-[16px] leading-[1.6] capitalize">
+                <p className="font-['Menbere'] text-[#aaa] text-[14px] lg:text-[15px] leading-[1.8] capitalize max-w-[700px]">
                   {item.text}
                 </p>
               </div>

@@ -12,9 +12,9 @@ export default function TestimonialSection() {
     <section className="relative w-full bg-[#050505] py-24 xl:py-32 overflow-hidden">
       
       {/* Background Thick Swoosh */}
-      <div className="absolute top-[60%] left-0 w-full h-[400px] -translate-y-1/2 pointer-events-none z-0">
-        <svg viewBox="0 0 1440 320" className="w-full h-full" preserveAspectRatio="none">
-          <path fill="none" stroke="#0c0c0c" strokeWidth="120" strokeLinecap="round" d="M-100,160 C400,350 500,-50 850,160 C1200,370 1300,50 1540,160"></path>
+      <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+        <svg viewBox="0 0 1440 800" className="w-full h-full" preserveAspectRatio="none">
+          <path fill="none" stroke="#0c0c0c" strokeWidth="200" strokeLinecap="round" d="M-100,-100 C400,500 500,100 850,400 C1200,900 1300,500 1540,900"></path>
         </svg>
       </div>
 
@@ -33,7 +33,7 @@ export default function TestimonialSection() {
         {/* Separator & Avatars Container */}
         <div className="w-full max-w-[1200px] flex justify-center items-center mb-16">
           {/* Left Line Fading Out */}
-          <div className="flex-1 h-[1px] bg-gradient-to-r from-transparent to-white/60"></div>
+          <div className="flex-1 h-[1px] bg-gradient-to-r from-transparent to-[#333]"></div>
           
           {/* Avatars Row exactly between the lines */}
           <div className="flex shrink-0 relative z-10 px-2 md:px-4">
@@ -41,13 +41,13 @@ export default function TestimonialSection() {
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`w-14 h-14 md:w-[70px] md:h-[70px] rounded-full flex items-center justify-center transition-all duration-300 relative bg-[#050505] border ${
+                className={`w-14 h-14 md:w-[70px] md:h-[70px] rounded-full flex items-center justify-center transition-all duration-300 relative bg-[#050505] border-[2px] ${
                   activeIndex === index 
                     ? 'scale-110 opacity-100 border-white z-20 shadow-[0_0_15px_rgba(255,255,255,0.1)]' 
-                    : 'scale-100 opacity-60 hover:opacity-100 border-[#444] z-10'
+                    : 'scale-100 opacity-60 hover:opacity-100 border-transparent z-10'
                 }`}
               >
-                <div className="w-[82%] h-[82%] rounded-full overflow-hidden">
+                <div className="w-[92%] h-[92%] rounded-full overflow-hidden">
                   <img 
                     src={client.avatar} 
                     alt={client.name}
@@ -59,17 +59,15 @@ export default function TestimonialSection() {
           </div>
 
           {/* Right Line Fading Out */}
-          <div className="flex-1 h-[1px] bg-gradient-to-l from-transparent to-white/60"></div>
+          <div className="flex-1 h-[1px] bg-gradient-to-l from-transparent to-[#333]"></div>
         </div>
 
         {/* Main Testimonial Block */}
         <div className="w-full max-w-[1200px] flex items-center justify-between gap-8 relative">
           
           {/* Huge Left Quote Icon */}
-          <div className="hidden xl:block text-[#111] mt-12 w-[200px] h-[200px] shrink-0">
-            <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 9c-3.866 0-7 3.134-7 7v10h10V15H8c0-2.761 2.239-5 5-5V9zm12 0c-3.866 0-7 3.134-7 7v10h10V15h-6c0-2.761 2.239-5 5-5V9z"/>
-            </svg>
+          <div className="hidden xl:flex text-[#111] mt-12 w-[200px] h-[200px] shrink-0 items-center justify-end font-serif text-[280px] leading-none select-none">
+            “
           </div>
 
           <div className="w-full xl:flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 xl:gap-24 relative z-20">
@@ -84,23 +82,20 @@ export default function TestimonialSection() {
               >
                 
                 {/* Text Content */}
-                <div className="flex-1 flex flex-col justify-center text-center xl:text-left">
-                  <h3 className="font-['Menbere'] font-bold text-[20px] md:text-[24px] text-[#c0c0c0] capitalize mb-1">
+                <div className="flex-1 flex flex-col justify-center text-left">
+                  <h3 className="font-['Menbere'] font-bold text-[20px] md:text-[24px] text-white capitalize mb-1">
                     {testimonials.clients[activeIndex].name}
                   </h3>
-                  <p className="font-['Menbere'] text-[12px] md:text-[14px] text-[#555] uppercase font-bold tracking-widest mb-6">
+                  <p className="font-['Menbere'] text-[12px] md:text-[14px] text-[#777] uppercase font-bold tracking-widest mb-6">
                     {testimonials.clients[activeIndex].role}
                   </p>
-                  <p className="font-['Menbere'] text-[#888] text-[14px] md:text-[16px] leading-[1.8] text-justify xl:text-left max-w-lg">
+                  <p className="font-['Menbere'] text-[#aaa] text-[14px] md:text-[16px] leading-[1.8] text-left max-w-lg">
                     {testimonials.clients[activeIndex].text}
                   </p>
                 </div>
 
                 {/* Large Portrait Image (Made smaller) */}
                 <div className="relative w-full max-w-[240px] md:max-w-[260px] aspect-[4/5] shrink-0 group">
-                  {/* White dotted overlap over the client's picture */}
-                  <div className="absolute -inset-4 border-[2px] border-dashed border-white/20 rounded-[45px] pointer-events-none z-0"></div>
-                  
                   <div className="w-full h-full rounded-[40px] overflow-hidden shadow-2xl bg-[#111] relative z-10">
                     <img 
                       src={testimonials.clients[activeIndex].avatar} 
@@ -109,20 +104,15 @@ export default function TestimonialSection() {
                     />
                   </div>
                 </div>
-
               </motion.div>
             </AnimatePresence>
           </div>
 
           {/* Huge Right Quote Icon */}
-          <div className="hidden xl:block text-[#111] mt-12 w-[200px] h-[200px] shrink-0 transform rotate-180">
-            <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 9c-3.866 0-7 3.134-7 7v10h10V15H8c0-2.761 2.239-5 5-5V9zm12 0c-3.866 0-7 3.134-7 7v10h10V15h-6c0-2.761 2.239-5 5-5V9z"/>
-            </svg>
+          <div className="hidden xl:flex text-[#111] mt-12 w-[200px] h-[200px] shrink-0 items-center justify-start font-serif text-[280px] leading-none select-none">
+            ”
           </div>
-
         </div>
-
       </div>
     </section>
   );
