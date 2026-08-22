@@ -24,31 +24,31 @@ export default function LatestWorks() {
       <div className="max-w-[1533px] mx-auto px-6 xl:px-24">
         
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-10 md:mb-16 text-left">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-['Menbere'] text-[50px] md:text-[96px] font-bold text-white capitalize leading-none tracking-tight"
+            className="font-['Menbere'] text-[36px] md:text-[96px] font-bold text-white capitalize leading-none tracking-tight"
           >
             {latestWorks.title}
           </motion.h2>
         </div>
 
-        {/* Carousel */}
+        {/* Carousel / Grid */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="flex overflow-x-auto pb-12 gap-8 scrollbar-hide snap-x"
+          className="flex flex-col md:flex-row md:overflow-x-auto pb-12 gap-6 md:gap-8 scrollbar-hide snap-y md:snap-x"
         >
           {latestWorks.works.map((work, idx) => (
             <motion.div 
               key={idx} 
               variants={itemVariants}
-              className="relative w-[320px] md:w-[618px] h-[350px] md:h-[400px] rounded-3xl overflow-hidden group snap-center cursor-pointer shrink-0 border border-[#222]"
+              className="relative w-full md:w-[618px] h-[220px] md:h-[400px] rounded-3xl md:rounded-[40px] overflow-hidden group snap-center cursor-pointer shrink-0 border border-[#222]"
             >
               {/* Background Image */}
               <div 
@@ -57,23 +57,28 @@ export default function LatestWorks() {
               />
               
               {/* Gradient Overlays */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/10 transition-opacity duration-300 group-hover:opacity-80" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 md:via-black/10 to-black/10 md:to-black/10 transition-opacity duration-300 group-hover:opacity-80" />
               
               {/* Status Badge */}
-              <div className="absolute top-6 left-6 right-6">
-                <div className="inline-flex items-center justify-center border border-[#2991ce] bg-gray-100/10 backdrop-blur-md rounded-full px-5 py-2 text-white font-['Menbere'] text-[12px] capitalize overflow-hidden relative shadow-lg">
+              <div className="absolute top-4 left-4 right-4 md:top-6 md:left-6 md:right-6">
+                <div className="inline-flex items-center justify-center border border-[#2991ce] bg-gray-100/10 backdrop-blur-md rounded-full px-4 py-1.5 md:px-5 md:py-2 text-white font-['Menbere'] text-[10px] md:text-[12px] capitalize overflow-hidden relative shadow-lg">
                   <span className="relative z-10 font-bold">{work.status}</span>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="absolute bottom-6 left-6 right-6 flex flex-col justify-end">
-                <h3 className="font-['Menbere'] text-[#cfcfcf] text-[20px] md:text-[24px] capitalize mb-1 font-bold">
-                  {work.title}
-                </h3>
-                <p className="font-['Menbere'] text-[#7b7a7a] text-[16px] md:text-[20px] capitalize font-medium">
-                  Client : {work.client}
-                </p>
+              <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 flex flex-col justify-end">
+                <div className="flex items-center gap-3">
+                  <div className="w-[3px] md:w-[4px] h-[30px] md:h-[40px] bg-[#2991ce]"></div>
+                  <div>
+                    <h3 className="font-['Menbere'] text-[#cfcfcf] text-[16px] md:text-[24px] capitalize mb-0 md:mb-1 font-bold leading-tight">
+                      {work.title}
+                    </h3>
+                    <p className="font-['Menbere'] text-[#dedede] text-[12px] md:text-[20px] capitalize font-medium leading-tight mt-1">
+                      {work.client}
+                    </p>
+                  </div>
+                </div>
               </div>
             </motion.div>
           ))}

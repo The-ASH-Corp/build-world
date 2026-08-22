@@ -29,14 +29,16 @@ export default function TestimonialSection() {
 
       <div className="max-w-[1400px] mx-auto px-6 xl:px-16 relative z-10 flex flex-col items-center">
         {/* Title */}
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="font-['Menbere'] text-[40px] md:text-[60px] xl:text-[85px] font-bold text-[#e0e0e0] mb-20 text-center capitalize tracking-tight"
-        >
-          {testimonials.title}
-        </motion.h2>
+        <motion.div className="w-full text-left md:text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="font-['Menbere'] text-[36px] md:text-[60px] xl:text-[85px] font-bold text-[#e0e0e0] mb-12 md:mb-20 capitalize tracking-tight"
+          >
+            {testimonials.title}
+          </motion.h2>
+        </motion.div>
 
         {/* Separator & Avatars Container */}
         <div className="w-full max-w-[1200px] flex justify-center items-center mb-16">
@@ -88,20 +90,20 @@ export default function TestimonialSection() {
                 className="flex flex-col-reverse xl:flex-row items-center xl:items-center gap-12 w-full max-w-[900px]"
               >
                 {/* Text Content */}
-                <div className="flex-1 flex flex-col justify-center text-left">
+                <div className="flex-1 flex flex-col justify-center text-left mt-8 md:mt-0">
                   <h3 className="font-['Menbere'] font-bold text-[20px] md:text-[24px] text-white capitalize mb-1">
                     {testimonials.clients[activeIndex].name}
                   </h3>
                   <p className="font-['Menbere'] text-[12px] md:text-[14px] text-[#777] uppercase font-bold tracking-widest mb-6">
                     {testimonials.clients[activeIndex].role}
                   </p>
-                  <p className="font-['Menbere'] text-[#aaa] text-[14px] md:text-[16px] leading-[1.8] text-left max-w-lg">
+                  <p className="font-['Menbere'] text-[#aaa] text-[14px] md:text-[16px] leading-[1.8] text-left max-w-lg mx-0">
                     {testimonials.clients[activeIndex].text}
                   </p>
                 </div>
 
-                {/* Large Portrait Image (Made smaller) */}
-                <div className="relative w-full max-w-[240px] md:max-w-[260px] aspect-[4/5] shrink-0 group">
+                {/* Large Portrait Image (Hidden on Mobile) */}
+                <div className="hidden md:block relative w-full max-w-[240px] md:max-w-[260px] aspect-[4/5] shrink-0 group">
                   <div className="w-full h-full rounded-[40px] overflow-hidden shadow-2xl bg-[#111] relative z-10">
                     <img
                       src={testimonials.clients[activeIndex].avatar}

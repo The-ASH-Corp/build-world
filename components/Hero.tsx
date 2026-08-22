@@ -42,13 +42,19 @@ export default function Hero() {
         >
           <motion.h1 
             style={{ y: textY }}
-            className="font-['Matangi'] text-[12vw] xl:text-[220px] leading-[1] font-black tracking-tighter flex items-center justify-center w-full"
+            className="font-['Matangi'] text-[25vw] md:text-[12vw] xl:text-[220px] leading-[0.9] md:leading-[1] font-black tracking-tighter flex flex-col md:flex-row items-center justify-center w-full text-center"
           >
             <span 
-              className="text-transparent bg-clip-text" 
+              className="text-transparent bg-clip-text block md:inline" 
               style={{ backgroundImage: "linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.1) 100%)" }}
             >
-              Build World
+              Build
+            </span>
+            <span 
+              className="text-transparent bg-clip-text block md:inline md:ml-[4vw] xl:ml-[60px]" 
+              style={{ backgroundImage: "linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.1) 100%)" }}
+            >
+              World
             </span>
           </motion.h1>
         </motion.div>
@@ -67,17 +73,17 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-black/90 via-black/50 to-transparent z-20 pointer-events-none" />
 
       {/* LAYER 4: Bottom Action Bar */}
-      <div className="relative z-30 w-full max-w-[1533px] mx-auto px-8 md:px-16 pb-12 xl:pb-16 flex flex-col xl:flex-row justify-between items-center xl:items-end gap-8">
+      <div className="relative z-30 w-full max-w-[1533px] mx-auto px-6 md:px-16 pb-12 xl:pb-16 flex flex-col xl:flex-row justify-between items-center xl:items-end gap-8">
         
         {/* Left Side: Subtitle */}
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex items-center w-full xl:w-auto"
+          className="flex flex-col md:flex-row items-center w-full xl:w-auto text-center md:text-left"
         >
-          <div className="w-[8px] h-[70px] bg-[#2a9df4] mr-6 shrink-0"></div>
-          <h2 className="text-[28px] xl:text-[36px] font-['Menbere'] text-white whitespace-pre-line leading-[1.2] capitalize tracking-tight">
+          <div className="w-[70px] h-[4px] md:w-[8px] md:h-[70px] bg-[#2a9df4] mb-4 md:mb-0 md:mr-6 shrink-0 hidden md:block"></div>
+          <h2 className="text-[18px] md:text-[28px] xl:text-[36px] font-['Menbere'] text-white whitespace-pre-line leading-[1.4] md:leading-[1.2] capitalize tracking-tight max-w-[300px] md:max-w-none mx-auto md:mx-0">
             {hero.subtitle}
           </h2>
         </motion.div>
@@ -87,20 +93,20 @@ export default function Hero() {
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col sm:flex-row gap-4 w-full xl:w-auto justify-end"
+          className="flex flex-col gap-4 w-full md:w-auto md:flex-row xl:w-auto justify-center xl:justify-end"
         >
           {/* Primary Button */}
-          <a href={hero.primaryButton.link} className="group relative bg-[#2a9df4] text-white h-[60px] pl-8 pr-2 rounded-full font-bold hover:bg-[#1f87d6] transition-all flex items-center justify-center gap-6 text-[11px] xl:text-[13px] tracking-widest uppercase font-['Menbere'] shadow-lg pointer-events-auto">
-            <span className="relative z-10 mt-[2px]">{hero.primaryButton.text}</span>
-            <div className="relative z-10 bg-white/90 text-[#2a9df4] rounded-full w-12 h-12 flex items-center justify-center transition-transform group-hover:rotate-45 shadow-sm">
+          <a href={hero.primaryButton.link} className="group relative bg-[#2a9df4] text-white h-[50px] md:h-[60px] pl-6 pr-2 md:pl-8 md:pr-2 rounded-full font-bold hover:bg-[#1f87d6] transition-all flex items-center justify-between md:justify-center gap-4 md:gap-6 text-[10px] md:text-[11px] xl:text-[13px] tracking-widest uppercase font-['Menbere'] shadow-lg pointer-events-auto w-full md:w-auto">
+            <span className="relative z-10 mt-[2px] w-full text-center md:text-left md:w-auto flex-1">{hero.primaryButton.text}</span>
+            <div className="relative z-10 bg-white/90 text-[#2a9df4] rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-transform group-hover:rotate-45 shadow-sm shrink-0">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
             </div>
           </a>
           
           {/* Secondary Button */}
-          <a href={hero.secondaryButton.link} className="group relative bg-transparent border border-white/50 text-white h-[60px] px-8 rounded-full font-bold hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3 text-[11px] xl:text-[13px] tracking-widest uppercase font-['Menbere'] pointer-events-auto">
-            <span className="mt-[2px]">{hero.secondaryButton.text}</span>
-            <div className="bg-transparent text-white group-hover:text-black w-4 h-4 flex items-center justify-center transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
+          <a href={hero.secondaryButton.link} className="group relative bg-transparent border border-white/50 text-white h-[50px] md:h-[60px] px-6 md:px-8 rounded-full font-bold hover:bg-white hover:text-black transition-all flex items-center justify-between md:justify-center gap-3 text-[10px] md:text-[11px] xl:text-[13px] tracking-widest uppercase font-['Menbere'] pointer-events-auto w-full md:w-auto">
+            <span className="mt-[2px] w-full text-center md:text-left md:w-auto flex-1">{hero.secondaryButton.text}</span>
+            <div className="bg-transparent text-white group-hover:text-black w-4 h-4 flex items-center justify-center transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 shrink-0">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
             </div>
           </a>

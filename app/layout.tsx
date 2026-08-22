@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Build World",
-  description: "Build World",
+  title: "Build World Constructions",
+  description: "Build World Constructions",
 };
 
 export default function RootLayout({
