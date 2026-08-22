@@ -8,20 +8,20 @@ export default function Service() {
   return (
     <>
       <main className="bg-[#080808] min-h-screen py-24 px-4 sm:px-8 lg:px-16 relative overflow-hidden">
-        
+
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
           <div className="absolute top-[-20%] left-[-10%] w-[150%] h-[150%] bg-gradient-to-br from-white/[0.015] via-transparent to-white/[0.015] transform -rotate-[15deg]"></div>
           <div className="absolute top-[20%] right-[-10%] w-[100%] h-[100%] bg-gradient-to-tl from-white/[0.01] via-transparent to-transparent transform rotate-[25deg]"></div>
         </div>
 
         <div className="max-w-[1400px] mx-auto relative z-10">
-         
+
           <div className="text-center mb-16 md:mb-24">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-5xl md:text-5xl lg:text-7xl font-extrabold text-white tracking-wide"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white tracking-wide"
             >
               Our Speciallizations
             </motion.h1>
@@ -29,8 +29,8 @@ export default function Service() {
 
           <div className="space-y-8">
             {services.map((service, index) => (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -45,10 +45,10 @@ export default function Service() {
                 <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
                 {/* Image Container */}
-                <div className="w-full md:w-[28%] lg:w-[28%] flex-shrink-0 min-h-[250px] md:min-h-full">
-                  <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden shadow-lg">
-                    <img 
-                      src={service.image} 
+                <div className="relative w-full md:w-[28%] lg:w-[28%] flex-shrink-0 h-[220px] sm:h-[280px] md:h-auto md:min-h-[250px]">
+                  <div className="absolute inset-0 w-full h-full rounded-[1.5rem] overflow-hidden shadow-lg">
+                    <img
+                      src={service.image}
                       alt={service.title}
                       className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                     />
@@ -60,10 +60,10 @@ export default function Service() {
                 <div className={`w-full md:w-[72%] lg:w-[72%] flex flex-col justify-center py-6 px-4 md:px-0
                   ${service.imageLeft ? 'md:pr-10 lg:pr-16' : 'md:pl-10 lg:pl-16'}
                 `}>
-                  <h3 className="text-2xl lg:text-[28px] font-bold text-white mb-3 lg:mb-4 uppercase font-sans tracking-normal">
+                  <h3 className="text-xl sm:text-2xl lg:text-[28px] font-bold text-white mb-3 lg:mb-4 uppercase font-sans tracking-normal">
                     {service.title}
                   </h3>
-                  <p className="text-white text-[15px] sm:text-base leading-relaxed font-normal font-sans">
+                  <p className="text-white text-sm sm:text-[15px] md:text-base leading-relaxed font-normal font-sans">
                     {service.description}
                   </p>
                 </div>
@@ -73,7 +73,7 @@ export default function Service() {
         </div>
       </main>
 
-      
+
     </>
   );
 }
