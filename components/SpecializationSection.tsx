@@ -35,7 +35,7 @@ export default function SpecializationSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-['Menbere'] text-[50px] md:text-[96px] font-bold text-white mb-20 text-center capitalize tracking-tight leading-none"
+          className="font-['Menbere'] text-[36px] md:text-[96px] font-bold text-white mb-10 md:mb-20 text-left md:text-center w-full capitalize tracking-tight leading-none"
         >
           {specializations.title}
         </motion.h2>
@@ -51,10 +51,10 @@ export default function SpecializationSection() {
             <motion.div 
               key={index}
               variants={itemVariants}
-              className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} bg-[#111] rounded-[32px] overflow-hidden items-stretch min-h-[240px] w-full p-4 gap-6 lg:gap-12 group border border-white/5 shadow-2xl`}
+              className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} bg-[#111] rounded-[32px] overflow-hidden items-stretch min-h-[240px] w-full p-4 md:p-6 lg:p-4 gap-4 md:gap-6 lg:gap-12 group border border-white/5 shadow-2xl`}
             >
               {/* Image */}
-              <div className="w-full lg:w-[400px] shrink-0 h-[240px] relative overflow-hidden rounded-[24px]">
+              <div className="w-full lg:w-[400px] shrink-0 h-[200px] md:h-[240px] relative overflow-hidden rounded-[24px]">
                   <div 
                     className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                     style={{ backgroundImage: `url(${item.img})` }}
@@ -62,11 +62,11 @@ export default function SpecializationSection() {
               </div>
 
               {/* Text Content */}
-              <div className="flex-1 py-6 lg:py-10 px-4 lg:px-8 flex flex-col justify-center">
-                <h3 className="font-['Menbere'] text-[20px] lg:text-[22px] font-bold text-white mb-4 uppercase">
+              <div className="flex-1 py-4 lg:py-10 px-2 md:px-4 lg:px-8 flex flex-col justify-center">
+                <h3 className="font-['Menbere'] text-[18px] md:text-[20px] lg:text-[22px] font-bold text-white mb-2 md:mb-4 uppercase">
                   {item.title}
                 </h3>
-                <p className="font-['Menbere'] text-[#aaa] text-[14px] lg:text-[15px] leading-[1.8] capitalize max-w-[700px]">
+                <p className="font-['Menbere'] text-[#aaa] text-[13px] md:text-[14px] lg:text-[15px] leading-[1.6] md:leading-[1.8] capitalize max-w-[700px]">
                   {item.text}
                 </p>
               </div>
