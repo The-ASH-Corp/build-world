@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
+import Link from "next/link";
 import { siteData } from "@/data/siteData";
 
 export default function ProjectsPage() {
@@ -73,49 +74,50 @@ export default function ProjectsPage() {
             className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10"
           >
             {filteredWorks.map((work, idx) => (
-              <motion.div 
-                key={idx} 
-                variants={itemVariants}
-                className="relative w-full h-[260px] md:h-[450px] rounded-3xl md:rounded-[40px] overflow-hidden group cursor-pointer border border-[#222]"
-              >
-                {/* Background Image */}
-                <div 
-                  className="absolute -inset-5 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                  style={{ backgroundImage: `url(${work.bg})` }}
-                />
-                
-                {/* Gradient Overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 md:via-black/10 to-black/30 md:to-black/10 transition-opacity duration-300 group-hover:opacity-80" />
-                
-                {/* Status Badge */}
-                <div className="absolute top-4 left-4 md:top-6 md:left-6">
-                  <div className="inline-flex items-center justify-center border border-white/20 bg-black/40 backdrop-blur-md rounded-full px-4 py-1.5 md:px-5 md:py-2 text-white text-[10px] md:text-[12px] overflow-hidden relative shadow-lg">
-                    <span className="relative z-10 font-medium">{work.status}</span>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 flex justify-between items-end">
-                  <div className="flex items-center gap-3">
-                    <div className="w-[3px] md:w-[4px] h-[30px] md:h-[40px] bg-[#2991ce]"></div>
-                    <div>
-                      <h3 className="font-['Menbere'] text-[#cfcfcf] text-[16px] md:text-[20px] capitalize mb-0 md:mb-1 font-medium leading-tight">
-                        {work.title}
-                      </h3>
-                      <p className="font-['Menbere'] text-white text-[14px] md:text-[24px] capitalize font-bold leading-tight mt-1">
-                        {work.client}
-                      </p>
+              <Link key={idx} href={`/projects/${work.id}`} className="block">
+                <motion.div 
+                  variants={itemVariants}
+                  className="relative w-full h-[260px] md:h-[450px] rounded-3xl md:rounded-[40px] overflow-hidden group cursor-pointer border border-[#222]"
+                >
+                  {/* Background Image */}
+                  <div 
+                    className="absolute -inset-5 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                    style={{ backgroundImage: `url(${work.bg})` }}
+                  />
+                  
+                  {/* Gradient Overlays */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 md:via-black/10 to-black/30 md:to-black/10 transition-opacity duration-300 group-hover:opacity-80" />
+                  
+                  {/* Status Badge */}
+                  <div className="absolute top-4 left-4 md:top-6 md:left-6">
+                    <div className="inline-flex items-center justify-center border border-white/20 bg-black/40 backdrop-blur-md rounded-full px-4 py-1.5 md:px-5 md:py-2 text-white text-[10px] md:text-[12px] overflow-hidden relative shadow-lg">
+                      <span className="relative z-10 font-medium">{work.status}</span>
                     </div>
                   </div>
-                  
-                  {/* Arrow Button */}
-                  <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#e0e0e0] flex items-center justify-center transform group-hover:bg-[#2991ce] transition-colors duration-300 shadow-lg">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2991ce" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:stroke-white transition-colors">
-                      <path d="M7 17l9.2-9.2M17 17V7H7"/>
-                    </svg>
+
+                  {/* Content */}
+                  <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 flex justify-between items-end">
+                    <div className="flex items-center gap-3">
+                      <div className="w-[3px] md:w-[4px] h-[30px] md:h-[40px] bg-[#2991ce]"></div>
+                      <div>
+                        <h3 className="font-['Menbere'] text-[#cfcfcf] text-[16px] md:text-[20px] capitalize mb-0 md:mb-1 font-medium leading-tight">
+                          {work.title}
+                        </h3>
+                        <p className="font-['Menbere'] text-white text-[14px] md:text-[24px] capitalize font-bold leading-tight mt-1">
+                          {work.client}
+                        </p>
+                      </div>
+                    </div>
+                    
+                    {/* Arrow Button */}
+                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#e0e0e0] flex items-center justify-center transform group-hover:bg-[#2991ce] transition-colors duration-300 shadow-lg">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2991ce" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:stroke-white transition-colors">
+                        <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </Link>
             ))}
           </motion.div>
         </AnimatePresence>
