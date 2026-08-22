@@ -13,6 +13,7 @@ export const siteData = {
     button1: { text: "More\nAbout Us", link: "/about" },
     button2: { text: "Download\nCompany Profile", link: "#" },
     images: [
+      "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png",
       "/images/huW5kybTw53dpOEUqem1TSexsY.png",
       "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
     ]
@@ -25,7 +26,7 @@ export const siteData = {
         name: "Er. Feroz Kalathil",
         role: "CEO & CO-FOUNDER",
         description: "Eng. Feroz Kalathil, the visionary leader at the helm of Build World Constructions Pvt. Ltd., is a seasoned engineer with a stellar 25-year track record that speaks volumes about his expertise and dedication to the construction industry. His illustrious portfolio includes iconic projects like the Makkah Haram Masjid and the American Consulate in Jeddah, KSA, where his unwavering commitment to precision and meticulous attention to detail have set new standards of excellence. Eng. Feroz Kalathil's contributions extend to renowned endeavors such as the Shifa Al-Jazeera Medical Center in Sharjah, UAE, reaffirming his status as a trailblazer in the field. His leadership inspires the entire Build World team to uphold international construction standards, fostering a culture of innovation, sustainability, and unwavering dedication to quality that sets the company apart in the industry.",
-        image: "/images/F1JKxW2JJHKwcH4AT1sDrZRro.png" // Real CEO photo
+        image: "/images/laShQCkW1gKUyFZ61FN0jwJXQ.png" // Real CEO photo
       }
     ]
   },
@@ -33,9 +34,9 @@ export const siteData = {
     title: "Latest Works",
     buttonText: "EXPLORE MORE",
     works: [
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png" }
+      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png" },
+      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png" },
+      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png" }
     ]
   },
   testimonials: {
@@ -45,7 +46,7 @@ export const siteData = {
         name: "Er. Feroz Kalathil",
         role: "CEO & CO-FOUNDER",
         text: "Lorem ipsum dolor sit amet consectetur. Sed prLorem ipsum dolor sit amet consectetur. Sed praesent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.esent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.",
-        avatar: "/images/HDHU2O4nPLmVeFa8e6E4l4RWL4I.png",
+        avatar: "/images/R456YeJfTbiHierJd8bZpvMlK8.png",
         largeImage: "/images/tGMwHkexN2Q8eJWTaxoqj3X8o.png"
       },
       {
@@ -59,7 +60,7 @@ export const siteData = {
         name: "Client 3",
         role: "CLIENT",
         text: "Lorem ipsum dolor sit amet consectetur. Sed prLorem ipsum dolor sit amet consectetur. Sed praesent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.esent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.",
-        avatar: "/images/tEnd1qHzR0WFFdeDnkabeYjJk.png",
+        avatar: "/images/R456YeJfTbiHierJd8bZpvMlK8.png",
         largeImage: "/images/tEnd1qHzR0WFFdeDnkabeYjJk.png"
       }
     ]
@@ -75,7 +76,7 @@ export const siteData = {
     ]
   },
   whyChooseUs: {
-    title: "Why\\nChoos Us?",
+    title: "Why\nChoos Us?",
     description: "Our Mode Of Action Involves Constructing Projects That Add Value To Residential And Commercial Buildings. Our Team Comprises Talented Engineers And Execution Specialists Who Are Passionate About Turning Your Dreams Into Reality. We Take Pride In Providing Solutions That Resonate With The Unique Identity Of Each Space. Our Modern, Affordable, And Sustainable Solutions Not Only Set Your Spaces Apart But Also Create A Warm Ambiance That Attracts Positive Energies.",
     items: [
       { title: "Experienced Engineering Team", text: "Managing Projects Efficiently With Skilled Work Managers And A Seasoned Engineering Team." },
