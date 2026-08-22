@@ -26,7 +26,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="w-full pt-32 pb-24 overflow-hidden relative min-h-screen">
-      <div className="max-w-[1533px] mx-auto px-6 xl:px-24">
+      <div className="max-w-383.25 mx-auto px-6 xl:px-24">
         
         {/* Header */}
         <div className="mb-12 text-center">
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
                     : "bg-transparent border-[#333] text-[#cfcfcf] hover:border-[#e0e0e0] hover:text-white"
                 } font-medium text-[14px] md:text-[16px]`}
               >
-                {activeTab === tab && <div className="w-[3px] h-3.5 bg-[#2991ce] mr-2"></div>}
+                {activeTab === tab && <div className="w-0.75 h-3.5 bg-[#2991ce] mr-2"></div>}
                 {tab}
               </button>
             ))}
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
               <Link key={idx} href={`/projects/${work.id}`} className="block">
                 <motion.div 
                   variants={itemVariants}
-                  className="relative w-full h-[260px] md:h-[450px] rounded-3xl md:rounded-[40px] overflow-hidden group cursor-pointer border border-[#222]"
+                  className="relative w-full h-65 md:h-112.5 rounded-3xl md:rounded-[40px] overflow-hidden group cursor-pointer border border-[#222]"
                 >
                   {/* Background Image */}
                   <div 
@@ -86,7 +86,7 @@ export default function ProjectsPage() {
                   />
                   
                   {/* Gradient Overlays */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 md:via-black/10 to-black/30 md:to-black/10 transition-opacity duration-300 group-hover:opacity-80" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 md:via-black/10 to-black/30 md:to-black/10 transition-opacity duration-300 group-hover:opacity-80" />
                   
                   {/* Status Badge */}
                   <div className="absolute top-4 left-4 md:top-6 md:left-6">
@@ -98,7 +98,7 @@ export default function ProjectsPage() {
                   {/* Content */}
                   <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 flex justify-between items-end">
                     <div className="flex items-center gap-3">
-                      <div className="w-[3px] md:w-[4px] h-[30px] md:h-[40px] bg-[#2991ce]"></div>
+                      <div className="w-0.75 md:w-1 h-7.5 md:h-10 bg-[#2991ce]"></div>
                       <div>
                         <h3 className="font-['Menbere'] text-[#cfcfcf] text-[16px] md:text-[20px] capitalize mb-0 md:mb-1 font-medium leading-tight">
                           {work.title}

@@ -22,7 +22,7 @@ export default function LatestWorks() {
 
   return (
     <section className="w-full bg-[#050505] py-24 overflow-hidden relative">
-      <div className="max-w-[1533px] mx-auto px-6 xl:px-24">
+      <div className="max-w-383.25 mx-auto px-6 xl:px-24">
         
         {/* Header */}
         <div className="mb-10 md:mb-16 text-left">
@@ -49,7 +49,7 @@ export default function LatestWorks() {
             <Link key={idx} href={`/projects/${work.id}`} className="shrink-0 block">
               <motion.div 
                 variants={itemVariants}
-                className="relative w-full md:w-[618px] h-[220px] md:h-[400px] rounded-3xl md:rounded-[40px] overflow-hidden group snap-center cursor-pointer border border-[#222]"
+                className="relative w-full md:w-154.5 h-55 md:h-100 rounded-3xl md:rounded-[40px] overflow-hidden group snap-center cursor-pointer border border-[#222]"
               >
                 {/* Background Image */}
                 <div 
@@ -58,7 +58,7 @@ export default function LatestWorks() {
                 />
                 
                 {/* Gradient Overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 md:via-black/10 to-black/10 md:to-black/10 transition-opacity duration-300 group-hover:opacity-80" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 md:via-black/10 to-black/10 md:to-black/10 transition-opacity duration-300 group-hover:opacity-80" />
                 
                 {/* Status Badge */}
                 <div className="absolute top-4 left-4 right-4 md:top-6 md:left-6 md:right-6">
@@ -70,7 +70,7 @@ export default function LatestWorks() {
                 {/* Content */}
                 <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 flex flex-col justify-end">
                   <div className="flex items-center gap-3">
-                    <div className="w-[3px] md:w-[4px] h-[30px] md:h-[40px] bg-[#2991ce]"></div>
+                    <div className="w-0.75 md:w-1 h-7.5 md:h-10 bg-[#2991ce]"></div>
                     <div>
                       <h3 className="font-['Menbere'] text-[#cfcfcf] text-[16px] md:text-[24px] capitalize mb-0 md:mb-1 font-bold leading-tight">
                         {work.title}
@@ -96,7 +96,7 @@ export default function LatestWorks() {
         >
           <Link 
             href={latestWorks.buttonLink || "/projects"}
-            className="group flex items-center justify-between min-w-[200px] h-[60px] border border-[#333] rounded-[32px] px-8 hover:border-white transition-all cursor-pointer"
+            className="group flex items-center justify-between min-w-50 h-15 border border-[#333] rounded-4xl px-8 hover:border-white transition-all cursor-pointer"
           >
             <span className="font-['Menbere'] font-bold text-[14px] text-white uppercase tracking-wider mr-4">
               {latestWorks.buttonText}
