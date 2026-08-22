@@ -2,7 +2,6 @@
 
 import { motion, Variants } from "framer-motion";
 import { siteData } from "@/data/siteData";
-import { Variants } from "framer-motion";
 
 export default function WhyChooseUs() {
   const { whyChooseUs } = siteData;
