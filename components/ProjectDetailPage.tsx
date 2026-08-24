@@ -3,21 +3,21 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { siteData } from "@/data/siteData";
+import { projectsData } from "@/data/projectsData";
 
 interface ProjectDetailPageProps {
   id: string;
 }
 
 export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
-  const project = siteData.projectsPage.works.find((p) => p.id === id);
+  const project = projectsData.projectsPage.works.find((p) => p.id === id);
 
   if (!project) {
     notFound();
   }
 
   // Get other projects for recommendation
-  const otherProjects = siteData.projectsPage.works
+  const otherProjects = projectsData.projectsPage.works
     .filter((p) => p.id !== id)
     .slice(0, 2);
 

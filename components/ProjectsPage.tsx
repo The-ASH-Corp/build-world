@@ -3,10 +3,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import Link from "next/link";
-import { siteData } from "@/data/siteData";
+import { projectsData } from "@/data/projectsData";
 
 export default function ProjectsPage() {
-  const { projectsPage } = siteData;
+  const { projectsPage } = projectsData;
   const [activeTab, setActiveTab] = useState(projectsPage.tabs[0]);
 
   const filteredWorks = projectsPage.works.filter(work => work.category === activeTab);

@@ -2,10 +2,10 @@
 
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
-import { siteData } from "@/data/siteData";
+import { homeData } from "@/data/homeData";
 
 export default function LatestWorks() {
-  const { latestWorks } = siteData;
+  const { latestWorks } = homeData;
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },

@@ -1,11 +1,11 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { siteData } from "@/data/siteData";
+import { homeData } from "@/data/homeData";
 import { useRef } from "react";
 
 export default function Hero() {
-  const { hero } = siteData;
+  const { hero } = homeData;
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
