@@ -1,10 +1,10 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { siteData } from "@/data/siteData";
+import { homeData } from "@/data/homeData";
 
 export default function WhyChooseUs() {
-  const { whyChooseUs } = siteData;
+  const { whyChooseUs } = homeData;
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },

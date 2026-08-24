@@ -3,21 +3,21 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { siteData } from "@/data/siteData";
+import { projectsData } from "@/data/projectsData";
 
 interface ProjectDetailPageProps {
   id: string;
 }
 
 export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
-  const project = siteData.projectsPage.works.find((p) => p.id === id);
+  const project = projectsData.projectsPage.works.find((p) => p.id === id);
 
   if (!project) {
     notFound();
   }
 
   // Get other projects for recommendation
-  const otherProjects = siteData.projectsPage.works
+  const otherProjects = projectsData.projectsPage.works
     .filter((p) => p.id !== id)
     .slice(0, 2);
 
@@ -25,11 +25,11 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
     <div className="min-h-screen bg-[#050505] text-white pt-28 pb-24 selection:bg-[#2991ce] selection:text-white">
       {/* Background Ambience */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#2991ce]/5 rounded-full blur-[140px]" />
-        <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] bg-[#2a9df4]/5 rounded-full blur-[160px]" />
+        <div className="absolute top-0 left-1/4 w-150 h-150 bg-[#2991ce]/5 rounded-full blur-[140px]" />
+        <div className="absolute bottom-1/3 right-1/4 w-125 h-125 bg-[#2a9df4]/5 rounded-full blur-[160px]" />
       </div>
 
-      <div className="max-w-[1533px] mx-auto px-6 xl:px-24 relative z-10">
+      <div className="max-w-383.25 mx-auto px-6 xl:px-24 relative z-10">
         
         {/* Navigation Breadcrumb & Back Button */}
         <motion.div 
@@ -99,16 +99,16 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative w-full h-[320px] sm:h-[480px] md:h-[640px] rounded-3xl md:rounded-[40px] overflow-hidden border border-[#222] shadow-2xl mb-16 group"
+          className="relative w-full h-80 sm:h-120 md:h-160 rounded-3xl md:rounded-[40px] overflow-hidden border border-[#222] shadow-2xl mb-16 group"
         >
           <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
             style={{ backgroundImage: `url(${project.bg})` }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />
           
           <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 z-10 flex items-center gap-3">
-            <div className="w-[4px] h-[36px] md:h-[48px] bg-[#2991ce]" />
+            <div className="w-1 h-9 md:h-12 bg-[#2991ce]" />
             <div>
               <p className="text-xs md:text-sm font-['Menbere'] uppercase tracking-widest text-gray-300">Project Location</p>
               <h3 className="text-lg md:text-2xl font-bold font-['Menbere'] text-white">{project.location}</h3>
@@ -156,7 +156,7 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
             className="lg:col-span-7 flex flex-col gap-6"
           >
             <div className="flex items-center gap-3">
-              <div className="w-[3px] h-6 bg-[#2991ce]" />
+              <div className="w-0.75 h-6 bg-[#2991ce]" />
               <h2 className="font-['Menbere'] text-2xl md:text-4xl font-bold text-white uppercase tracking-tight">
                 Project Overview
               </h2>
@@ -207,7 +207,7 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
             className="mb-28"
           >
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-[3px] h-6 bg-[#2991ce]" />
+              <div className="w-0.75 h-6 bg-[#2991ce]" />
               <h2 className="font-['Menbere'] text-2xl md:text-4xl font-bold text-white uppercase tracking-tight">
                 Visual Gallery
               </h2>
@@ -217,7 +217,7 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
               {project.gallery.map((imgSrc, idx) => (
                 <div 
                   key={idx} 
-                  className="relative h-[280px] md:h-[400px] rounded-3xl overflow-hidden border border-[#222] group cursor-pointer shadow-lg"
+                  className="relative h-70 md:h-100 rounded-3xl overflow-hidden border border-[#222] group cursor-pointer shadow-lg"
                 >
                   <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -254,12 +254,12 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {otherProjects.map((item, idx) => (
                 <Link key={idx} href={`/projects/${item.id}`} className="group block">
-                  <div className="relative h-[260px] md:h-[360px] rounded-3xl overflow-hidden border border-[#222] bg-[#111]">
+                  <div className="relative h-65 md:h-90 rounded-3xl overflow-hidden border border-[#222] bg-[#111]">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                       style={{ backgroundImage: `url(${item.bg})` }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/10" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-black/10" />
                     
                     <div className="absolute top-4 left-4">
                       <span className="border border-white/20 bg-black/40 backdrop-blur-md rounded-full px-4 py-1 text-white text-xs font-['Menbere']">

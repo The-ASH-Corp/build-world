@@ -1,11 +1,11 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { siteData } from "@/data/siteData";
+import { homeData } from "@/data/homeData";
 import { useState } from "react";
 
 export default function TestimonialSection() {
-  const { testimonials } = siteData;
+  const { testimonials } = homeData;
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (

@@ -1,8 +1,8 @@
 import ProjectDetailPage from "@/components/ProjectDetailPage";
-import { siteData } from "@/data/siteData";
+import { projectsData } from "@/data/projectsData";
 
 export function generateStaticParams() {
-  return siteData.projectsPage.works.map((project) => ({
+  return projectsData.projectsPage.works.map((project) => ({
     id: project.id,
   }));
 }
