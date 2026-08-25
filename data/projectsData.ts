@@ -4,7 +4,7 @@ export const projectsData = {
     works: [
       {
         id: "residence-calicut",
-        title: "Residence, Calicut",
+        title: "A Home Shaped Around Modern Living",
         client: "Mr. Ahammed Jalal",
         status: "Completed ✓",
         category: "Completed",
@@ -13,7 +13,7 @@ export const projectsData = {
         year: "2024",
         scope: "Architectural Execution, Structural Engineering & Interior Works",
         bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
-        description: "A benchmark residential project blending contemporary structural architecture with sophisticated interior finishes. Designed to meet modern living needs while maintaining structural integrity in tropical coastal conditions.",
+        description: "Designed and delivered for Mr. Ahammed Jalal, this completed residence brings together contemporary architecture, refined interiors, and carefully considered spaces for everyday living.\n\nFrom its clean architectural form to the warmth of its interior details, every element was developed with a focus on comfort, functionality, and visual harmony. The result is a home where modern design meets a sense of warmth — creating spaces that are practical to live in and timeless in character.",
         highlights: [
           "Custom cantilevered balconies and deep overhangs",
           "Integrated ambient smart lighting systems",
@@ -24,7 +24,9 @@ export const projectsData = {
           "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
           "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png",
           "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-          "/images/a8ncra2SSE0thOySygQJ1YTffE.png"
+          "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
+          "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png",
+          "/images/zTTPvb5aUC27Jj46G3PQqCWY7k.png"
         ]
       },
       {
