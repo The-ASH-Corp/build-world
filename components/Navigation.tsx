@@ -73,7 +73,7 @@ export default function Navigation() {
         {/* Links */}
         <div className="hidden md:flex gap-8">
           {links.map((link) => {
-            const isActive = pathname === link.href;
+            const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
             return (
               <Link
                 key={link.name}
@@ -134,7 +134,7 @@ export default function Navigation() {
             
             <div className="flex flex-col gap-8 items-center">
               {links.map((link) => {
-                const isActive = pathname === link.href;
+                const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
                 return (
                   <Link
                     key={link.name}
