@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { siteData } from "@/data/siteData";
+import { homeData } from "@/data/homeData";
 
 export default function TeamSection() {
-  const { team } = siteData;
+  const { team } = homeData;
 
   return (
     <section className="relative w-full bg-[#050505] py-24 xl:py-32 overflow-hidden">

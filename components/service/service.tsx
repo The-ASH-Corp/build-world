@@ -1,21 +1,19 @@
 "use client";
 
-import React from 'react';
-import { serviceData as services } from '@/data/serviceData';
-import { motion } from 'framer-motion';
+import React from "react";
+import { serviceData as services } from "@/data/serviceData";
+import { motion } from "framer-motion";
 
 export default function Service() {
   return (
     <>
       <main className="bg-[#080808] min-h-screen py-24 px-4 sm:px-8 lg:px-16 relative overflow-hidden">
-
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
           <div className="absolute top-[-20%] left-[-10%] w-[150%] h-[150%] bg-gradient-to-br from-white/[0.015] via-transparent to-white/[0.015] transform -rotate-[15deg]"></div>
           <div className="absolute top-[20%] right-[-10%] w-[100%] h-[100%] bg-gradient-to-tl from-white/[0.01] via-transparent to-transparent transform rotate-[25deg]"></div>
         </div>
 
         <div className="max-w-[1400px] mx-auto relative z-10">
-
           <div className="text-center mb-16 md:mb-24">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -34,8 +32,12 @@ export default function Service() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.7, ease: "easeOut", delay: index * 0.15 }}
-                className={`flex flex-col ${service.imageLeft ? 'md:flex-row' : 'md:flex-row-reverse'} 
+                transition={{
+                  duration: 0.7,
+                  ease: "easeOut",
+                  delay: index * 0.15,
+                }}
+                className={`flex flex-col ${service.imageLeft ? "md:flex-row" : "md:flex-row-reverse"} 
                 items-stretch gap-6 md:gap-10 lg:gap-16 p-4 md:p-5 lg:p-6 
                 bg-[#1a1a1a] rounded-[2rem] shadow-[0_15px_40px_rgba(0,0,0,0.4)] 
                 border border-white/[0.02] hover:border-white/[0.08] transition-all duration-300 relative overflow-hidden group 
@@ -57,9 +59,11 @@ export default function Service() {
                 </div>
 
                 {/* Text Container */}
-                <div className={`w-full md:w-[72%] lg:w-[72%] flex flex-col justify-center py-6 px-4 md:px-0
-                  ${service.imageLeft ? 'md:pr-10 lg:pr-16' : 'md:pl-10 lg:pl-16'}
-                `}>
+                <div
+                  className={`w-full md:w-[72%] lg:w-[72%] flex flex-col justify-center py-6 px-4 md:px-0
+                  ${service.imageLeft ? "md:pr-10 lg:pr-16" : "md:pl-10 lg:pl-16"}
+                `}
+                >
                   <h3 className="text-xl sm:text-2xl lg:text-[28px] font-bold text-white mb-3 lg:mb-4 uppercase font-sans tracking-normal">
                     {service.title}
                   </h3>
@@ -72,8 +76,6 @@ export default function Service() {
           </div>
         </div>
       </main>
-
-
     </>
   );
 }

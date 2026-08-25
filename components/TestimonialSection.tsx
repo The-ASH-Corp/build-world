@@ -1,11 +1,11 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { siteData } from "@/data/siteData";
+import { homeData } from "@/data/homeData";
 import { useState } from "react";
 
 export default function TestimonialSection() {
-  const { testimonials } = siteData;
+  const { testimonials } = homeData;
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -75,9 +75,15 @@ export default function TestimonialSection() {
         {/* Main Testimonial Block */}
         <div className="w-full max-w-[1200px] flex items-center justify-between gap-8 relative">
           {/* Huge Left Quote Icon */}
-          <div className="hidden xl:flex text-[#111] mt-12 w-[200px] h-[200px] shrink-0 items-center justify-end font-serif text-[280px] leading-none select-none">
+          <motion.div 
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="hidden xl:flex text-[#111] mt-12 w-[200px] h-[200px] shrink-0 items-center justify-end font-serif text-[280px] leading-none select-none"
+          >
             “
-          </div>
+          </motion.div>
 
           <div className="w-full xl:flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 xl:gap-24 relative z-20">
             <AnimatePresence mode="wait">
@@ -117,9 +123,15 @@ export default function TestimonialSection() {
           </div>
 
           {/* Huge Right Quote Icon */}
-          <div className="hidden xl:flex text-[#111] mt-12 w-[200px] h-[200px] shrink-0 items-center justify-start font-serif text-[280px] leading-none select-none">
+          <motion.div 
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="hidden xl:flex text-[#111] mt-12 w-[200px] h-[200px] shrink-0 items-center justify-start font-serif text-[280px] leading-none select-none"
+          >
             ”
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

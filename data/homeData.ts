@@ -1,9 +1,9 @@
-export const siteData = {
+export const homeData = {
   hero: {
     title: "Build World",
     subtitle: "Structural Integrity\nUncompromised Timelines.",
     primaryButton: { text: "LAUNCH PROJECT REQUEST", link: "#" },
-    secondaryButton: { text: "EXPLORE PROVEN PORTFOLIO", link: "#" },
+    secondaryButton: { text: "EXPLORE PROVEN PORTFOLIO", link: "/projects" },
     bgImage: "/images/a8ncra2SSE0thOySygQJ1YTffE.png" // Using the main hero image
   },
   about: {
@@ -33,10 +33,29 @@ export const siteData = {
   latestWorks: {
     title: "Latest Works",
     buttonText: "EXPLORE MORE",
+    buttonLink: "/projects",
     works: [
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png" }
+      {
+        id: "residence-calicut",
+        title: "Residence, Calicut",
+        client: "Mr. Ahammed Jalal",
+        status: "Completed ✓",
+        bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
+      },
+      {
+        id: "skaris-grand-residence",
+        title: "Skari's Grand Residence",
+        client: "Mr. Skaria Thomas",
+        status: "Completed ✓",
+        bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png"
+      },
+      {
+        id: "era-nature-park",
+        title: "ERA Nature Park",
+        client: "ERA Developers & Resorts",
+        status: "Completed ✓",
+        bg: "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png"
+      }
     ]
   },
   testimonials: {
@@ -91,16 +110,4 @@ export const siteData = {
       { title: "Skari's Grand Residence: A Monumental Project", img: "/images/laShQCkW1gKUyFZ61FN0jwJXQ.png", channel: "Build world" }
     ]
   },
-  projectsPage: {
-    tabs: ["Completed", "Under Construction"],
-    works: [
-      // Mocking full data for now based on the single card repeated
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png", category: "Completed" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png", category: "Completed" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png", category: "Completed" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png", category: "Completed" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png", category: "Completed" },
-      { title: "Residence, Calicut", client: "Mr. Ahammed Jalal", status: "Completed ✓", bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png", category: "Completed" },
-    ]
-  }
 };
