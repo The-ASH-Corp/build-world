@@ -1,8 +1,5 @@
-export default function AwardsPage() {
-  return (
-    <div>
-      <h1>Awards Page</h1>
-      <p>This is the awards page of our application.</p>
-    </div>
-  );
+import AwardsPage from "@/components/AwardsPage";
+
+export default function AwardsRoute() {
+  return <AwardsPage />;
 }
