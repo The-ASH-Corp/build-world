@@ -1,7 +1,7 @@
 export const galleryData = [
   {
     id: 1,
-    image: "/images/image1gallery.avif",
+    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Pepper/DSC_0457.jpg",
     alt: "Awards and achievements celebration",
     className: "md:col-span-1 md:row-span-2 lg:col-start-1 lg:row-start-1 lg:col-span-1 lg:row-span-5",
   },
@@ -13,7 +13,7 @@ export const galleryData = [
   },
   {
     id: 3,
-    image: "/images/image3gallery.avif",
+    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00291.jpg",
     alt: "Ribbon cutting ceremony",
     className: "md:col-span-1 md:row-span-1 lg:col-start-3 lg:row-start-1 lg:col-span-1 lg:row-span-4",
   },
@@ -25,19 +25,19 @@ export const galleryData = [
   },
   {
     id: 5,
-    image: "/images/image5gallery.avif",
+    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Tiara+Inauguration/New/f1a.jpg",
     alt: "Key handover milestone",
     className: "md:col-span-1 md:row-span-2 lg:col-start-2 lg:row-start-5 lg:col-span-1 lg:row-span-5",
   },
   {
     id: 6,
-    image: "/images/image6gallery.avif",
+    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Moments/103.jpg",
     alt: "Project handover to family",
     className: "md:col-span-1 md:row-span-1 lg:col-start-3 lg:row-start-5 lg:col-span-1 lg:row-span-5",
   },
   {
     id: 7,
-    image: "/images/image7gallery.avif",
+    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00412+(1).jpg",
     alt: "Major project ribbon cutting",
     className: "md:col-span-1 md:row-span-2 lg:col-start-1 lg:row-start-10 lg:col-span-1 lg:row-span-5",
   },
