@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
@@ -39,14 +40,14 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="grid grid-cols-3 gap-1 rotate-45 scale-75">
-            {[...Array(9)].map((_, i) => (
-              <div
-                key={i}
-                className={`w-3 h-3 ${[1, 3, 4, 5, 7].includes(i) ? "border-2 border-white" : "bg-white"}`}
-              ></div>
-            ))}
-          </div>
+          <Image 
+            src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.png" 
+            alt="Build World Logo" 
+            width={200} 
+            height={60} 
+            className="h-10 md:h-12 w-auto object-contain brightness-0 invert" 
+            priority
+          />
         </Link>
 
         {/* Links */}
@@ -91,14 +92,14 @@ export default function Navigation() {
           >
             <div className="flex justify-between items-center mb-16">
               <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-                <div className="grid grid-cols-3 gap-1 rotate-45 scale-75">
-                  {[...Array(9)].map((_, i) => (
-                    <div
-                      key={i}
-                      className={`w-3 h-3 ${[1, 3, 4, 5, 7].includes(i) ? "border-2 border-white" : "bg-white"}`}
-                    ></div>
-                  ))}
-                </div>
+                <Image 
+                  src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.png" 
+                  alt="Build World Logo" 
+                  width={200} 
+                  height={60} 
+                  className="h-10 w-auto object-contain brightness-0 invert" 
+                  priority
+                />
               </Link>
               <button 
                 className="text-white p-2"
