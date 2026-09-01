@@ -62,25 +62,46 @@ export const homeData = {
     title: "Client's Testimonial",
     clients: [
       {
-        name: "Er. Feroz Kalathil",
-        role: "CEO & CO-FOUNDER",
-        text: "Lorem ipsum dolor sit amet consectetur. Sed prLorem ipsum dolor sit amet consectetur. Sed praesent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.esent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.",
-        avatar: "/images/R456YeJfTbiHierJd8bZpvMlK8.png",
-        largeImage: "/images/tGMwHkexN2Q8eJWTaxoqj3X8o.png"
+        name: "Mr. Fadi Muhammed ",
+        role: "CEO, Chef Lebanon",
+        text: "Engineer Feroz and the Build World team excel in their long-term vision, carefully considering every detail from materials and infrastructure to capacity and equipment. Their proactive approach guarantees a well-planned, durable space, minimizing future maintenance needs. With Build World, your restaurant or any construction project is built to last.",
+        avatar: "/images/imgi_38_fadi-muhammed.webp",
+        largeImage: "/images/imgi_38_fadi-muhammed.webp"
       },
       {
-        name: "Mr. Muneer",
-        role: "CO-FOUNDER",
-        text: "Lorem ipsum dolor sit amet consectetur. Sed prLorem ipsum dolor sit amet consectetur. Sed praesent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.esent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.",
-        avatar: "/images/R456YeJfTbiHierJd8bZpvMlK8.png",
-        largeImage: "/images/R456YeJfTbiHierJd8bZpvMlK8.png"
+        name: "Mr. Abdussamad Kari ",
+        role: "Chairman, SMBG Group",
+        text: "I am extremely pleased with Engineer Feroz and his company, Build World. True to his word, he delivered exactly as promised. Working with Build World was a remarkable experience, showcasing exceptional teamwork and unwavering support throughout the project. Thank you, Engineer Feroz, Mr. Munir, and the entire Build World team.",
+        avatar: "/images/imgi_39_abdussamad-kari.webp",
+        largeImage: "/images/imgi_39_abdussamad-kari.webp"
       },
       {
-        name: "Client 3",
-        role: "CLIENT",
-        text: "Lorem ipsum dolor sit amet consectetur. Sed prLorem ipsum dolor sit amet consectetur. Sed praesent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.esent sit elit mauris purus tellus non. Dignissim elementum neque dolor ut. Id sodales ut sagittis fames vel. Neque amet faucibus sit metus.",
-        avatar: "/images/R456YeJfTbiHierJd8bZpvMlK8.png",
-        largeImage: "/images/tEnd1qHzR0WFFdeDnkabeYjJk.png"
+        name: "Mr. Muhammed Kutty",
+        role: "Chairman, Ajfan Group",
+        text: "Build World Constructions showcased exceptional professionalism and efficiency in managing our premium restaurant project in Kottakkal. Their unwavering commitment to delivering quality within specified timelines solidifies them as our preferred choice for future projects. We trust in Build World's consistent ability to bring excellence to every construction endeavor.",
+        avatar: "/images/imgi_40_muhammed-kutty.webp",
+        largeImage: "/images/imgi_40_muhammed-kutty.webp"
+      },
+      {
+        name: "Mr. Shamsudheen ",
+        role: "Chairman, MPS Group",
+        text: "In the successful completion of our five-star hotel project at Calicut, Build World played a pivotal role, demonstrating high professionalism and unwavering dedication. Their regular updates and seamless project execution were crucial to our satisfaction. We wholeheartedly vouch for Build World's reliability and commendable construction services",
+        avatar: "/images/imgi_41_Shamsudheen.webp",
+        largeImage: "/images/imgi_41_Shamsudheen.webp"
+      },
+      {
+        name: "Mr. Eramu Kakka",
+        role: "Chairman, Era Group",
+        text: "Build World has been an invaluable partner in realizing our amusement park project at Perinthalmanna. Their expertise, coupled with a strong commitment to project timelines and attention to detail, resulted in the creation of a spectacular entertainment destination. We highly endorse Build World for their exceptional contributions to the success of our venture.",
+        avatar: "/images/imgi_42_eramu-kakka.webp",
+        largeImage: "/images/imgi_42_eramu-kakka.webp"
+      },
+      {
+        name: "Mr. Sayed Abu Thahir",
+        role: "Tami Nadu",
+        text: "Build World surpassed our expectations in managing our home. Their meticulous attention to detail and commitment to excellence resulted in the creation of a stunning living space. We are immensely satisfied with Build World's expertise and highly recommend them for any residential project.",
+        avatar: "/images/imgi_43_sayed-abu-thahir.webp",
+        largeImage: "/images/imgi_43_sayed-abu-thahir.webp"
       }
     ]
   },
@@ -106,8 +127,18 @@ export const homeData = {
       { title: "Advanced Surveying Techniques", text: "Utilizing State-Of-The-Art Digital Survey Machines For Accurate And Efficient Set-Out Work." }
     ],
     videos: [
-      { title: "ERA NATURE PARK - A WORLD CLASS DESTINATION", img: "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png", channel: "Build world" },
-      { title: "Skari's Grand Residence: A Monumental Project", img: "/images/laShQCkW1gKUyFZ61FN0jwJXQ.png", channel: "Build world" }
+      { 
+        title: "ERA NATURE PARK - A WORLD CLASS DESTINATION FOR NATURE LOVER.", 
+        img: "https://img.youtube.com/vi/z7jy5AitYJ4/maxresdefault.jpg", 
+        channel: "Build world", 
+        youtubeId: "z7jy5AitYJ4" 
+      },
+      { 
+        title: "Skari's Grand Residence: A Monumental Project of Build World", 
+        img: "https://img.youtube.com/vi/X1m_7Yylq-A/maxresdefault.jpg", 
+        channel: "Build world", 
+        youtubeId: "X1m_7Yylq-A" 
+      }
     ]
   },
 };

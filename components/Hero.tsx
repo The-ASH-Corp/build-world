@@ -12,10 +12,12 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  // Parallax effects for 3D depth
+  // Parallax and scale effects for 3D depth
   const skyY = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const houseY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  const skyScale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
+  const houseScale = useTransform(scrollYProgress, [0, 1], [1, 1.35]);
 
   return (
     <section ref={ref} className="relative w-full h-[100vh] min-h-[800px] flex flex-col justify-end overflow-hidden bg-[#050505]">
@@ -25,15 +27,16 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-top bg-no-repeat z-0"
         style={{ 
           backgroundImage: "url('/images/41T7XkmAJGDtVOCpIElcL8tpE.png')",
-          y: skyY
+          y: skyY,
+          scale: skyScale,
         }}
       />
       
       {/* Top Gradient for navbar contrast (above sky) */}
       <div className="absolute top-0 left-0 w-full h-48 bg-gradient-to-b from-black/60 to-transparent z-10 pointer-events-none" />
 
-      {/* LAYER 2: Massive Background Text - "Build World" */}
-      <div className="absolute top-[10%] left-0 w-full flex justify-center pointer-events-none select-none z-10 overflow-hidden">
+      {/* LAYER 2: Massive Background Text - "Build World" (Set z-25 so scaling image does not cover it) */}
+      <div className="absolute top-[10%] left-0 w-full flex justify-center pointer-events-none select-none z-25 overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -65,7 +68,9 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-top bg-no-repeat z-20 pointer-events-none"
         style={{ 
           backgroundImage: `url(${hero.bgImage})`,
-          y: houseY
+          y: houseY,
+          scale: houseScale,
+          transformOrigin: "bottom center",
         }}
       />
 
