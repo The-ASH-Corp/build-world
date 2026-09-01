@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -10,19 +11,8 @@ export default function Footer() {
         
         {/* Column 1 - Brand */}
         <div className="md:w-1/3 flex flex-col items-start">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="grid grid-cols-3 gap-1 rotate-45 scale-[0.6]">
-              {[...Array(9)].map((_, i) => (
-                <div key={i} className={`w-3 h-3 ${[1,3,4,5,7].includes(i) ? 'border-2 border-[#2a9df4]' : 'bg-[#2a9df4]'}`}></div>
-              ))}
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold tracking-tight text-[#2a9df4]">BUILD</h2>
-              <h2 className="text-2xl font-bold tracking-tight text-[#2a9df4] leading-3">WORLD</h2>
-              <p className="text-[10px] text-[#2a9df4] tracking-widest mt-1 uppercase">CONSTRUCTIONS PVT. LTD.</p>
-              <p className="text-[8px] text-[#2a9df4] mt-1">AN ISO 9001:2015 Certified Construction Company</p>
-            </div>
-          </div>
+        
+          <Image src="/images/GZGE9BLDIEh0JDNrm7SHDbdU8y4.png" alt="Build World Logo" width={200} height={60} className="h-12 md:h-16 w-auto object-contain" />
           <p className="text-gray-400 text-xs leading-loose pr-8">
             At Build World, we are dedicated to achieving excellence and ensuring customer happiness. With our uncompromising willpower and years of experience, we have built a strong reputation in the construction business.
           </p>

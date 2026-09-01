@@ -1,10 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { motion, Variants } from "framer-motion";
 import { homeData } from "@/data/homeData";
 
 export default function WhyChooseUs() {
   const { whyChooseUs } = homeData;
+  const [playingVideoIndex, setPlayingVideoIndex] = useState<number | null>(null);
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -77,45 +79,81 @@ export default function WhyChooseUs() {
 
         {/* Videos Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {whyChooseUs.videos.map((video, index) => (
-            <motion.div 
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="relative h-[300px] md:h-[450px] rounded-[32px] overflow-hidden group cursor-pointer border border-[#222]"
-            >
-              <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                style={{ backgroundImage: `url(${video.img})` }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40 group-hover:opacity-80 transition-opacity duration-300" />
-              
-              {/* Play Button Center */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                 <div className="bg-[#ff0000] w-20 h-14 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 shadow-2xl">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M5 3l14 9-14 9V3z"/></svg>
-                 </div>
-              </div>
+          {whyChooseUs.videos.map((video, index) => {
+            const isPlaying = playingVideoIndex === index;
+            const youtubeId = (video as any).youtubeId || "LXb3EKWsInQ";
 
-              {/* Top Text */}
-              <div className="absolute top-6 left-6 right-6 flex items-center gap-3">
-                 <div className="w-10 h-10 shrink-0 rounded-full bg-white flex items-center justify-center overflow-hidden">
-                    <img src={video.img} className="w-full h-full object-cover opacity-80" alt="Channel" />
-                 </div>
-                 <div className="flex flex-col">
-                   <p className="font-['Menbere'] text-white font-bold text-[15px] md:text-[18px] leading-tight line-clamp-1 drop-shadow-md">
-                     {video.title}
-                   </p>
-                   <p className="font-['Menbere'] text-[#cfcfcf] text-[13px]">
-                     {video.channel}
-                   </p>
-                 </div>
-              </div>
+            return (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+                className="relative h-[300px] md:h-[450px] rounded-[32px] overflow-hidden group border border-[#222] bg-black"
+              >
+                {isPlaying ? (
+                  <div className="relative w-full h-full">
+                    <iframe 
+                      src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`} 
+                      title={video.title} 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      allowFullScreen 
+                      className="w-full h-full rounded-[32px] border-0"
+                    />
+                    <button 
+                      onClick={() => setPlayingVideoIndex(null)}
+                      className="absolute top-4 right-4 z-10 bg-black/70 hover:bg-black text-white p-2.5 rounded-full backdrop-blur-md transition-all shadow-lg hover:scale-110"
+                      title="Close video"
+                    >
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    </button>
+                  </div>
+                ) : (
+                  <div 
+                    onClick={() => setPlayingVideoIndex(index)}
+                    className="w-full h-full relative cursor-pointer"
+                  >
+                    <img 
+                      src={video.img} 
+                      alt={video.title}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      onError={(e) => {
+                        // Fallback to sddefault if maxresdefault is unavailable
+                        (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${youtubeId}/sddefault.jpg`;
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40 group-hover:opacity-80 transition-opacity duration-300" />
+                    
+                    {/* Play Button Center */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                       <div className="bg-[#ff0000] w-20 h-14 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 shadow-2xl">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M5 3l14 9-14 9V3z"/></svg>
+                       </div>
+                    </div>
 
-            </motion.div>
-          ))}
+                    {/* Top Text */}
+                    <div className="absolute top-6 left-6 right-6 flex items-center gap-3">
+                       <div className="w-10 h-10 shrink-0 rounded-full bg-black/80 border border-white/20 p-1.5 flex items-center justify-center overflow-hidden backdrop-blur-sm">
+                          <img src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.png" className="w-full h-full object-contain brightness-0 invert" alt="Build World Logo" />
+                       </div>
+                       <div className="flex flex-col">
+                         <p className="font-['Menbere'] text-white font-bold text-[15px] md:text-[18px] leading-tight line-clamp-1 drop-shadow-md">
+                           {video.title}
+                         </p>
+                         <p className="font-['Menbere'] text-[#cfcfcf] text-[13px]">
+                           {video.channel}
+                         </p>
+                       </div>
+                    </div>
+                  </div>
+                )}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

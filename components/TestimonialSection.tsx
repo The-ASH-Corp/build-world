@@ -2,11 +2,19 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { homeData } from "@/data/homeData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function TestimonialSection() {
   const { testimonials } = homeData;
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.clients.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [testimonials.clients.length]);
 
   return (
     <section className="relative w-full bg-[#050505] py-24 xl:py-32 overflow-hidden">
@@ -46,14 +54,15 @@ export default function TestimonialSection() {
           <div className="flex-1 h-[1px] bg-gradient-to-r from-transparent to-[#333]"></div>
 
           {/* Avatars Row exactly between the lines */}
-          <div className="flex shrink-0 relative z-10 px-2 md:px-4">
+          <div className="flex shrink-0 relative z-10 px-2 md:px-4 flex-wrap justify-center gap-2 md:gap-4">
             {testimonials.clients.map((client, index) => (
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`w-14 h-14 md:w-[70px] md:h-[70px] rounded-full flex items-center justify-center transition-all duration-300 relative bg-[#050505] border-[2px] ${
+                aria-label={client.name}
+                className={`w-12 h-12 md:w-[70px] md:h-[70px] rounded-full flex items-center justify-center transition-all duration-300 relative bg-[#050505] border-[2px] ${
                   activeIndex === index
-                    ? "scale-110 opacity-100 border-white z-20 shadow-[0_0_15px_rgba(255,255,255,0.1)]"
+                    ? "scale-110 opacity-100 border-white z-20 shadow-[0_0_15px_rgba(255,255,255,0.2)]"
                     : "scale-100 opacity-60 hover:opacity-100 border-transparent z-10"
                 }`}
               >
@@ -73,7 +82,7 @@ export default function TestimonialSection() {
         </div>
 
         {/* Main Testimonial Block */}
-        <div className="w-full max-w-[1200px] flex items-center justify-between gap-8 relative">
+        <div className="w-full max-w-[1200px] flex items-center justify-between gap-8 relative min-h-[420px] sm:min-h-[340px] md:min-h-[300px]">
           {/* Huge Left Quote Icon */}
           <motion.div 
             initial={{ opacity: 0, y: -100 }}
@@ -85,7 +94,7 @@ export default function TestimonialSection() {
             “
           </motion.div>
 
-          <div className="w-full xl:flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 xl:gap-24 relative z-20">
+          <div className="w-full xl:flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 xl:gap-24 relative z-20 min-h-[420px] sm:min-h-[340px] md:min-h-[300px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -96,7 +105,7 @@ export default function TestimonialSection() {
                 className="flex flex-col-reverse xl:flex-row items-center xl:items-center gap-12 w-full max-w-[900px]"
               >
                 {/* Text Content */}
-                <div className="flex-1 flex flex-col justify-center text-left mt-8 md:mt-0">
+                <div className="flex-1 flex flex-col justify-start text-left mt-8 md:mt-0 min-h-[220px] md:min-h-[240px]">
                   <h3 className="font-['Menbere'] font-bold text-[20px] md:text-[24px] text-white capitalize mb-1">
                     {testimonials.clients[activeIndex].name}
                   </h3>
@@ -108,13 +117,13 @@ export default function TestimonialSection() {
                   </p>
                 </div>
 
-                {/* Large Portrait Image (Hidden on Mobile) */}
-                <div className="hidden md:block relative w-full max-w-[240px] md:max-w-[260px] aspect-[4/5] shrink-0 group">
-                  <div className="w-full h-full rounded-[40px] overflow-hidden shadow-2xl bg-[#111] relative z-10">
+                {/* Round Featured Client Image */}
+                <div className="relative w-[200px] h-[200px] md:w-[260px] md:h-[260px] aspect-square shrink-0 group">
+                  <div className="w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-white/10 bg-[#111] relative z-10">
                     <img
                       src={testimonials.clients[activeIndex].avatar}
                       alt={testimonials.clients[activeIndex].name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-full"
                     />
                   </div>
                 </div>
