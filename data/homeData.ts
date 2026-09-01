@@ -106,8 +106,18 @@ export const homeData = {
       { title: "Advanced Surveying Techniques", text: "Utilizing State-Of-The-Art Digital Survey Machines For Accurate And Efficient Set-Out Work." }
     ],
     videos: [
-      { title: "ERA NATURE PARK - A WORLD CLASS DESTINATION", img: "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png", channel: "Build world" },
-      { title: "Skari's Grand Residence: A Monumental Project", img: "/images/laShQCkW1gKUyFZ61FN0jwJXQ.png", channel: "Build world" }
+      { 
+        title: "ERA NATURE PARK - A WORLD CLASS DESTINATION FOR NATURE LOVER.", 
+        img: "https://img.youtube.com/vi/z7jy5AitYJ4/maxresdefault.jpg", 
+        channel: "Build world", 
+        youtubeId: "z7jy5AitYJ4" 
+      },
+      { 
+        title: "Skari's Grand Residence: A Monumental Project of Build World", 
+        img: "https://img.youtube.com/vi/X1m_7Yylq-A/maxresdefault.jpg", 
+        channel: "Build world", 
+        youtubeId: "X1m_7Yylq-A" 
+      }
     ]
   },
 };
