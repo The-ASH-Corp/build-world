@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { aboutData } from "@/data/aboutData";
+import Image from "next/image";
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -25,10 +26,14 @@ export default function ApproachSection() {
           {[...aboutPage.approach.images, ...aboutPage.approach.images].map((imgSrc, idx) => (
             <div key={idx} className="pr-3">
               <div className="relative w-32 h-20 md:w-56 md:h-36 flex-shrink-0 overflow-hidden rounded-[50px] shadow-lg">
-                <img
+                <Image
                   src={imgSrc}
                   alt={`Approach ${idx}`}
                   className="w-full h-full object-cover"
+                  width={500}
+                  height={500}
+                  priority={true}
+                  
                 />
               </div>
             </div>
