@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { projectsData } from "@/data/projectsData";
 
 export default function ProjectsPage() {
@@ -80,10 +81,17 @@ export default function ProjectsPage() {
                   className="relative w-full h-65 md:h-112.5 rounded-3xl md:rounded-[40px] overflow-hidden group cursor-pointer border border-[#222]"
                 >
                   {/* Background Image */}
-                  <div 
-                    className="absolute -inset-5 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                    style={{ backgroundImage: `url(${work.bg})` }}
-                  />
+                  <div className="absolute -inset-5">
+                    <Image
+                      src={work.bg}
+                      alt={work.title}
+                      unoptimized
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                      priority={idx < 2}
+                    />
+                  </div>
                   
                   {/* Gradient Overlays */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 md:via-black/10 to-black/30 md:to-black/10 transition-opacity duration-300 group-hover:opacity-80" />
