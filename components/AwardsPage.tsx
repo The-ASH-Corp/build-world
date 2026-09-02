@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { awardsData } from "@/data/awardsData";
+import Image from "next/image";
 
 export default function AwardsPage() {
   const containerRef = useRef(null);
@@ -58,10 +59,13 @@ export default function AwardsPage() {
             >
               {/* Image Side */}
               <div className="w-full md:w-[55%] lg:w-[60%] aspect-video md:aspect-auto relative md:min-h-[400px]">
-                <img 
+                <Image 
                   src={award.image} 
                   alt={award.title} 
-                  className="w-full h-full object-cover absolute inset-0"
+                  unoptimized
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-fit absolute inset-0"
                 />
               </div>
 
