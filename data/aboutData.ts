@@ -18,12 +18,13 @@ export const aboutData = {
         { title: "One Team. One Vision.", text: "Seamless coordination across\nevery stage of construction." }
       ],
       images: [
-        "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-        "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png",
-        "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
-        "/images/zTTPvb5aUC27Jj46G3PQqCWY7k.png",
-        "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-        "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png"
+        "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Night+View.jpg", 
+        "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_81.jpg",
+        "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Design/VIEW+14.jpg",
+        "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/New+folder/1.jpg",
+        "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04094-01.jpeg",
+        "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00012.jpg",
+        "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/New+folder/224.jpg"
       ]
     },
     stats: [
