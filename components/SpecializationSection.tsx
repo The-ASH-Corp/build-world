@@ -2,6 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import { homeData } from "@/data/homeData";
+import Link from "next/link";
 
 export default function SpecializationSection() {
   const { specializations } = homeData;
@@ -92,8 +93,8 @@ export default function SpecializationSection() {
           viewport={{ once: true }}
           className="mt-20 flex justify-center w-full"
         >
-          <a
-            href="#"
+          <Link
+            href="/service"
             className="group flex items-center justify-between w-full max-w-[280px] h-[60px] border border-white rounded-[32px] px-8 hover:bg-white/10 transition-all"
           >
             <span className="font-['Menbere'] font-bold text-[14px] text-white uppercase tracking-wider">
@@ -113,7 +114,7 @@ export default function SpecializationSection() {
                 <path d="M7 17l9.2-9.2M17 17V7H7" />
               </svg>
             </div>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
