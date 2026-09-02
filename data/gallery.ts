@@ -43,7 +43,7 @@ export const galleryData = [
   },
   {
     id: 8,
-    image: "/images/image8Gallery.avif",
+    image: "/images/p4uyIbEy3HSZxkgDksJHaTmoif0.png",
     alt: "Award ceremony celebration",
     className: "md:col-span-2 md:row-span-2 lg:col-start-2 lg:row-start-10 lg:col-span-2 lg:row-span-5",
   },
