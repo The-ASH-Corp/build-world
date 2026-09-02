@@ -51,7 +51,9 @@ export const projectsData = {
           "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png",
           "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
           "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png"
+          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
+          "/images/huW5kybTw53dpOEUqem1TSexsY.png",
+          "/images/a8ncra2SSE0thOySygQJ1YTffE.png"
         ]
       },
       {
@@ -76,7 +78,9 @@ export const projectsData = {
           "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png",
           "/images/zTTPvb5aUC27Jj46G3PQqCWY7k.png",
           "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png"
+          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png",
+          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
+          "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png"
         ]
       },
       {
@@ -101,7 +105,9 @@ export const projectsData = {
           "/images/huW5kybTw53dpOEUqem1TSexsY.png",
           "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
           "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
-          "/images/a8ncra2SSE0thOySygQJ1YTffE.png"
+          "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
+          "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
+          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png"
         ]
       },
       {
@@ -125,7 +131,10 @@ export const projectsData = {
         gallery: [
           "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png",
           "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-          "/images/zTTPvb5aUC27Jj46G3PQqCWY7k.png"
+          "/images/zTTPvb5aUC27Jj46G3PQqCWY7k.png",
+          "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png",
+          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
+          "/images/huW5kybTw53dpOEUqem1TSexsY.png"
         ]
       },
       {
@@ -149,7 +158,10 @@ export const projectsData = {
         gallery: [
           "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
           "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png",
-          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png"
+          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
+          "/images/zTTPvb5aUC27Jj46G3PQqCWY7k.png",
+          "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
+          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
         ]
       }
     ]
