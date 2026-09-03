@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { awardsData } from "@/data/awardsData";
-import Image from "next/image";
+import SafeImage from "@/components/SafeImage";
 
 export default function AwardsPage() {
   const containerRef = useRef(null);
@@ -58,8 +58,8 @@ export default function AwardsPage() {
               className="w-full flex flex-col md:flex-row bg-[#0d0e12] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl"
             >
               {/* Image Side */}
-              <div className="w-full md:w-[55%] lg:w-[60%] aspect-video md:aspect-auto relative md:min-h-[400px]">
-                <Image 
+              <div className="w-full md:w-[55%] lg:w-[60%] aspect-video md:aspect-auto relative md:min-h-[400px] bg-[#1a1d24]">
+                <SafeImage 
                   src={award.image} 
                   alt={award.title} 
                   fill

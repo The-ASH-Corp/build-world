@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { notFound } from "next/navigation";
 import { projectsData } from "@/data/projectsData";
+import SafeImage from "@/components/SafeImage";
 
 interface ProjectDetailPageProps {
   id: string;
@@ -40,12 +41,16 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="w-full lg:w-7/12 rounded-[24px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[16/10]"
+            className="w-full lg:w-7/12 rounded-[24px] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-[16/10] relative bg-[#1a1d24]"
           >
-            <img
+            <SafeImage
               src={project.bg}
               alt={project.title}
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 60vw"
+              priority
+              quality={75}
+              className="object-cover"
             />
           </motion.div>
 
@@ -92,20 +97,26 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
                   {/* Left Column: 2 Stacked Horizontal Cards */}
                   <div className="md:col-span-7 flex flex-col gap-6 md:gap-8">
                     {firstBlock[0] && (
-                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl">
-                        <img
+                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                        <SafeImage
                           src={firstBlock[0]}
                           alt="Gallery Image 1"
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="(max-width: 768px) 100vw, 60vw"
+                          quality={75}
+                          className="object-cover"
                         />
                       </div>
                     )}
                     {firstBlock[1] && (
-                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl">
-                        <img
+                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                        <SafeImage
                           src={firstBlock[1]}
                           alt="Gallery Image 2"
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="(max-width: 768px) 100vw, 60vw"
+                          quality={75}
+                          className="object-cover"
                         />
                       </div>
                     )}
@@ -114,11 +125,14 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
                   {/* Right Column: 1 Tall Vertical Card */}
                   <div className="md:col-span-5 flex">
                     {firstBlock[2] && (
-                      <div className="w-full h-full min-h-[350px] md:min-h-full rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl">
-                        <img
+                      <div className="w-full h-full min-h-[350px] md:min-h-full rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                        <SafeImage
                           src={firstBlock[2]}
                           alt="Gallery Image 3"
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="(max-width: 768px) 100vw, 40vw"
+                          quality={75}
+                          className="object-cover"
                         />
                       </div>
                     )}
@@ -132,11 +146,14 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
                   {/* Left Column: 1 Tall Vertical Card */}
                   <div className="md:col-span-5 flex">
                     {secondBlock[0] && (
-                      <div className="w-full h-full min-h-[350px] md:min-h-full rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl">
-                        <img
+                      <div className="w-full h-full min-h-[350px] md:min-h-full rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                        <SafeImage
                           src={secondBlock[0]}
                           alt="Gallery Image 4"
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="(max-width: 768px) 100vw, 40vw"
+                          quality={75}
+                          className="object-cover"
                         />
                       </div>
                     )}
@@ -145,20 +162,26 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
                   {/* Right Column: 2 Stacked Horizontal Cards */}
                   <div className="md:col-span-7 flex flex-col gap-6 md:gap-8">
                     {secondBlock[1] && (
-                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl">
-                        <img
+                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                        <SafeImage
                           src={secondBlock[1]}
                           alt="Gallery Image 5"
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="(max-width: 768px) 100vw, 60vw"
+                          quality={75}
+                          className="object-cover"
                         />
                       </div>
                     )}
                     {secondBlock[2] && (
-                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl">
-                        <img
+                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                        <SafeImage
                           src={secondBlock[2]}
                           alt="Gallery Image 6"
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="(max-width: 768px) 100vw, 60vw"
+                          quality={75}
+                          className="object-cover"
                         />
                       </div>
                     )}

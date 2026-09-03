@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { aboutData } from "@/data/aboutData";
-import Image from "next/image";
+import SafeImage from "@/components/SafeImage";
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -25,15 +25,15 @@ export default function ApproachSection() {
         >
           {[...aboutPage.approach.images, ...aboutPage.approach.images].map((imgSrc, idx) => (
             <div key={idx} className="pr-3">
-              <div className="relative w-32 h-20 md:w-56 md:h-36 flex-shrink-0 overflow-hidden rounded-[50px] shadow-lg">
-                <Image
+              <div className="relative w-32 h-20 md:w-56 md:h-36 flex-shrink-0 overflow-hidden rounded-[50px] shadow-lg bg-[#1a1d24]">
+                <SafeImage
                   src={imgSrc}
                   alt={`Approach ${idx}`}
                   className="w-full h-full object-cover"
-                  width={500}
-                  height={500}
-                  priority={true}
-                  quality={50}
+                  fill
+                  sizes="(max-width: 768px) 128px, 224px"
+                  priority={idx < 4}
+                  quality={70}
                 />
               </div>
             </div>
