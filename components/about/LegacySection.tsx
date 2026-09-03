@@ -2,6 +2,8 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 import { aboutData } from "@/data/aboutData";
 
+import SafeImage from "@/components/SafeImage";
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -32,9 +34,12 @@ export default function LegacySection() {
       >
         {/* Background Image */}
         <div className="absolute inset-x-0 top-0 md:inset-0 z-0 h-[450px] md:h-auto">
-          <img
+          <SafeImage
             src={aboutPage.legacy.image}
             alt="Legacy"
+            fill
+            sizes="100vw"
+            priority
             className="w-full h-full object-cover object-center"
           />
           {/* Gradient Overlay for Text Readability at the bottom */}

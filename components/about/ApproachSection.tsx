@@ -24,8 +24,8 @@ export default function ApproachSection() {
           transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
         >
           {[...aboutPage.approach.images, ...aboutPage.approach.images].map((imgSrc, idx) => (
-            <div key={idx} className="pr-3">
-              <div className="relative w-32 h-20 md:w-56 md:h-36 flex-shrink-0 overflow-hidden rounded-[50px] shadow-lg bg-[#1a1d24]">
+            <div key={idx} className="pr-3 shrink-0">
+              <div className="relative w-32 h-20 md:w-56 md:h-36 shrink-0 overflow-hidden rounded-[50px] shadow-lg bg-[#1a1d24]">
                 <SafeImage
                   src={imgSrc}
                   alt={`Approach ${idx}`}
@@ -33,7 +33,7 @@ export default function ApproachSection() {
                   fill
                   sizes="(max-width: 768px) 128px, 224px"
                   priority={idx < 4}
-                  quality={70}
+                  quality={75}
                 />
               </div>
             </div>
