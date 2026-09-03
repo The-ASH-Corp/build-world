@@ -33,7 +33,7 @@ export default function ApproachSection() {
                   width={500}
                   height={500}
                   priority={true}
-                  
+                  quality={50}
                 />
               </div>
             </div>

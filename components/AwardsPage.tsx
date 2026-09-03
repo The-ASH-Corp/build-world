@@ -62,10 +62,11 @@ export default function AwardsPage() {
                 <Image 
                   src={award.image} 
                   alt={award.title} 
-                  unoptimized
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-fit absolute inset-0"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 60vw"
+                  className="w-full h-full object-cover absolute inset-0"
+                  priority={index < 2}
+                  quality={75}
                 />
               </div>
 
