@@ -7,35 +7,45 @@ interface SafeImageProps extends ImageProps {
   fallbackSrc?: string;
 }
 
+function sanitizeUrl(url: any): any {
+  if (typeof url !== "string") return url;
+  if (url.startsWith("http://") || url.startsWith("https://")) {
+    try {
+      return encodeURI(decodeURI(url));
+    } catch {
+      return url;
+    }
+  }
+  return url;
+}
+
 export default function SafeImage({
   src,
   alt,
   fallbackSrc,
   className = "",
-  onLoad,
+  onError,
+  unoptimized,
   ...props
 }: SafeImageProps) {
-  const [isError, setIsError] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [failed, setFailed] = useState(false);
+
+  const cleanSrc = sanitizeUrl(src);
+  const targetSrc = failed && fallbackSrc ? fallbackSrc : cleanSrc;
 
   return (
     <Image
       {...props}
-      src={isError && fallbackSrc ? fallbackSrc : src}
+      src={targetSrc}
       alt={alt || "Image"}
-      unoptimized={isError || props.unoptimized}
+      unoptimized={failed || unoptimized}
       onError={(e) => {
-        if (!isError) {
-          setIsError(true);
+        if (!failed) {
+          setFailed(true);
         }
+        if (onError) onError(e);
       }}
-      onLoad={(e) => {
-        setIsLoaded(true);
-        if (onLoad) onLoad(e);
-      }}
-      className={`transition-opacity duration-500 ${
-        isLoaded ? "opacity-100" : "opacity-0"
-      } ${className}`}
+      className={className}
     />
   );
 }

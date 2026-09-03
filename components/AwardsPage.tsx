@@ -39,9 +39,16 @@ export default function AwardsPage() {
             <motion.div 
               key={index} 
               style={{ x: index === 0 ? xLeft : xRight }}
-              className="w-full bg-white p-2 md:p-4 rounded-xl shadow-2xl flex items-center justify-center aspect-[4/5] overflow-hidden"
+              className="w-full bg-white p-2 md:p-4 rounded-xl shadow-2xl flex items-center justify-center aspect-[4/5] overflow-hidden relative"
             >
-              <img src={cert} alt={`Certificate ${index + 1}`} className="w-full h-full object-contain" />
+              <SafeImage 
+                src={cert} 
+                alt={`Certificate ${index + 1}`} 
+                fill 
+                sizes="(max-width: 768px) 100vw, 400px" 
+                className="object-contain p-2 md:p-4" 
+                quality={85}
+              />
             </motion.div>
           ))}
         </motion.div>

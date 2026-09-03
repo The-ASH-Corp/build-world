@@ -75,7 +75,7 @@ export default function ProjectsPage() {
             className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10"
           >
             {filteredWorks.map((work, idx) => (
-              <Link key={idx} href={`/projects/${work.id}`} className="block">
+              <Link key={work.id} href={`/projects/${work.id}`} className="block">
                 <motion.div 
                   variants={itemVariants}
                   className="relative w-full h-65 md:h-112.5 rounded-3xl md:rounded-[40px] overflow-hidden group cursor-pointer border border-[#222]"
