@@ -5,7 +5,7 @@ export const projectsData = {
       {
         id: "residence-calicut",
         title: "Maab Square ",
-        client: "Mr.Balagopal",
+        client: "Mr. Balagopal",
         status: "Completed ✓",
         category: "Completed",
         location: "Thirurkkad, Kerala",
@@ -23,14 +23,14 @@ export const projectsData = {
         gallery: [
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Day+View.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Front+View.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Night+View.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Day+View.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Tirurkad++Exterior+view+option+2.jpg"
         ]
       },
       {
         id: "skaris-grand-residence",
         title: "Skari's Grand Residence",
-        client: "Mr. Skaria Thomas",
+        client: "unknown",
         status: "Completed ✓",
         category: "Completed",
         location: "Kochi, Kerala",
@@ -72,48 +72,20 @@ export const projectsData = {
           "Integrated nature walkways, footbridges & waterbodies"
         ],
         gallery: [
-          "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png",
-          "/images/zTTPvb5aUC27Jj46G3PQqCWY7k.png",
-          "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png",
-          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
-          "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00196.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00182.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00192.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00564.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00585.jpg"
         ]
       },
       {
-        id: "hilite-luxury-villa",
-        title: "HiLite Luxury Villa",
-        client: "Dr. Rasheed Ahmed",
-        status: "Completed ✓",
-        category: "Completed",
-        location: "Kozhikode, Kerala",
-        area: "5,200 sq.ft",
-        year: "2024",
-        scope: "Structural Engineering & Turnkey Finishing",
-        bg: "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
-        highlights: [
-          "Floor-to-ceiling acoustic glazing panels",
-          "State-of-the-art climate automation system",
-          "Custom infinity pool with cantilevered terrace",
-          "Precision-crafted architectural concrete elements"
-        ],
-        gallery: [
-          "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
-          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
-          "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
-          "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png"
-        ]
-      },
-       {
         id: "arshads-residency",
-        title: "Arshad's Residency",
-        client: "Arshad",
+        title: "RESIDENCE, ARIPRA",
+        client: "Mr. Arshad Noufal",
         status: "Completed ✓",
         category: "Completed",
-        location: "Kozhikode, Kerala",
+        location: "ARIPRA, Kerala",
         area: "5,200 sq.ft",
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
@@ -126,18 +98,18 @@ export const projectsData = {
           "Precision-crafted architectural concrete elements"
         ],
         gallery: [
-          "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
-          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
-          "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
-          "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_4.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/4+N.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/7+N.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/5+N.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/16+N.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/8+N.jpg"
         ]
       },
        {
         id: "Bawa-Jamjoom-Home",
-        title: "Bawa Jamjoom Home",
-        client: "Abdul Kabeer",
+        title: "RESIDENCE, Malappuram",
+        client: "Mr. Shabeer Jamjoom",
         status: "Completed ✓",
         category: "Completed",
         location: "Malappuram, Kerala",
@@ -153,17 +125,16 @@ export const projectsData = {
           "Precision-crafted architectural concrete elements"
         ],
         gallery: [
-          "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
-          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
-          "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
-          "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04094-01.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04144-01.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04213-01.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04210-01.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04270-01.jpeg"
         ]
       },
        {
         id: "Dr.-Sharath-Home",
-        title: "Dr. Sharath Home",
+        title: "RESIDENCE, Thirunnavaya",
         client: "Dr. Sharath",
         status: "Completed ✓",
         category: "Completed",
@@ -180,21 +151,21 @@ export const projectsData = {
           "Precision-crafted architectural concrete elements"
         ],
         gallery: [
-          "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
-          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
-          "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
-          "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00022.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00016.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00009.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00021.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00008.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00024.jpg"
         ]
       },
        {
         id: "Seyed-Abu-Thahir-Residence",
-        title: "Seyed Abu Thahir Residence",
-        client: "Seyed Abu Thahir",
+        title: "RESIDENCE, MALAPPURAM",
+        client: "Mr. Sayed Abu Thair",
         status: "Completed ✓",
         category: "Completed",
-        location: "Kayal Pattinam, Tamil Nadu",
+        location: "MALAPPURAM,Kerala",
         area: "5,200 sq.ft",
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
@@ -207,18 +178,18 @@ export const projectsData = {
           "Precision-crafted architectural concrete elements"
         ],
         gallery: [
-          "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
-          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
-          "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
-          "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_10.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_55.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_64.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_67.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_34.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_79.jpg"
         ]
       },
       {
         id: "Kondotty-House",
-        title: "Kondotty House",
-        client: "Samed Bhai",
+        title: "RESIDENCE Kondotty",
+        client: "Mr. Samad Kari",
         status: "Completed ✓",
         category: "Completed",
         location: "Kondotty, Kerala",
@@ -234,27 +205,81 @@ export const projectsData = {
           "Precision-crafted architectural concrete elements"
         ],
         gallery: [
-          "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
-          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
-          "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
-          "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/205.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/220.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/223.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/247.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/235.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/260.jpg"
+        ]
+      },
+      {
+        id: "Tiara",
+        title: "Tiara",
+        client: "Tiara by MPS - (unknown)",
+        status: "Completed ✓",
+        category: "Completed",
+        location: "Malappuram, Kerala",
+        area: "5,200 sq.ft",
+        year: "2024",
+        scope: "Structural Engineering & Turnkey Finishing",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2460.jpg",
+        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+        highlights: [
+          "Floor-to-ceiling acoustic glazing panels",
+          "State-of-the-art climate automation system",
+          "Custom infinity pool with cantilevered terrace",
+          "Precision-crafted architectural concrete elements"
+        ],
+        gallery: [
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4272.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2652.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2435.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2542.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4420.jpg"
+        ]
+      },
+      
+       {
+        id: "Kayal-Pattinam-House",
+        title: "RESIDENCE , Kayalpattinam",
+        client: "unknown",
+        status: "Completed ✓",
+        category: "Completed",
+        location: "Kayal Pattinam, Tamil Nadu",
+        area: "5,200 sq.ft",
+        year: "2024",
+        scope: "Structural Engineering & Turnkey Finishing",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/61.jpg",
+        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+        highlights: [
+          "Floor-to-ceiling acoustic glazing panels",
+          "State-of-the-art climate automation system",
+          "Custom infinity pool with cantilevered terrace",
+          "Precision-crafted architectural concrete elements"
+        ],
+        gallery: [
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/169.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/7.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/2.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/45.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/11.jpg"
+         
         ]
       },
 
 
       {
-        id: "shifa-medical-center",
-        title: "Shifa Al-Jazeera Center",
-        client: "Shifa Healthcare Group",
+        id: "RAC",
+        title: "RAC calicut",
+        client: "Shibili Rahman",
         status: "Under Construction",
         category: "Under Construction",
-        location: "Sharjah, UAE",
+        location: "Calicut, Kerala",
         area: "18,500 sq.ft",
         year: "2025",
         scope: "Commercial Healthcare Civil & MEP Works",
-        bg: "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/WhatsApp+Image+2026-01-05+at+4.17.29+PM.jpeg",
         description: "A state-of-the-art multi-specialty healthcare facility engineered in accordance with rigorous international healthcare building codes and seismic safety standards.",
         highlights: [
           "Specialized medical gas pipeline structural framing",
@@ -263,26 +288,24 @@ export const projectsData = {
           "24/7 uninterrupted emergency power redundancy integration"
         ],
         gallery: [
-          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png",
-          "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-          "/images/zTTPvb5aUC27Jj46G3PQqCWY7k.png",
-          "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png",
-          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png",
-          "/images/huW5kybTw53dpOEUqem1TSexsY.png"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f.png",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f1.png",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f0.png"
         ]
       },
+
      
       {
-        id: "makkah-commercial-hub",
-        title: "Makkah Commercial Hub",
-        client: "Al-Barakah Holdings",
+        id: "Tiara-Walk-Perinthalmanna",
+        title: "Tiara Walk Perinthalmanna",
+        client: "unknown",
         status: "Under Construction",
         category: "Under Construction",
-        location: "Jeddah, KSA",
+        location: "Perinthalmanna, Kerala",
         area: "32,000 sq.ft",
         year: "2025",
         scope: "Commercial Complex & Steel Structure Engineering",
-        bg: "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0022.jpg",
         description: "A landmark multi-story commercial complex featuring expansive retail spaces, corporate offices, and underground parking designed with precision engineering.",
         highlights: [
           "Deep foundation piling and earth retention system",
@@ -291,14 +314,44 @@ export const projectsData = {
           "Integrated automated building management & fire suppression"
         ],
         gallery: [
-          "/images/DW6C3TvzOwb4joILsW3O99XwWNc.png",
-          "/images/crKLrnqmWeGb2lekkK65J51Ho8E.png",
-          "/images/Eeiq1Tp28dvwrmeFpJ3L83BM.png",
-          "/images/zTTPvb5aUC27Jj46G3PQqCWY7k.png",
-          "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
-          "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0023.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0024.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0024.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0025.jpg"
+          // "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
+          // "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
+        ]
+      },
+
+      {
+        id: "Pearl-Ville-Coimbatur",
+        title: "Pearl-Ville-Coimbatur",
+        client: "unknown",
+        status: "Under Construction",
+        category: "Under Construction",
+        location: "Coimbatur, Tamil Nadu",
+        area: "32,000 sq.ft",
+        year: "2025",
+        scope: "Commercial Complex & Steel Structure Engineering",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/5.jpeg",
+        description: "A landmark multi-story commercial complex featuring expansive retail spaces, corporate offices, and underground parking designed with precision engineering.",
+        highlights: [
+          "Deep foundation piling and earth retention system",
+          "Long-span pre-stressed concrete beam framework",
+          "Energy-efficient insulated double-glazed curtain wall facade",
+          "Integrated automated building management & fire suppression"
+        ],
+        gallery: [
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/2.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/1.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/4.jpeg"
+
+          // "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
+          // "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
         ]
       }
+   
+
     ]
   },
 };

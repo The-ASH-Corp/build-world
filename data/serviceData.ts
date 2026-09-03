@@ -2,7 +2,7 @@ export const serviceData = [
   {
     title: "DIGITAL SURVEY",
     description: "Our Digital Survey Services Involve Precise Measurements And Location Marking For Construction Activities, Ensuring Accurate Positioning, Dimensions, And Elevation Control Of Structures, Ultimately Supporting Efficient Project Execution.",
-    image: "/images/Ehq6JTVe9nS3R6iqEAB2dRILZ8.png",
+    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Photos+and+Videos/IMG-20250124-WA0047.jpg",
     imageLeft: true
   },
   {
@@ -26,7 +26,7 @@ export const serviceData = [
   {
     title: "ELECTRICAL & PLUMBING WORKS",
     description: "We specialize in turning design plans into reality, offering top-tier electrical and plumbing installations that prioritize safety, efficiency, and reliability. With a keen eye for detail and a commitment to client satisfaction, we ensure your project's success in every aspect of electrical and plumbing design and execution.",
-    image: "/images/3lh7Gp608PyUSoL6ChW02fTk1lY.png",
+    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/TIARA+WORK+PHOTOS/IMG-20250120-WA0226.jpg",
     imageLeft: true
   },
   {
