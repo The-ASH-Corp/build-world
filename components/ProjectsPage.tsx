@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
+import SafeImage from "@/components/SafeImage";
 import { projectsData } from "@/data/projectsData";
 
 export default function ProjectsPage() {
@@ -81,8 +81,8 @@ export default function ProjectsPage() {
                   className="relative w-full h-65 md:h-112.5 rounded-3xl md:rounded-[40px] overflow-hidden group cursor-pointer border border-[#222]"
                 >
                   {/* Background Image */}
-                  <div className="absolute -inset-5">
-                    <Image
+                  <div className="absolute -inset-5 bg-[#1a1d24]">
+                    <SafeImage
                       src={work.bg}
                       alt={work.title}
                       fill

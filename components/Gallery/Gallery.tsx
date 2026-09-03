@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import SafeImage from "../SafeImage";
 import { galleryData } from "../../data/gallery";
 import { motion } from "framer-motion";
 
@@ -43,17 +43,17 @@ const Gallery = () => {
                 ease: "easeOut",
                 delay: index * 0.1,
               }}
-              className={`relative w-full h-full rounded-[2rem] overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-700 ${item.className}`}
+              className={`relative w-full h-full rounded-[2rem] overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-700 bg-[#1a1d24] ${item.className}`}
             >
               {/* Premium dark overlay that fades on hover */}
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none" />
               
-              <Image
+              <SafeImage
                 src={item.image}
                 alt={item.alt}
                 fill
                 priority={index < 3}
-                quality={85}
+                quality={75}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
               />
