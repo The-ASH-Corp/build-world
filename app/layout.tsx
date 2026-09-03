@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ImagePreloader from "@/components/ImagePreloader";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Navigation />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
