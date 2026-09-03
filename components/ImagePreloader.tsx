@@ -61,7 +61,7 @@ export default function ImagePreloader() {
           }
 
           // Pre-trigger Next.js image optimizer endpoint
-          const optimizedUrl = `/_next/image?url=${encodeURIComponent(cleanUrl)}&w=640&q=75`;
+          const optimizedUrl = `/_next/image?url=${encodeURIComponent(cleanUrl)}&w=1200&q=85`;
 
           // 1. Store in Cache Storage API
           if (cache) {

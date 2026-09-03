@@ -47,9 +47,9 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
               src={project.bg}
               alt={project.title}
               fill
-              sizes="(max-width: 1024px) 100vw, 60vw"
+              sizes="(max-width: 1024px) 100vw, 1200px"
               priority
-              quality={75}
+              quality={90}
               className="object-cover"
             />
           </motion.div>
