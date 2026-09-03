@@ -85,11 +85,11 @@ export default function ProjectsPage() {
                     <Image
                       src={work.bg}
                       alt={work.title}
-                      unoptimized
                       fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 650px"
                       className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                       priority={idx < 2}
+                      quality={75}
                     />
                   </div>
                   
