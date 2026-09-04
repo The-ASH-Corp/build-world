@@ -318,8 +318,6 @@ export const projectsData = {
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0024.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0024.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0025.jpg"
-          // "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
-          // "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
         ]
       },
 
@@ -345,9 +343,85 @@ export const projectsData = {
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/2.jpeg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/1.jpeg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/4.jpeg"
-
-          // "/images/a8ncra2SSE0thOySygQJ1YTffE.png",
-          // "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
+        ]
+      },
+      {
+        id:"Arya-Perl-Hotel",
+        title:"Arya Perl Hotel",
+        client: "unknown",
+        status:"Under Construction",
+        category:"Under Construction",
+        location:"Kozhikkode",
+        area:"28,000 sq.ft",
+        year:"2026",
+        scope:"Hotel Architecture and Interior Design",
+        bg:"/images/Screenshot From 2026-09-04 11-15-00.png",
+        description:" Set to redefine the hospitality landscape of Kozhikode, Arya-Perl-Hotel is a premium 75-room boutique hotel located in the heart of the city. Designed to blend contemporary luxury with Kerala’s rich cultural aesthetic, the project features a grand double-height atrium, signature rooftop infinity pool, fine-dining restaurants, and state-of-the-art banquet facilities for up to 500 guests. Our complete architectural, interior design, and structural engineering services ensure a seamless blend of bold design and functional excellence. Construction is currently underway, with completion scheduled for late 2026.",
+        highlights:[
+          "75-room boutique hotel with premium interiors",
+          "Grand double-height atrium",
+          "Signature rooftop infinity pool",
+          "Fine-dining restaurants and banquet halls for up to 500 guests"
+        ],
+        gallery:[
+          "/images/Screenshot From 2026-09-04 11-19-40.png",
+          "/images/Screenshot From 2026-09-04 11-19-31.png",
+          "/images/Screenshot From 2026-09-04 11-19-25.png",
+          "/images/Screenshot From 2026-09-04 11-19-12.png",
+          "/images/Screenshot From 2026-09-04 11-19-03.png",
+          "/images/Screenshot From 2026-09-04 11-15-00.png",
+        ]
+      },
+       {
+        id:"Sharafco",
+        title:"Sharafco",
+        client: "unknown",
+        status:"Under Construction",
+        category:"Under Construction",
+        location:"Kozhikkode",
+        area:"30,000 sq.ft",
+        year:"2026",
+        scope:"Residential Complex Architecture and Interior Design",
+        bg:"/images/Screenshot From 2026-09-04 11-54-00.png",
+        description:"A landmark multi-family residential development, Sharafco combines contemporary architectural design with smart space planning to offer spacious and luxurious living environments. The project features multi-level layouts, private balconies, and community recreational amenities. Our scope includes conceptual design, structural engineering, and detailed interior planning. The development is currently under construction, scheduled for completion in 2026.",
+        highlights:[
+          "Multi-level layouts with private balconies",
+          "Community recreational amenities",
+          "Conceptual design, structural engineering, and interior planning",
+          "Development is currently under construction, scheduled for completion in 2026"
+        ],
+        gallery:[
+          "/images/Screenshot From 2026-09-04 12-00-00.png",
+          "/images/Screenshot From 2026-09-04 11-59-48.png",
+          "/images/Screenshot From 2026-09-04 11-54-00.png",
+          "/images/Screenshot From 2026-09-04 11-59-06.png",
+          "/images/Screenshot From 2026-09-04 12-00-10.png",
+        ]
+      },
+       {
+        id:"The-Heavenly-Daze",
+        title:"The Heavenly Daze",
+        client: "Sameer",
+        status:"Under Construction",
+        category:"Under Construction",
+        location:"Malappuram ,Pookottur",
+        area:"36,000 sq.ft",
+        year:"2026",
+        scope:"Architecture and Interior Design",
+        bg:"/images/Screenshot From 2026-09-04 12-09-42.png",
+        description:"Set against the scenic backdrop of Malappuram, ‘The Heavenly Daze’ is a sprawling 36,000 sq.ft luxury residential project designed for a multi-generational family. The estate features a contemporary villa, integrated gymnasium, multi-car garage, and lush landscaped gardens. Our complete architectural and interior design services ensure a seamless blend of bold design and functional excellence. The project is currently under construction, with completion scheduled for late 2026.",
+        highlights:[
+          "Multi-level layouts with private balconies",
+          "Community recreational amenities",
+          "Conceptual design, structural engineering, and interior planning",
+          "Development is currently under construction, scheduled for completion in 2026"
+        ],
+        gallery:[
+          "/images/Screenshot From 2026-09-04 12-09-34.png",
+          "/images/Screenshot From 2026-09-04 12-09-27.png",
+          "/images/Screenshot From 2026-09-04 12-09-17.png",
+          "/images/Screenshot From 2026-09-04 12-10-25.png",
+          "/images/Screenshot From 2026-09-04 12-09-42.png",
         ]
       }
    
