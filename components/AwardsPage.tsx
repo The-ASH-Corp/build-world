@@ -70,10 +70,10 @@ export default function AwardsPage() {
                   src={award.image} 
                   alt={award.title} 
                   fill
-                  sizes="(max-width: 768px) 100vw, 60vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 1200px"
                   className="w-full h-full object-cover absolute inset-0"
                   priority={index < 2}
-                  quality={75}
+                  quality={85}
                 />
               </div>
 

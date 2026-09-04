@@ -101,7 +101,12 @@ export default function Hero() {
           className="flex flex-col gap-4 w-full md:w-auto md:flex-row xl:w-auto justify-center xl:justify-end"
         >
           {/* Primary Button */}
-          <a href={hero.primaryButton.link} className="group relative bg-[#2a9df4] text-white h-[50px] md:h-[60px] pl-6 pr-2 md:pl-8 md:pr-2 rounded-full font-bold hover:bg-[#1f87d6] transition-all flex items-center justify-between md:justify-center gap-4 md:gap-6 text-[10px] md:text-[11px] xl:text-[13px] tracking-widest uppercase font-['Menbere'] shadow-lg pointer-events-auto w-full md:w-auto">
+          <a 
+            href={hero.primaryButton.link} 
+            target={hero.primaryButton.link.startsWith("http") ? "_blank" : "_self"}
+            rel="noopener noreferrer"
+            className="group relative bg-[#2a9df4] text-white h-[50px] md:h-[60px] pl-6 pr-2 md:pl-8 md:pr-2 rounded-full font-bold hover:bg-[#1f87d6] transition-all flex items-center justify-between md:justify-center gap-4 md:gap-6 text-[10px] md:text-[11px] xl:text-[13px] tracking-widest uppercase font-['Menbere'] shadow-lg pointer-events-auto w-full md:w-auto"
+          >
             <span className="relative z-10 mt-[2px] w-full text-center md:text-left md:w-auto flex-1">{hero.primaryButton.text}</span>
             <div className="relative z-10 bg-white/90 text-[#2a9df4] rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-transform group-hover:rotate-45 shadow-sm shrink-0">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>

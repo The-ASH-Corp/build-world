@@ -2,7 +2,10 @@ export const homeData = {
   hero: {
     title: "Build World",
     subtitle: "Structural Integrity\nUncompromised Timelines.",
-    primaryButton: { text: "LAUNCH PROJECT REQUEST", link: "#" },
+    primaryButton: { 
+      text: "LAUNCH PROJECT REQUEST", 
+      link: "https://wa.me/919037863030?text=Hello%20Build%20World%2C%20I%20would%20like%20to%20launch%20a%20project%20request." 
+    },
     secondaryButton: { text: "EXPLORE PROVEN PORTFOLIO", link: "/projects" },
     bgImage: "/images/a8ncra2SSE0thOySygQJ1YTffE.png" // Using the main hero image
   },

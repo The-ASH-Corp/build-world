@@ -31,9 +31,9 @@ export default function ApproachSection() {
                   alt={`Approach ${idx}`}
                   className="w-full h-full object-cover"
                   fill
-                  sizes="(max-width: 768px) 128px, 224px"
+                  sizes="(max-width: 768px) 256px, 448px"
                   priority={idx < 4}
-                  quality={75}
+                  quality={85}
                 />
               </div>
             </div>
