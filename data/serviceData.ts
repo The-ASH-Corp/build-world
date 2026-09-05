@@ -1,25 +1,25 @@
 export const serviceData = [
   {
     title: "DIGITAL SURVEY",
-    description: "Our Digital Survey Services Involve Precise Measurements And Location Marking For Construction Activities, Ensuring Accurate Positioning, Dimensions, And Elevation Control Of Structures, Ultimately Supporting Efficient Project Execution.",
+    description: "Accurate surveying is an important part of getting a project off to the right start. Our digital survey services provide precise measurements, location marking, and elevation control to support accurate positioning and set-out work on site.",
     image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Photos+and+Videos/IMG-20250124-WA0047.jpg",
     imageLeft: true
   },
   {
     title: "STRUCTURAL WORKS",
-    description: "Our Skilled Structural Engineers Construct Buildings That Are Strong, Durable, And Aesthetically Pleasing. We Work In Consultation With Designers To Ensure That Our Structures Meet The Client's Vision And Are Safe, Efficient, And Sustainable.",
+    description: "Our structural engineering team focuses on creating buildings that are strong, safe, and durable. We work closely with designers and project teams to ensure that structural requirements are met while keeping the overall design and functionality of the project in mind.",
     image: "/images/6aATekDLTIngAm0ATP8I4Ny4os.png",
     imageLeft: false
   },
   {
     title: "INTERIOR & FINISHING WORKS",
-    description: "We Specialize In The Execution Of Interior Design Plans. We Work With Designers To Ensure That Their Visions Are Brought To Life, Transforming Spaces Into Personalized Havens That Reflect Your Unique Style And Preferences.",
+    description: "We work alongside designers to bring interior plans to life, with careful attention to finishing, functionality, and detail. Our team focuses on executing each element as planned while creating spaces that feel comfortable, practical, and well finished.",
     image: "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png",
     imageLeft: true
   },
   {
     title: "LANDSCAPING WORKS",
-    description: "We Are A Team Of Experienced Landscapers Who Specialize In The Execution Of Landscape Design Plans. We Work With Designers To Ensure That Their Visions Are Brought To Life, Delivering High-Quality Landscaping That Is Both Beautiful And Functional.",
+    description: "Our landscaping team works with designers to execute landscape plans that complement the building and its surroundings. We focus on creating outdoor spaces that are practical, visually appealing, and thoughtfully connected to the overall property.",
     image: "/images/3lh7Gp608PyUSoL6ChW02fTk1lY.png",
     imageLeft: false
   },
