@@ -3,16 +3,18 @@ export const homeData = {
     title: "Build World",
     subtitle: "Structural Integrity\nUncompromised Timelines.",
     primaryButton: { 
-      text: "LAUNCH PROJECT REQUEST", 
+      text: "START A PROJECT", 
       link: "https://wa.me/919037863030?text=Hello%20Build%20World%2C%20I%20would%20like%20to%20launch%20a%20project%20request." 
     },
-    secondaryButton: { text: "EXPLORE PROVEN PORTFOLIO", link: "/projects" },
+    secondaryButton: { text: "EXPLORE OUR PORTFOLIO", link: "/projects" },
     bgImage: "/images/a8ncra2SSE0thOySygQJ1YTffE.png" // Using the main hero image
   },
   about: {
     title: "Shaping A Legacy Of Excellence",
-    description1: "For over a quarter-century, Build World Constructions Pvt. Ltd. has been at the forefront of the construction industry, leaving behind a trail of triumphs and victorious moments. Our journey began with a vision to deliver quality and commitment, and today, we proudly stand as one of the largest construction companies in South India, with a global footprint that extends into the Middle East. With a dedicated team, an unyielding commitment to quality, and a confident smile, Build World continues its journey of triumph and celebration. We are proud to be the first and only ISO 9001:2015 certified construction company in Kerala, headquartered in Calicut. Our strong presence in Kerala has solidified our position as a leading player in the construction industry.",
-    description2: "Build World's inception is a story of passion and purpose. Engineer Firoz Kalathil, during a vacation, heeded his mother's advice to use his skills for the betterment of his homeland. This advice led to a meeting with Mr. Muneer, a like-minded visionary, and gave birth to Build World. Today, our company leverages its extensive knowledge and global exposure to fulfill the aspirations of many.",
+    description1: "For over a quarter-century, Build World Constructions Pvt. Ltd. has grown through experience, commitment, and a consistent focus on quality. What began with a vision to deliver dependable construction has grown into a company with a strong presence across South India and projects extending into the Middle East.",
+    description2: "Based in Calicut, Kerala, Build World brings together an experienced team, practical engineering expertise, and a clear focus on quality at every stage of construction. From planning and execution to the final handover, we work to ensure that every project is delivered with care and attention to detail.",
+    description3: "Build World’s journey began with a shared vision between Er. Feroz Kalathil and Mr. Abdul Muneer. What started as an ambition to put their knowledge and experience to better use became the foundation of a construction company built on dedication, technical expertise, and purpose.",
+    description4: "Today, that same approach continues to guide our work. With experience across different projects and markets, we focus on creating spaces that are well planned, well executed, and built for the people who use them.",
     button1: { text: "More\nAbout Us", link: "/about" },
     button2: { text: "Download\nCompany Profile", link: "#" },
     images: [
@@ -23,12 +25,12 @@ export const homeData = {
   },
   team: {
     title: "At The Helm",
-    subtitle: "Meet the people guiding BuildWorld with vision, experience, and a commitment to building what lasts.",
+    subtitle: "Meet the people guiding Build World with experience, vision, and a hands-on approach to construction.",
     members: [
       {
         name: "Er. Feroz Kalathil",
         role: "CEO & CO-FOUNDER",
-        description: "Eng. Feroz Kalathil, the visionary leader at the helm of Build World Constructions Pvt. Ltd., is a seasoned engineer with a stellar 25-year track record that speaks volumes about his expertise and dedication to the construction industry. His illustrious portfolio includes iconic projects like the Makkah Haram Masjid and the American Consulate in Jeddah, KSA, where his unwavering commitment to precision and meticulous attention to detail have set new standards of excellence. Eng. Feroz Kalathil's contributions extend to renowned endeavors such as the Shifa Al-Jazeera Medical Center in Sharjah, UAE, reaffirming his status as a trailblazer in the field. His leadership inspires the entire Build World team to uphold international construction standards, fostering a culture of innovation, sustainability, and unwavering dedication to quality that sets the company apart in the industry.",
+        description: "Er. Feroz Kalathil is the CEO and Co-Founder of Build World Constructions Pvt. Ltd., with more than 25 years of experience in the construction industry. His professional experience includes involvement in major projects such as the Makkah Haram Masjid and the American Consulate in Jeddah, KSA, as well as the Shifa Al-Jazeera Medical Center in Sharjah, UAE. His experience continues to shape Build World’s approach to quality, precision, and responsible execution. Working closely with the team, he focuses on maintaining high standards throughout the construction process.",
         image: "/images/laShQCkW1gKUyFZ61FN0jwJXQ.png" // Real CEO photo
       }
     ]
@@ -37,28 +39,35 @@ export const homeData = {
     title: "Latest Works",
     buttonText: "EXPLORE MORE",
     buttonLink: "/projects",
-    works: [
+    works:[
       {
         id: "residence-calicut",
-        title: "Residence, Calicut",
-        client: "Mr. Ahammed Jalal",
+        title: "Maab Square ",
+        client: "Mr. Balagopal",
         status: "Completed ✓",
-        bg: "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
-      },
-      {
-        id: "skaris-grand-residence",
-        title: "Skari's Grand Residence",
-        client: "Mr. Skaria Thomas",
-        status: "Completed ✓",
-        bg: "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png"
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Night+View.jpg",
       },
       {
         id: "era-nature-park",
         title: "ERA Nature Park",
         client: "ERA Developers & Resorts",
         status: "Completed ✓",
-        bg: "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png"
-      }
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Design/VIEW+14.jpg",
+      },
+      {
+        id: "arshads-residency",
+        title: "RESIDENCE, ARIPRA",
+        client: "Mr. Arshad Noufal",
+        status: "Completed ✓",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/1+N.jpg",
+      },
+      {
+        id: "skaris-grand-residence",
+        title: "Skari's Grand Residence",
+        client: "unknown",
+        status: "Completed ✓",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00012.jpg",
+      },
     ]
   },
   testimonials: {
@@ -120,14 +129,14 @@ export const homeData = {
   },
   whyChooseUs: {
     title: "Why\nChoos Us?",
-    description: "Our Mode Of Action Involves Constructing Projects That Add Value To Residential And Commercial Buildings. Our Team Comprises Talented Engineers And Execution Specialists Who Are Passionate About Turning Your Dreams Into Reality. We Take Pride In Providing Solutions That Resonate With The Unique Identity Of Each Space. Our Modern, Affordable, And Sustainable Solutions Not Only Set Your Spaces Apart But Also Create A Warm Ambiance That Attracts Positive Energies.",
+    description: "Good construction depends on more than just getting the work done. It takes careful planning, experienced people, clear communication, and attention to detail at every stage. At Build World, our engineers, project managers, and execution teams work together to keep projects organised and moving according to plan. We also work closely with clients, designers, and project partners to make sure the work stays aligned with the project’s requirements.",
     items: [
-      { title: "Experienced Engineering Team", text: "Managing Projects Efficiently With Skilled Work Managers And A Seasoned Engineering Team." },
-      { title: "Precision In Detail", text: "Crafting Success Through Meticulous Preparation Of Detailed Shop Drawings." },
-      { title: "27/7 Support", text: "There Is Always Technical Support Accessible." },
-      { title: "Timely Project Completion", text: "Delivering Projects Within The Agreed-Upon Time Frame, Ensuring Adherence To Schedules." },
-      { title: "Comprehensive Documentation", text: "Going Beyond Completion By Providing Comprehensive As-Built Drawings Upon Project Conclusion." },
-      { title: "Advanced Surveying Techniques", text: "Utilizing State-Of-The-Art Digital Survey Machines For Accurate And Efficient Set-Out Work." }
+      { title: "Experienced Engineering Team", text: "Our experienced engineers and project teams work together to manage construction efficiently and maintain quality on site." },
+      { title: "Precision In Detail", text: "Detailed planning and shop drawings help our teams understand the design clearly and execute it accurately on site." },
+      { title: "27/7 Support", text: "Our technical and site teams remain accessible to address project requirements and provide support when needed." },
+      { title: "Timely Project Completion", text: "We plan and monitor our work carefully to keep projects on schedule and deliver within the agreed timeline." },
+      { title: "Comprehensive Documentation", text: "At the end of the project, we provide the necessary documentation, including as-built drawings, to support a clear handover." },
+      { title: "Advanced Surveying Techniques", text: "Modern digital surveying equipment helps us achieve accurate measurements and efficient site set-out work." }
     ],
     videos: [
       { 

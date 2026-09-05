@@ -60,6 +60,18 @@ export default function AboutSection() {
                   {about.description2}
                 </p>
               </motion.div>
+
+              <motion.div variants={itemVariants}>
+                <p className="font-['Menbere'] text-[14px] md:text-[16px] text-[#b0b0b0] leading-[1.8] text-left md:text-justify">
+                  {about.description3}
+                </p>
+              </motion.div>
+
+              <motion.div variants={itemVariants}>
+                <p className="font-['Menbere'] text-[14px] md:text-[16px] text-[#b0b0b0] leading-[1.8] text-left md:text-justify">
+                  {about.description4}
+                </p>
+              </motion.div>
             </div>
           </div>
 
