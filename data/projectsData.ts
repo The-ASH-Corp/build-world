@@ -30,7 +30,7 @@ export const projectsData = {
       {
         id: "skaris-grand-residence",
         title: "Skari's Grand Residence",
-        client: "unknown",
+        client: "Mr. Samad Kari",
         status: "Completed ✓",
         category: "Completed",
         location: "Kochi, Kerala",
@@ -216,7 +216,7 @@ export const projectsData = {
       {
         id: "Tiara",
         title: "Tiara",
-        client: "Tiara by MPS - (unknown)",
+        client: "Tiara",
         status: "Completed ✓",
         category: "Completed",
         location: "Malappuram, Kerala",
@@ -240,33 +240,33 @@ export const projectsData = {
         ]
       },
       
-       {
-        id: "Kayal-Pattinam-House",
-        title: "RESIDENCE , Kayalpattinam",
-        client: "unknown",
-        status: "Completed ✓",
-        category: "Completed",
-        location: "Kayal Pattinam, Tamil Nadu",
-        area: "5,200 sq.ft",
-        year: "2024",
-        scope: "Structural Engineering & Turnkey Finishing",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/61.jpg",
-        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
-        highlights: [
-          "Floor-to-ceiling acoustic glazing panels",
-          "State-of-the-art climate automation system",
-          "Custom infinity pool with cantilevered terrace",
-          "Precision-crafted architectural concrete elements"
-        ],
-        gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/169.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/7.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/2.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/45.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/11.jpg"
+      //  {
+      //   id: "Kayal-Pattinam-House",
+      //   title: "RESIDENCE , Kayalpattinam",
+      //   client: "unknown",
+      //   status: "Completed ✓",
+      //   category: "Completed",
+      //   location: "Kayal Pattinam, Tamil Nadu",
+      //   area: "5,200 sq.ft",
+      //   year: "2024",
+      //   scope: "Structural Engineering & Turnkey Finishing",
+      //   bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/61.jpg",
+      //   description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+      //   highlights: [
+      //     "Floor-to-ceiling acoustic glazing panels",
+      //     "State-of-the-art climate automation system",
+      //     "Custom infinity pool with cantilevered terrace",
+      //     "Precision-crafted architectural concrete elements"
+      //   ],
+      //   gallery: [
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/169.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/7.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/2.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/45.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/11.jpg"
          
-        ]
-      },
+      //   ]
+      // },
 
 
       {
@@ -298,7 +298,7 @@ export const projectsData = {
       {
         id: "Tiara-Walk-Perinthalmanna",
         title: "Tiara Walk Perinthalmanna",
-        client: "unknown",
+        client: "Tiara",
         status: "Under Construction",
         category: "Under Construction",
         location: "Perinthalmanna, Kerala",
@@ -375,7 +375,7 @@ export const projectsData = {
        {
         id:"Sharafco",
         title:"Sharafco",
-        client: "unknown",
+        client: "Sharafco",
         status:"Under Construction",
         category:"Under Construction",
         location:"Kozhikkode",
@@ -429,3 +429,4 @@ export const projectsData = {
     ]
   },
 };
+
