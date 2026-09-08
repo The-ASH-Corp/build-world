@@ -13,7 +13,7 @@ export const projectsData = {
         year: "2024",
         scope: "Architectural Design, Structural Engineering & Interior Works",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Night+View.jpg",
-        description: "Designed and delivered for Mr. Ahammed Jalal, this completed residence brings together contemporary architecture, refined interiors, and carefully considered spaces for everyday living.\n\nFrom its clean architectural form to the warmth of its interior details, every element was developed with a focus on comfort, functionality, and visual harmony. The result is a home where modern design meets a sense of warmth — creating spaces that are practical to live in and timeless in character.",
+        description: "A modern commercial project designed to support active business operations. The building combines clean exterior lines, structural glazing, and efficient floor planning to create practical spaces with good natural light and flexibility for commercial use.",
         highlights: [
           "Custom cantilevered balconies and deep overhangs",
           "Integrated ambient smart lighting systems",
@@ -38,7 +38,7 @@ export const projectsData = {
         year: "2023",
         scope: "Full-Cycle Turnkey Construction & Landscaping",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00012.jpg",
-        description: "A monumental residential villa exhibiting grand architectural volume, expansive double-height ceilings, and artisanal stonework delivered on time and within specifications.",
+        description: "A large-scale residence defined by generous proportions, double-height spaces, and detailed architectural finishes. The project brings together spacious interiors, custom stonework, and carefully executed structural elements to create a distinctive family home.",
         highlights: [
           "Reinforced seismic structural framework",
           "Custom imported natural stone cladding",
@@ -64,7 +64,7 @@ export const projectsData = {
         year: "2023",
         scope: "Eco-Resort Infrastructure & Civil Development",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Design/VIEW+14.jpg",
-        description: "A world-class eco-tourism destination built with sustainable engineering techniques that preserve indigenous terrain while providing robust civil and structural foundations.",
+        description: "An eco-tourism and leisure development planned around its natural surroundings. The project involved strong civil and structural execution while taking care to work with the existing terrain and preserve the character of the site.",
         highlights: [
           "Eco-friendly slope stabilization & contour management",
           "Sustainable storm-water drainage architecture",
@@ -90,7 +90,7 @@ export const projectsData = {
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/1+N.jpg",
-        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+        description: "A contemporary family residence designed around clean forms and open living spaces. The layout creates a natural connection between indoor and outdoor areas, with careful attention to functionality and finishing throughout the home.",
         highlights: [
           "Floor-to-ceiling acoustic glazing panels",
           "State-of-the-art climate automation system",
@@ -117,7 +117,7 @@ export const projectsData = {
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04105-01.jpeg",
-        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+        description: "A multi-level modern residence combining strong architectural elements with spacious balconies and warm interior detailing. The home was planned for comfortable family living while maintaining a distinctive contemporary character.",
         highlights: [
           "Floor-to-ceiling acoustic glazing panels",
           "State-of-the-art climate automation system",
@@ -143,7 +143,7 @@ export const projectsData = {
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00006.jpg",
-        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+        description: "A modern residence focused on simple design, practical planning, and lasting construction. Natural light, ventilation, and comfortable living spaces were considered throughout, with clean finishing tailored to everyday family life.",
         highlights: [
           "Floor-to-ceiling acoustic glazing panels",
           "State-of-the-art climate automation system",
@@ -170,7 +170,7 @@ export const projectsData = {
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_81.jpg",
-        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+        description: "A luxury modern villa featuring expansive glass facades, architectural lighting, and generous outdoor spaces. The project combines open-plan interiors with strong structural execution and detailed exterior finishing.",
         highlights: [
           "Floor-to-ceiling acoustic glazing panels",
           "State-of-the-art climate automation system",
@@ -197,7 +197,7 @@ export const projectsData = {
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/250.jpg",
-        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+        description: "A contemporary residence built around clean architectural lines and practical living spaces. The construction brings together structural strength, thoughtful planning, and careful finishing to create a comfortable modern home.",
         highlights: [
           "Floor-to-ceiling acoustic glazing panels",
           "State-of-the-art climate automation system",
@@ -224,7 +224,7 @@ export const projectsData = {
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2460.jpg",
-        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+        description: "A high-end hospitality project executed with close attention to structural precision, interior finishing, and essential building services. The project was delivered to meet the requirements of a modern hotel environment while maintaining a refined overall finish.",
         highlights: [
           "Floor-to-ceiling acoustic glazing panels",
           "State-of-the-art climate automation system",
@@ -280,7 +280,7 @@ export const projectsData = {
         year: "2025",
         scope: "Commercial Healthcare Civil & MEP Works",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/WhatsApp+Image+2026-01-05+at+4.17.29+PM.jpeg",
-        description: "A state-of-the-art multi-specialty healthcare facility engineered in accordance with rigorous international healthcare building codes and seismic safety standards.",
+        description: "A multi-storey commercial facility under construction in Calicut. With a contemporary glass facade and clean architectural lines, the project is being developed to accommodate modern office and commercial requirements.",
         highlights: [
           "Specialized medical gas pipeline structural framing",
           "Heavy-duty radiation shielding partition walls",
@@ -306,7 +306,7 @@ export const projectsData = {
         year: "2025",
         scope: "Commercial Complex & Steel Structure Engineering",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0022.jpg",
-        description: "A landmark multi-story commercial complex featuring expansive retail spaces, corporate offices, and underground parking designed with precision engineering.",
+        description: "An ongoing commercial development planned around retail and dining spaces. The project combines distinctive exterior architecture, open paved areas, and hardscaping to create a welcoming environment for visitors.",
         highlights: [
           "Deep foundation piling and earth retention system",
           "Long-span pre-stressed concrete beam framework",
@@ -332,7 +332,7 @@ export const projectsData = {
         year: "2025",
         scope: "Commercial Complex & Steel Structure Engineering",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/5.jpeg",
-        description: "A landmark multi-story commercial complex featuring expansive retail spaces, corporate offices, and underground parking designed with precision engineering.",
+        description: "A residential development currently underway in Coimbatore, including a defined entrance, boundary walls, internal roads, and associated civil works. The project is being developed with a focus on organised access, practical planning, and consistent execution.",
         highlights: [
           "Deep foundation piling and earth retention system",
           "Long-span pre-stressed concrete beam framework",
@@ -356,7 +356,7 @@ export const projectsData = {
         year:"2026",
         scope:"Hotel Architecture and Interior Design",
         bg:"/images/Screenshot From 2026-09-04 11-15-00.png",
-        description:" Set to redefine the hospitality landscape of Kozhikode, Arya-Perl-Hotel is a premium 75-room boutique hotel located in the heart of the city. Designed to blend contemporary luxury with Kerala’s rich cultural aesthetic, the project features a grand double-height atrium, signature rooftop infinity pool, fine-dining restaurants, and state-of-the-art banquet facilities for up to 500 guests. Our complete architectural, interior design, and structural engineering services ensure a seamless blend of bold design and functional excellence. Construction is currently underway, with completion scheduled for late 2026.",
+        description:" A 75-room hotel development currently underway in Kozhikode. The project includes multi-level structural works, a double-height entrance lobby, rooftop facilities, and carefully planned spaces suited to modern hospitality.",
         highlights:[
           "75-room boutique hotel with premium interiors",
           "Grand double-height atrium",
@@ -383,7 +383,7 @@ export const projectsData = {
         year:"2026",
         scope:"Residential Complex Architecture and Interior Design",
         bg:"/images/Screenshot From 2026-09-04 11-54-00.png",
-        description:"A landmark multi-family residential development, Sharafco combines contemporary architectural design with smart space planning to offer spacious and luxurious living environments. The project features multi-level layouts, private balconies, and community recreational amenities. Our scope includes conceptual design, structural engineering, and detailed interior planning. The development is currently under construction, scheduled for completion in 2026.",
+        description:"A contemporary hotel project under construction, combining textured facade elements, structural glazing, and practical interior planning. The development is designed to accommodate guest rooms, dining areas, and essential service spaces within a well-organised layout.",
         highlights:[
           "Multi-level layouts with private balconies",
           "Community recreational amenities",
@@ -409,7 +409,7 @@ export const projectsData = {
         year:"2026",
         scope:"Architecture and Interior Design",
         bg:"/images/Screenshot From 2026-09-04 12-09-42.png",
-        description:"Set against the scenic backdrop of Malappuram, ‘The Heavenly Daze’ is a sprawling 36,000 sq.ft luxury residential project designed for a multi-generational family. The estate features a contemporary villa, integrated gymnasium, multi-car garage, and lush landscaped gardens. Our complete architectural and interior design services ensure a seamless blend of bold design and functional excellence. The project is currently under construction, with completion scheduled for late 2026.",
+        description:"A 36,000 sq. ft. luxury residential estate currently under construction in Malappuram. Planned for a multi-generational family, the project includes spacious living areas, integrated recreational facilities, multi-car parking, and landscaped outdoor spaces.",
         highlights:[
           "Multi-level layouts with private balconies",
           "Community recreational amenities",
