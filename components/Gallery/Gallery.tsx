@@ -31,7 +31,7 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6 auto-rows-[250px] md:auto-rows-[200px] lg:auto-rows-[80px] grid-flow-dense">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6 auto-rows-[250px] md:auto-rows-[200px] lg:auto-rows-[90px] grid-flow-dense">
           {galleryData.map((item, index) => (
             <motion.div
               key={item.id}
