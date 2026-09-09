@@ -20,7 +20,7 @@ export default function ApproachSection() {
       <div className="w-full overflow-hidden bg-[#111318] py-10 flex">
         <motion.div
           className="flex w-max"
-          animate={{ x: ["0%", "-50%"] }}
+          animate={{ x: ["0%", "-20%"] }}
           transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
         >
           {[...aboutPage.approach.images, ...aboutPage.approach.images].map((imgSrc, idx) => (

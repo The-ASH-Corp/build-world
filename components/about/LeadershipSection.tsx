@@ -1,5 +1,7 @@
-import React from "react";
-import { motion, Variants } from "framer-motion";
+"use client";
+
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { aboutData } from "@/data/aboutData";
 import { FaStar, FaRegBuilding, FaGlobe, FaAward } from "react-icons/fa";
 
@@ -22,6 +24,20 @@ const itemVariants: Variants = {
 
 export default function LeadershipSection() {
   const { aboutPage } = aboutData;
+  const members = aboutPage.leadership.members;
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (isPaused || members.length <= 1) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % members.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [isPaused, members.length]);
+
+  const member = members[currentIndex];
 
   const renderIcon = (iconName: string) => {
     switch (iconName) {
@@ -83,48 +99,90 @@ export default function LeadershipSection() {
           </h2>
         </motion.div>
 
+        {/* Outer Card Shell with Fixed Height */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="w-full max-w-[1250px] relative flex flex-col md:flex-row items-center justify-center mt-0 md:mt-6 bg-[#12587e] md:bg-transparent"
+          className="w-full max-w-[1250px] relative flex flex-col md:flex-row items-center justify-center mt-0 md:mt-6 bg-[#12587e] md:bg-transparent overflow-hidden md:overflow-visible"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
         >
-          {/* U-Shaped Image Container Mobile */}
-          <div className="flex md:hidden w-full h-[380px] sm:h-[450px] bg-[#161c21] rounded-b-[50%] overflow-hidden items-end justify-center z-20">
-            <img
-              src={aboutPage.leadership.image}
-              alt={aboutPage.leadership.name}
-              className="w-full h-full object-cover object-top"
-            />
+          {/* Mobile Image Container */}
+          <div className="flex md:hidden w-full h-[380px] sm:h-[450px] bg-[#161c21] rounded-b-[50%] overflow-hidden items-end justify-center z-20 relative">
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={currentIndex}
+                initial={{ opacity: 0, scale: 0.96 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.96 }}
+                transition={{ duration: 0.35, ease: "easeInOut" }}
+                src={member.image}
+                alt={member.name}
+                className="w-full h-full object-cover object-top"
+              />
+            </AnimatePresence>
           </div>
 
-          {/* Blue Background Container */}
-          <div className="w-full h-auto md:h-[460px] md:bg-[#12587e] flex flex-col justify-center pt-10 pb-16 px-6 sm:px-10 md:p-12 lg:pl-16 lg:pr-[450px] relative z-10 md:z-auto">
-            <h3 className="font-['Menbere'] text-[20px] md:text-[24px] lg:text-[28px] font-bold text-white mb-1">
-              {aboutPage.leadership.name}
-            </h3>
-            <p className="font-['Menbere'] text-[#7bb0ce] text-[10px] md:text-[12px] lg:text-[14px] font-bold tracking-widest uppercase mb-6 md:mb-8">
-              {aboutPage.leadership.role}
-            </p>
-            <p className="font-['Menbere'] text-white/90 text-[12px] md:text-[13px] leading-[1.8] text-left max-w-[650px]">
-              {aboutPage.leadership.description}
-            </p>
+          {/* Blue Background Content Box (Fixed Height) */}
+          <div className="w-full h-auto md:h-[480px] lg:h-[460px] md:bg-[#12587e] flex flex-col justify-between pt-10 pb-12 px-6 sm:px-10 md:p-12 lg:pl-16 lg:pr-[450px] relative z-10 md:z-auto">
+            
+            {/* Animating Text Content Grid Cell */}
+            <div className="grid grid-cols-1 grid-rows-1 min-h-[240px] md:min-h-[220px]">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentIndex}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.35, ease: "easeInOut" }}
+                  className="col-start-1 row-start-1 flex flex-col justify-start"
+                >
+                  <h3 className="font-['Menbere'] text-[20px] md:text-[24px] lg:text-[28px] font-bold text-white mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="font-['Menbere'] text-[#7bb0ce] text-[10px] md:text-[12px] lg:text-[14px] font-bold tracking-widest uppercase mb-6 md:mb-8">
+                    {member.role}
+                  </p>
+                  <p className="font-['Menbere'] text-white/90 text-[12px] md:text-[13px] leading-[1.8] text-left max-w-[650px]">
+                    {member.description}
+                  </p>
+                </motion.div>
+              </AnimatePresence>
+            </div>
 
-            {/* Paginator Dots */}
-            <div className="absolute bottom-6 md:bottom-8 left-6 sm:left-10 md:left-12 lg:left-16 flex gap-2">
-              <div className="w-2 md:w-2.5 h-2 md:h-2.5 bg-white rounded-full"></div>
-              <div className="w-2 md:w-2.5 h-2 md:h-2.5 bg-white/30 rounded-full"></div>
+            {/* Manual Paginator Dots */}
+            <div className="flex items-center gap-2.5 pt-6 md:pt-0">
+              {members.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrentIndex(idx)}
+                  aria-label={`Go to slide ${idx + 1}`}
+                  className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
+                    currentIndex === idx
+                      ? "w-8 bg-white"
+                      : "w-2.5 bg-white/30 hover:bg-white/60"
+                  }`}
+                />
+              ))}
             </div>
           </div>
 
-          {/* U-Shaped Image Container Desktop */}
-          <div className="hidden md:flex absolute right-10 lg:right-24 top-[-60px] w-[350px] h-[500px] bg-[#161c21] rounded-b-[175px] overflow-hidden shadow-2xl items-end justify-center">
-            <img
-              src={aboutPage.leadership.image}
-              alt={aboutPage.leadership.name}
-              className="w-full h-full object-cover object-top"
-            />
+          {/* Desktop U-Shaped Image Container */}
+          <div className="hidden md:flex absolute right-10 lg:right-24 top-[-60px] w-[350px] h-[500px] bg-[#161c21] rounded-b-[175px] overflow-hidden shadow-2xl items-end justify-center z-20">
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={currentIndex}
+                initial={{ opacity: 0, scale: 0.96 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.96 }}
+                transition={{ duration: 0.35, ease: "easeInOut" }}
+                src={member.image}
+                alt={member.name}
+                className="w-full h-full object-cover object-top"
+              />
+            </AnimatePresence>
           </div>
         </motion.div>
       </div>

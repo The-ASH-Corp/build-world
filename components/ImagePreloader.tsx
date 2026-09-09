@@ -32,8 +32,10 @@ export default function ImagePreloader() {
       if (aboutData.aboutPage.legacy?.image) {
         urlsToPreload.push(aboutData.aboutPage.legacy.image);
       }
-      if (aboutData.aboutPage.leadership?.image) {
-        urlsToPreload.push(aboutData.aboutPage.leadership.image);
+      if (aboutData.aboutPage.leadership?.members) {
+        aboutData.aboutPage.leadership.members.forEach((m) => {
+          if (m.image) urlsToPreload.push(m.image);
+        });
       }
 
       // Deduplicate URLs
