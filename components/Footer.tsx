@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="md:w-1/3 flex flex-col items-start">
         
           <Image src="/images/GZGE9BLDIEh0JDNrm7SHDbdU8y4.png" alt="Build World Logo" width={200} height={60} className="h-12 md:h-16 w-auto object-contain" />
-          <p className="text-gray-400 text-xs leading-loose pr-8">
+          <p className="text-gray-400 text-sm leading-loose pr-8 font-bold">
             At Build World, we are dedicated to achieving excellence and ensuring customer happiness. With our uncompromising willpower and years of experience, we have built a strong reputation in the construction business.
           </p>
         </div>

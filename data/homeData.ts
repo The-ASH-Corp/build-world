@@ -32,6 +32,12 @@ export const homeData = {
         role: "CEO & CO-FOUNDER",
         description: "Er. Feroz Kalathil is the CEO and Co-Founder of Build World Constructions Pvt. Ltd., with more than 25 years of experience in the construction industry. His professional experience includes involvement in major projects such as the Makkah Haram Masjid and the American Consulate in Jeddah, KSA, as well as the Shifa Al-Jazeera Medical Center in Sharjah, UAE. His experience continues to shape Build World’s approach to quality, precision, and responsible execution. Working closely with the team, he focuses on maintaining high standards throughout the construction process.",
         image: "/images/laShQCkW1gKUyFZ61FN0jwJXQ.png" // Real CEO photo
+      },
+      {
+        name: "Mr. Abdul Muneer",
+        role: "MANAGING DIRECTOR & CO-FOUNDER",
+        description: "Mr. Abdul Muneer is the Managing Director and Co-Founder of Build World Constructions Pvt. Ltd. Co-founding the company alongside Er. Feroz Kalathil, he brings strategic vision, practical engineering knowledge, and extensive leadership experience in executing major building and infrastructure projects across South India and the Middle East. Working closely with the team, he guides business operations and project delivery to ensure consistent quality, structural reliability, and long-term value for every client.",
+        image: "/images/871b0ae1a34942218aa43d6253c2422e-removebg-preview.png"
       }
     ]
   },
