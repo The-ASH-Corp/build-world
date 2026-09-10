@@ -322,9 +322,9 @@ export const projectsData = {
       },
 
       {
-        id: "Pearl-Ville-Coimbatur",
-        title: "Pearl-Ville-Coimbatur",
-        client: "unknown",
+        id: "Ville-Project-Coimbatur",
+        title: "Ville Project Coimbatur",
+        client: "MPS Group",
         status: "Under Construction",
         category: "Under Construction",
         location: "Coimbatur, Tamil Nadu",

@@ -64,9 +64,9 @@ export default function Hero() {
       </div>
 
       {/* LAYER 3: Foreground House */}
-      <motion.div
-        className="absolute inset-0 bg-cover bg-top bg-no-repeat z-20 pointer-events-none"
-        style={{
+      <motion.div 
+        className="absolute inset-0 bg-cover bg-top bg-no-repeat z-20 pointer-events-none scale-[1.1]"
+        style={{ 
           backgroundImage: `url(${hero.bgImage})`,
           y: houseY,
           scale: houseScale,
