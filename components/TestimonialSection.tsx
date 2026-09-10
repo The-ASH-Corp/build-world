@@ -42,7 +42,7 @@ export default function TestimonialSection() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-['Menbere'] text-[36px] md:text-[60px] xl:text-[85px] font-bold text-[#e0e0e0] mb-12 md:mb-20 capitalize tracking-tight"
+            className="font-['Menbere'] text-[36px] md:text-[60px] xl:text-[85px] font-bold text-[#e0e0e0] mb-12 md:mb-20 capitalize tracking-tight text-center"
           >
             {testimonials.title}
           </motion.h2>
