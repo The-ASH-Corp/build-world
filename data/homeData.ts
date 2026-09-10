@@ -7,7 +7,8 @@ export const homeData = {
       link: "https://wa.me/919037863030?text=Hello%20Build%20World%2C%20I%20would%20like%20to%20launch%20a%20project%20request." 
     },
     secondaryButton: { text: "EXPLORE OUR PORTFOLIO", link: "/projects" },
-    bgImage: "/images/a8ncra2SSE0thOySygQJ1YTffE.png" // Using the main hero image
+    // bgImage: "/images/a8ncra2SSE0thOySygQJ1YTffE.png" // Using the main hero image
+    bgImage: "/images/house_3d_image.png"
   },
   about: {
     title: "Shaping A Legacy Of Excellence",
@@ -18,9 +19,10 @@ export const homeData = {
     button1: { text: "More\nAbout Us", link: "/about" },
     button2: { text: "Download\nCompany Profile", link: "#" },
     images: [
-      "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png",
-      "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-      "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
+      "/images/house (1).png",
+      // "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png",
+      // "/images/huW5kybTw53dpOEUqem1TSexsY.png",
+      // "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
     ]
   },
   team: {
