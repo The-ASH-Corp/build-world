@@ -83,11 +83,11 @@ export default function AboutSection() {
               className="hidden md:block w-full h-[250px] rounded-[32px] relative shadow-2xl bg-white"
             >
               {/* Clipping Wrapper: Tall enough to not clip the top, but clips sides and bottom */}
-              <div className="absolute bottom-0 left-0 w-full h-[300px] overflow-hidden rounded-b-[32px] pointer-events-none">
+              <div className="absolute bottom-0 left-0 w-full h-[320px] overflow-hidden rounded-b-[32px] pointer-events-none">
                 <img
                   src={about.images[0]}
                   alt="About Image 1"
-                  className="absolute bottom-0 left-0 w-full h-auto object-cover object-bottom scale-[1.2] origin-bottom rounded-b-[32px]"
+                  className="absolute bottom-0 left-0 w-full h-auto object-cover object-bottom scale-[1] origin-bottom rounded-b-[32px]"
                 />
               </div>
             </motion.div>
