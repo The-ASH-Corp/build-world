@@ -69,12 +69,12 @@ export const homeData = {
         status: "Completed ✓",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/1+N.jpg",
       },
-      {
-        id: "skaris-grand-residence",
-        title: "Skari's Grand Residence",
-        client: "unknown",
+     {
+        id: "Kondotty-House",
+        title: "RESIDENCE Kondotty",
+        client: "Mr. Samad Kari",
         status: "Completed ✓",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00012.jpg",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/250.jpg",
       },
     ]
   },
