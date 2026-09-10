@@ -38,7 +38,7 @@ export const homeData = {
       {
         name: "Mr. Abdul Muneer",
         role: "MANAGING DIRECTOR & CO-FOUNDER",
-        description: "Mr. Abdul Muneer is the Managing Director and Co-Founder of Build World Constructions Pvt. Ltd. Co-founding the company alongside Er. Feroz Kalathil, he brings strategic vision, practical engineering knowledge, and extensive leadership experience in executing major building and infrastructure projects across South India and the Middle East. Working closely with the team, he guides business operations and project delivery to ensure consistent quality, structural reliability, and long-term value for every client.",
+        description: "Mr. Abdul Muneer is the Managing Director and Co-Founder of Build World Constructions Pvt. Ltd. Alongside Er. Feroz Kalathil, he played a key role in establishing the company and continues to contribute to its growth and direction. With practical engineering knowledge and extensive leadership experience, he has been involved in the execution of major building and infrastructure projects across South India and the Middle East. Working closely with the team, he oversees business operations and project delivery, with a focus on maintaining consistent quality, structural reliability, and long-term value for every client.",
         image: "/images/871b0ae1a34942218aa43d6253c2422e-removebg-preview.png"
       }
     ]
