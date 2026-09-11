@@ -141,7 +141,7 @@ export const homeData = {
     items: [
       { title: "Experienced Engineering Team", text: "Our experienced engineers and project teams work together to manage construction efficiently and maintain quality on site." },
       { title: "Precision In Detail", text: "Detailed planning and shop drawings help our teams understand the design clearly and execute it accurately on site." },
-      { title: "27/7 Support", text: "Our technical and site teams remain accessible to address project requirements and provide support when needed." },
+      { title: "24/7 Support", text: "Our technical and site teams remain accessible to address project requirements and provide support when needed." },
       { title: "Timely Project Completion", text: "We plan and monitor our work carefully to keep projects on schedule and deliver within the agreed timeline." },
       { title: "Comprehensive Documentation", text: "At the end of the project, we provide the necessary documentation, including as-built drawings, to support a clear handover." },
       { title: "Advanced Surveying Techniques", text: "Modern digital surveying equipment helps us achieve accurate measurements and efficient site set-out work." }
