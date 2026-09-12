@@ -22,7 +22,7 @@ export default function LatestWorks() {
 
   return (
     <section className="w-full bg-[#050505] py-24 overflow-hidden relative">
-      <div className="max-w-383.25 mx-auto px-6 xl:px-24">
+      <div className="max-w-383.25 mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
         
         {/* Header */}
         <div className="mb-10 md:mb-16 text-left">
@@ -31,7 +31,7 @@ export default function LatestWorks() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-['Menbere'] text-[36px] md:text-[96px] font-bold text-white capitalize leading-none tracking-tight"
+            className="font-['Menbere'] text-[36px] md:text-[60px] lg:text-[76px] xl:text-[96px] font-bold text-white capitalize leading-none tracking-tight"
           >
             {latestWorks.title}
           </motion.h2>
@@ -49,7 +49,7 @@ export default function LatestWorks() {
             <Link key={idx} href={`/projects/${work.id}`} className="shrink-0 block">
               <motion.div 
                 variants={itemVariants}
-                className="relative w-full md:w-154.5 h-55 md:h-100 rounded-3xl md:rounded-[40px] overflow-hidden group snap-center cursor-pointer border border-[#222]"
+                className="relative w-full md:w-154.5 lg:w-[480px] xl:w-154.5 h-55 md:h-100 rounded-3xl md:rounded-[40px] overflow-hidden group snap-center cursor-pointer border border-[#222]"
               >
                 {/* Background Image */}
                 <div 
