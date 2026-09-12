@@ -23,15 +23,15 @@ export default function WhyChooseUs() {
 
   return (
     <section className="w-full bg-[#050505] py-32 overflow-hidden relative">
-      <div className="max-w-[1533px] mx-auto px-6 xl:px-24">
+      <div className="max-w-[1533px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
         
         {/* Top Content */}
-        <div className="flex flex-col xl:flex-row justify-between items-center gap-12 xl:gap-24 mb-24">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-16 xl:gap-24 mb-16 lg:mb-24">
           <motion.h2 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="font-['Menbere'] text-[50px] md:text-[90px] font-bold text-white capitalize leading-[1.1] tracking-tight xl:w-[40%] whitespace-pre-line"
+            className="font-['Menbere'] text-[36px] md:text-[60px] lg:text-[72px] xl:text-[90px] font-bold text-white capitalize leading-[1.1] tracking-tight lg:w-[45%] xl:w-[40%] whitespace-pre-line"
           >
             {whyChooseUs.title}
           </motion.h2>
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
              initial={{ opacity: 0, x: 30 }}
              whileInView={{ opacity: 1, x: 0 }}
              viewport={{ once: true }}
-             className="xl:w-[60%] border-l border-white/20 pl-6 md:pl-10 py-2"
+             className="w-full lg:w-[55%] xl:w-[60%] border-l border-white/20 pl-6 md:pl-10 py-2"
           >
             <p className="font-['Menbere'] text-[#aaa] text-[15px] md:text-[16px] leading-[1.8]">
               {whyChooseUs.description}

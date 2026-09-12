@@ -43,12 +43,12 @@ export default function SpecializationSection() {
         </svg>
       </div>
 
-      <div className="max-w-[1533px] mx-auto px-6 xl:px-24 flex flex-col items-center relative z-10">
+      <div className="max-w-[1533px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24 flex flex-col items-center relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-['Menbere'] text-[36px] md:text-[96px] font-bold text-[#e0e0e0] mb-8 text-center w-full capitalize tracking-tight leading-none"
+          className="font-['Menbere'] text-[36px] md:text-[60px] lg:text-[76px] xl:text-[96px] font-bold text-[#e0e0e0] mb-8 text-center w-full capitalize tracking-tight leading-none"
         >
           {specializations.title}
         </motion.h2>

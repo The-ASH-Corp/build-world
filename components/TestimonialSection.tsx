@@ -35,14 +35,14 @@ export default function TestimonialSection() {
         </svg>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 xl:px-16 relative z-10 flex flex-col items-center">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 xl:px-16 relative z-10 flex flex-col items-center">
         {/* Title */}
         <motion.div className="w-full text-left md:text-center">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-['Menbere'] text-[36px] md:text-[60px] xl:text-[85px] font-bold text-[#e0e0e0] mb-12 md:mb-20 capitalize tracking-tight text-center"
+            className="font-['Menbere'] text-[36px] md:text-[54px] lg:text-[72px] xl:text-[85px] font-bold text-[#e0e0e0] mb-12 md:mb-20 capitalize tracking-tight text-center"
           >
             {testimonials.title}
           </motion.h2>
@@ -89,12 +89,12 @@ export default function TestimonialSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden xl:flex text-[#111] mt-12 w-[200px] h-[200px] shrink-0 items-center justify-end font-serif text-[280px] leading-none select-none"
+            className="hidden lg:flex text-[#111] mt-12 w-[160px] xl:w-[200px] h-[160px] xl:h-[200px] shrink-0 items-center justify-end font-serif text-[220px] xl:text-[280px] leading-none select-none"
           >
             “
           </motion.div>
 
-          <div className="w-full xl:flex-1 flex flex-col xl:flex-row items-center justify-center gap-12 xl:gap-24 relative z-20 min-h-[420px] sm:min-h-[340px] md:min-h-[300px]">
+          <div className="w-full lg:flex-1 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 xl:gap-24 relative z-20 min-h-[420px] sm:min-h-[340px] md:min-h-[300px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -102,7 +102,7 @@ export default function TestimonialSection() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.4 }}
-                className="flex flex-col-reverse xl:flex-row items-center xl:items-center gap-12 w-full max-w-[900px]"
+                className="flex flex-col-reverse lg:flex-row items-center lg:items-center gap-8 lg:gap-12 w-full max-w-[900px]"
               >
                 {/* Text Content */}
                 <div className="flex-1 flex flex-col justify-start text-left mt-8 md:mt-0 min-h-[220px] md:min-h-[240px]">
@@ -118,7 +118,7 @@ export default function TestimonialSection() {
                 </div>
 
                 {/* Round Featured Client Image */}
-                <div className="relative w-[200px] h-[200px] md:w-[260px] md:h-[260px] aspect-square shrink-0 group">
+                <div className="relative w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[240px] lg:h-[240px] xl:w-[260px] xl:h-[260px] aspect-square shrink-0 group">
                   <div className="w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-white/10 bg-[#111] relative z-10">
                     <img
                       src={testimonials.clients[activeIndex].avatar}
@@ -137,7 +137,7 @@ export default function TestimonialSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden xl:flex text-[#111] mt-12 w-[200px] h-[200px] shrink-0 items-center justify-start font-serif text-[280px] leading-none select-none"
+            className="hidden lg:flex text-[#111] mt-12 w-[160px] xl:w-[200px] h-[160px] xl:h-[200px] shrink-0 items-center justify-start font-serif text-[220px] xl:text-[280px] leading-none select-none"
           >
             ”
           </motion.div>
