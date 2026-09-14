@@ -43,7 +43,7 @@ export default function SpecializationSection() {
         </svg>
       </div>
 
-      <div className="max-w-[1533px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24 flex flex-col items-center relative z-10">
+      <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%] flex flex-col items-center relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

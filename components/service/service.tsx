@@ -13,7 +13,7 @@ export default function Service() {
           <div className="absolute top-[20%] right-[-10%] w-[100%] h-[100%] bg-gradient-to-tl from-white/[0.01] via-transparent to-transparent transform rotate-[25deg]"></div>
         </div>
 
-        <div className="max-w-[1400px] mx-auto relative z-10">
+        <div className="w-full 2xl:px-[8%] relative z-10">
           <div className="text-center mb-16 md:mb-24">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}

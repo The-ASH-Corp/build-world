@@ -23,7 +23,7 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
 
   return (
     <div className="min-h-screen bg-[#111318] text-white pt-24 md:pt-32 pb-24 font-['Menbere']">
-      <div className="max-w-[1533px] mx-auto px-6 xl:px-24">
+      <div className="w-full px-6 xl:px-24 2xl:px-[8%]">
         {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

@@ -22,7 +22,7 @@ export default function TeamSection() {
 
   return (
     <section className="relative w-full bg-[#050505] py-24 xl:py-32 overflow-hidden">
-      <div className="max-w-[1533px] mx-auto px-0 md:px-6 lg:px-16 xl:px-24">
+      <div className="w-full px-0 md:px-6 lg:px-16 xl:px-24 2xl:px-[8%]">
         {/* Header */}
         <div className="flex flex-col items-start md:items-center mb-10 md:mb-16 lg:mb-20 xl:mb-24 text-left md:text-center px-6 md:px-0">
           <h2 className="font-['Menbere'] text-[36px] md:text-[60px] lg:text-[72px] xl:text-[85px] font-bold text-white capitalize leading-none mb-4 md:mb-6">

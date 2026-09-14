@@ -78,7 +78,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-black/90 via-black/50 to-transparent z-20 pointer-events-none" />
 
       {/* LAYER 4: Bottom Action Bar */}
-      <div className="relative z-30 w-full max-w-[1533px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24 pb-12 xl:pb-16 flex flex-col lg:flex-row justify-between items-center lg:items-end gap-8">
+      <div className="relative z-30 w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%] pb-12 xl:pb-16 flex flex-col lg:flex-row justify-between items-center lg:items-end gap-8">
 
         {/* Left Side: Subtitle */}
         <motion.div

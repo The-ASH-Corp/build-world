@@ -37,7 +37,7 @@ export default function Navigation() {
       transition={{ duration: 0.3 }}
       className="absolute top-0 left-0 w-full z-50 bg-transparent py-8"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+      <div className="w-full px-6 md:px-12 2xl:px-[8%] flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image 

@@ -126,7 +126,7 @@ export const homeData = {
     ]
   },
   specializations: {
-    title: "Our Speciallization",
+    title: "Our Specialization",
     buttonText: "EXPLORE MORE",
     items: [
       { title: "DIGITAL SURVEY", text: "Our Digital Survey Services Involve Precise Measurements And Location Marking For Construction Activities, Ensuring Accurate Positioning, Dimensions, And Elevation Control Of Structures, Ultimately Supporting Efficient Project Execution.", img: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Photos+and+Videos/IMG-20250124-WA0047.jpg" },

@@ -16,7 +16,7 @@ export default function AwardsPage() {
 
   return (
     <div ref={containerRef} className="w-full pt-32 pb-24 overflow-hidden relative min-h-screen bg-[#06070a]">
-      <div className="max-w-[1533px] mx-auto px-6 xl:px-24 flex flex-col items-center">
+      <div className="w-full px-6 xl:px-24 2xl:px-[8%] flex flex-col items-center">
         
         {/* Main Heading */}
         <motion.h1 

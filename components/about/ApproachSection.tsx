@@ -69,7 +69,7 @@ export default function ApproachSection() {
               transition: { delay: 0.4, duration: 0.8, ease: "easeOut" }
             }
           }}
-          className="relative z-10 max-w-[1533px] mx-auto flex flex-col"
+          className="relative z-10 w-full 2xl:px-[8%] flex flex-col"
         >
           <h2 className="font-['Menbere'] text-white text-[32px] md:text-[50px] xl:text-[70px] leading-[1.2] capitalize tracking-tight font-bold mb-8 md:mb-10 max-w-[300px] md:max-w-full">
             {aboutPage.approach.title}
