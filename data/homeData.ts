@@ -136,7 +136,7 @@ export const homeData = {
     ]
   },
   whyChooseUs: {
-    title: "Why\nChoos Us?",
+    title: "Why\nChoose Us?",
     description: "Good construction depends on more than just getting the work done. It takes careful planning, experienced people, clear communication, and attention to detail at every stage. At Build World, our engineers, project managers, and execution teams work together to keep projects organised and moving according to plan. We also work closely with clients, designers, and project partners to make sure the work stays aligned with the project’s requirements.",
     items: [
       { title: "Experienced Engineering Team", text: "Our experienced engineers and project teams work together to manage construction efficiently and maintain quality on site." },

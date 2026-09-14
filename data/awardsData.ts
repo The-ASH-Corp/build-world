@@ -1,5 +1,5 @@
 export const awardsData = {
-  title: "Awards",
+  title: "Achievements",
   certificates: [
     "/images/2ra70ycX05y1nQWvRp7FeAENQ.jpg", // placeholder
     "/images/vUhQdDYXYApsGxGh7HCIVbTj0g.jpg"  // placeholder
