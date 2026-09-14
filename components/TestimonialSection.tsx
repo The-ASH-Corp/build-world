@@ -35,7 +35,7 @@ export default function TestimonialSection() {
         </svg>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 xl:px-16 relative z-10 flex flex-col items-center">
+      <div className="w-full px-6 md:px-12 lg:px-16 xl:px-16 2xl:px-[8%] relative z-10 flex flex-col items-center">
         {/* Title */}
         <motion.div className="w-full text-left md:text-center">
           <motion.h2

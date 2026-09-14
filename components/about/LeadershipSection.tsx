@@ -63,7 +63,7 @@ export default function LeadershipSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="max-w-[1533px] mx-auto px-10 md:px-6 xl:px-24 grid grid-cols-1 md:grid-cols-4 gap-8"
+          className="w-full px-10 md:px-6 xl:px-24 2xl:px-[8%] grid grid-cols-1 md:grid-cols-4 gap-8"
         >
           {aboutPage.stats.map((stat, idx) => (
             <motion.div
@@ -86,7 +86,7 @@ export default function LeadershipSection() {
       </div>
 
       {/* Leadership Content */}
-      <div className="max-w-[1533px] mx-auto w-full md:px-6 xl:px-24 mt-16 md:mt-20 flex flex-col items-center relative">
+      <div className="w-full md:px-6 xl:px-24 2xl:px-[8%] mt-16 md:mt-20 flex flex-col items-center relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

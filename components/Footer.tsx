@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-[#050608] text-white pt-24 pb-8 border-t border-white/10">
-      <div className="max-w-[1533px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24 flex flex-col lg:flex-row justify-between gap-8 lg:gap-12 mb-16">
+      <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%] flex flex-col lg:flex-row justify-between gap-8 lg:gap-12 mb-16">
         
         {/* Column 1 - Brand */}
         <div className="w-full lg:w-1/3 flex flex-col items-start">
@@ -65,7 +65,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="max-w-[1533px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24 py-8 flex flex-col lg:flex-row justify-between items-center gap-4">
+        <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%] py-8 flex flex-col lg:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-[10px]">&copy; 2026 BuildWorld Construction LLC. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-gray-300 transition-colors text-[10px]">Safety Act Compliance</Link>

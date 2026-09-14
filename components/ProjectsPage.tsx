@@ -27,7 +27,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="w-full pt-32 pb-24 overflow-hidden relative min-h-screen">
-      <div className="max-w-383.25 mx-auto px-6 xl:px-24">
+      <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%]">
         
         {/* Header */}
         <div className="mb-12 text-center">

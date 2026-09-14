@@ -24,7 +24,7 @@ const itemVariants: Variants = {
 export default function LegacySection() {
   const { aboutPage } = aboutData;
   return (
-    <section className="relative w-full max-w-[1533px] mx-auto py-6 md:py-10 px-0 md:px-6 xl:px-24 mb-16 md:mb-24">
+    <section className="relative w-full py-6 md:py-10 px-0 md:px-6 xl:px-24 2xl:px-[8%] mb-16 md:mb-24">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

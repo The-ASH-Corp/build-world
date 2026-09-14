@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const Gallery = () => {
   return (
-    <section className="bg-[#050505] py-20 md:py-32 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-[1400px] mx-auto">
+    <section className="bg-[#050505] py-20 md:py-32 w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%]">
+      <div className="w-full">
         {/* Header Section */}
         <div className="text-center mb-16 md:mb-24 flex flex-col items-center w-full">
           <motion.h2 

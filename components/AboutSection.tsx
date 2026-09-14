@@ -25,7 +25,7 @@ export default function AboutSection() {
 
   return (
     <section className="relative w-full bg-[#050505] py-24 xl:py-32 overflow-hidden">
-      <div className="relative z-10 max-w-[1533px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24">
+      <div className="relative z-10 w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%]">
         {/* Massive Top Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
