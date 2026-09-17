@@ -8,7 +8,7 @@ export const homeData = {
     },
     secondaryButton: { text: "EXPLORE OUR PORTFOLIO", link: "/projects" },
     // bgImage: "/images/a8ncra2SSE0thOySygQJ1YTffE.png" // Using the main hero image
-    bgImage: "/images/house_3d_image.png"
+    bgImage: "/images/png1.png"
   },
   about: {
     title: "Shaping A Legacy Of Excellence",
@@ -19,7 +19,7 @@ export const homeData = {
     button1: { text: "More\nAbout Us", link: "/about" },
     button2: { text: "Download\nCompany Profile", link: "#" },
     images: [
-      "/images/house (1).png",
+      "/images/png1.png",
       // "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png",
       // "/images/huW5kybTw53dpOEUqem1TSexsY.png",
       // "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
