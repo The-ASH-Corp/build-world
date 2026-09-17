@@ -32,9 +32,9 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-8 md:mb-14 lg:mb-20 text-left"
+          className="mb-8 md:mb-14 lg:mb-20 text-center md:text-left"
         >
-          <h2 className="font-['Menbere'] text-[#4a4a4a] text-[36px] md:text-[54px] lg:text-[68px] xl:text-[85px] leading-[1.1] capitalize tracking-tight font-bold">
+          <h2 className="font-['Menbere'] text-[#4a4a4a] text-[36px] md:text-[54px] lg:text-[68px] xl:text-[85px] leading-[1.1] capitalize tracking-tight font-bold text-center md:text-left">
             {about.title}
           </h2>
         </motion.div>
@@ -48,27 +48,27 @@ export default function AboutSection() {
         >
           {/* Left Side: Text */}
           <div className="w-full lg:w-5/12 flex flex-col justify-start gap-8 lg:gap-10 pt-2">
-            <div className="flex flex-col gap-6 md:gap-8 lg:gap-8 w-full text-left">
+            <div className="flex flex-col gap-6 md:gap-8 lg:gap-8 w-full text-center md:text-left">
               <motion.div variants={itemVariants}>
-                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-left">
+                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-center md:text-left">
                   {about.description1}
                 </p>
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-left">
+                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-center md:text-left">
                   {about.description2}
                 </p>
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-left">
+                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-center md:text-left">
                   {about.description3}
                 </p>
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-left">
+                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-center md:text-left">
                   {about.description4}
                 </p>
               </motion.div>
@@ -77,19 +77,16 @@ export default function AboutSection() {
 
           {/* Right Side: Image & Buttons */}
           <div className="w-full lg:w-7/12 flex flex-col gap-6 relative mt-6 lg:mt-0">
-            {/* Top Image */}
+            {/* Top Image - Responsive Overflow View */}
             <motion.div
               variants={itemVariants}
-              className="hidden md:block w-full h-[220px] lg:h-[240px] xl:h-[250px] rounded-[32px] relative shadow-2xl bg-white"
+              className="hidden md:block w-full h-[220px] lg:h-[240px] xl:h-[250px] 2xl:h-auto 2xl:aspect-[3/1] rounded-[32px] relative shadow-2xl overflow-hidden bg-white"
             >
-              {/* Clipping Wrapper: Tall enough to not clip the top, but clips sides and bottom */}
-              <div className="absolute bottom-0 left-0 w-full h-[320px] overflow-hidden rounded-b-[32px] pointer-events-none">
-                <img
-                  src={about.images[0]}
-                  alt="About Image 1"
-                  className="absolute bottom-0 left-0 w-full h-auto object-cover object-bottom scale-[1] origin-bottom rounded-b-[32px]"
-                />
-              </div>
+              <img
+                src={about.images[0]}
+                alt="About Image 1"
+                className="absolute inset-0 w-full h-full object-cover object-center rounded-[32px]"
+              />
             </motion.div>
 
             {/* Bottom Buttons Grid */}

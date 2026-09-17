@@ -65,7 +65,7 @@ export default function AwardsPage() {
               className="w-full flex flex-col md:flex-row bg-[#0d0e12] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl"
             >
               {/* Image Side */}
-              <div className="w-full md:w-[55%] lg:w-[60%] aspect-video md:aspect-auto relative md:min-h-[400px] bg-[#1a1d24]">
+              <div className="w-full md:w-[55%] lg:w-[60%] aspect-video md:aspect-auto 2xl:aspect-[2/1] relative md:min-h-[400px] 2xl:min-h-0 bg-[#1a1d24] self-stretch 2xl:self-start">
                 <SafeImage 
                   src={award.image} 
                   alt={award.title} 
