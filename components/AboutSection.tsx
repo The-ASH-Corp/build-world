@@ -80,7 +80,7 @@ export default function AboutSection() {
             {/* Top Image - Responsive Overflow View */}
             <motion.div
               variants={itemVariants}
-              className="hidden md:block w-full h-[220px] lg:h-[240px] xl:h-[250px] 2xl:h-auto 2xl:aspect-[3/1] rounded-[32px] relative shadow-2xl overflow-hidden bg-white"
+              className="hidden md:block w-full h-[280px] md:h-[320px] lg:h-[360px] xl:h-[390px] rounded-[32px] relative shadow-2xl overflow-hidden bg-white"
             >
               <img
                 src={about.images[0]}
