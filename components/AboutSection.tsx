@@ -77,10 +77,10 @@ export default function AboutSection() {
 
           {/* Right Side: Image & Buttons */}
           <div className="w-full lg:w-7/12 flex flex-col gap-6 relative mt-6 lg:mt-0">
-            {/* Top Image - Responsive Overflow View */}
+            {/* Top Image - Fully Responsive View */}
             <motion.div
               variants={itemVariants}
-              className="hidden md:block w-full h-[280px] md:h-[320px] lg:h-[360px] xl:h-[390px] rounded-[32px] relative shadow-2xl overflow-hidden bg-white"
+              className="hidden md:block w-full md:h-[420px] lg:h-[380px] xl:h-[440px] 2xl:h-[540px] min-[1920px]:h-[640px] min-[2560px]:h-[760px] rounded-[32px] relative shadow-2xl overflow-hidden bg-white"
             >
               <img
                 src={about.images[0]}
@@ -97,7 +97,7 @@ export default function AboutSection() {
               {/* More About Us Button */}
               <a
                 href={about.button1.link}
-                className="group relative flex flex-col items-start justify-center h-[140px] md:h-[180px] lg:h-[190px] xl:h-[200px] bg-[#3a7ca5] rounded-[32px] p-6 md:p-8 lg:p-10 hover:bg-[#2f6789] transition-all overflow-hidden"
+                className="group relative flex flex-col items-start justify-center h-[140px] md:h-[180px] lg:h-[190px] xl:h-[200px] 2xl:h-[220px] min-[1920px]:h-[250px] bg-[#3a7ca5] rounded-[32px] p-6 md:p-8 lg:p-10 hover:bg-[#2f6789] transition-all overflow-hidden"
               >
                 {/* Arrow Top Right */}
                 <div className="absolute top-6 right-6 md:top-8 md:right-8 bg-white/20 w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform">
@@ -122,7 +122,7 @@ export default function AboutSection() {
               {/* Download Company Profile Button */}
               <a
                 href={about.button2.link}
-                className="group relative flex flex-col items-start justify-center h-[140px] md:h-[180px] lg:h-[190px] xl:h-[200px] bg-[#0a0a0a] border border-white/10 rounded-[32px] p-6 md:p-8 lg:p-10 hover:bg-[#111] transition-all overflow-hidden"
+                className="group relative flex flex-col items-start justify-center h-[140px] md:h-[180px] lg:h-[190px] xl:h-[200px] 2xl:h-[220px] min-[1920px]:h-[250px] bg-[#0a0a0a] border border-white/10 rounded-[32px] p-6 md:p-8 lg:p-10 hover:bg-[#111] transition-all overflow-hidden"
               >
                 {/* Arrow Top Right (pointing down in design) */}
                 <div className="absolute top-6 right-6 md:top-8 md:right-8 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center transform group-hover:translate-y-1 transition-transform">
