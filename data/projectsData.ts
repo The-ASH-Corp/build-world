@@ -22,11 +22,20 @@ export const projectsData = {
         ],
         gallery: [
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_4.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_24.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_137.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_101.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_27.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/4+N.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/7+N.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/5+N.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/16+N.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/8+N.jpg"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_21.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_110.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_116.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_130.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_129.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_134.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_135.jpg"
         ]
       },
        {
@@ -40,21 +49,34 @@ export const projectsData = {
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
         bg: "/images/imgi_27_ajfan-banner.jpg",
-        description: "",
+        description: "A flagship commercial building project executed in Kottakkal, featuring modern architectural facades, sophisticated interior lighting, and premium turnkey finishing tailored for a luxurious retail experience.",
         highlights: [
-          "Floor-to-ceiling acoustic glazing panels",
-          "State-of-the-art climate automation system",
-          "Custom infinity pool with cantilevered terrace",
-          "Precision-crafted architectural concrete elements"
+          "High performance glazing systems with precise detailing and installation",
+          "Advanced building management & lighting control integration",
+          "Custom architectural concrete & exposed structural elements",
+          "Premium interior finishes with attention to lighting and experience"
         ],
         gallery: [
-         "/images/ChatGPT Image Sep 29, 2026, 03_46_28 PM.png",
-         "/images/ChatGPT Image Sep 29, 2026, 03_47_33 PM.png",
-         "/images/ChatGPT Image Sep 29, 2026, 03_48_35 PM.png",
-         "/images/ChatGPT Image Sep 29, 2026, 03_50_12 PM.png",
-         "/images/ChatGPT Image Sep 29, 2026, 03_49_36 PM.png",
-         "/images/ChatGPT Image Sep 29, 2026, 03_55_30 PM.png",
-         "/images/ChatGPT Image Sep 29, 2026, 03_56_17 PM.png"
+         "/images/ajfanExterior1.png",
+         "/images/ajfanExterior2.png",
+         "/images/ajfanExterior3.png",
+         "/images/ajfanInterior1.png",
+         "/images/ajfanInterior2.png",
+         "/images/ajfanInterior3.png",
+         "/images/ajfanInterior4.png",
+         "/images/ajfanInterior5.png",
+         "/images/ajfanInterior6.png",
+        //  "/images/ajfanInterior7.png",
+         "/images/ajfanInterior8.png",
+         "/images/ajfanInterior9.png",
+         "/images/ajfanInterior10.png",
+         "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Ajfan/AJFAN+WORK+PHOTOS+1/IMG-20250206-WA0058.jpg",
+         "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Ajfan/AJFAN+WORK+PHOTOS+1/IMG-20250206-WA0052.jpg",
+         "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Ajfan/AJFAN+WORK+PHOTOS+1/IMG-20250206-WA0054.jpg",
+         "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Ajfan/AJFAN+WORK+PHOTOS+1/IMG-20250206-WA0053.jpg",
+         "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Ajfan/AJFAN+WORK+PHOTOS+1/IMG-20250206-WA0013.jpg",
+         
+        
         ]
       },
        {
@@ -80,14 +102,18 @@ export const projectsData = {
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00182.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00192.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00564.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00585.jpg"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00585.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00178.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00184.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00165.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00195+(1).jpg"
         ]
       },
 
         {
         id: "Kayal-Pattinam-House",
         title: "RESIDENCE , Kayalpattinam",
-        client: "unknown",
+        client: "Mr. Sayed Abu Thair",
         status: "Completed ✓",
         category: "Completed",
         location: "Kayal Pattinam, Tamil Nadu",
@@ -95,7 +121,7 @@ export const projectsData = {
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/61.jpg",
-        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+        description: "A contemporary villa featuring clean architectural lines, spacious interiors and seamless indoor-outdoor living. Designed to balance modern aesthetics with comfort, the residence offers a refined setting for family life.",
         highlights: [
           "Floor-to-ceiling acoustic glazing panels",
           "State-of-the-art climate automation system",
@@ -104,10 +130,21 @@ export const projectsData = {
         ],
         gallery: [
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/169.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/7.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Design/24.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/59.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/3.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/6.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/2.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/45.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/11.jpg"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/33.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/8.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_15.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_18.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_22.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Work+Photos/IMG-20250117-WA1447.jpg",
+          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Work+Photos/IMG-20250117-WA1197.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Work+Photos/IMG-20250117-WA1350.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Work+Photos/IMG-20250117-WA1693.jpg"
          
         ]
       },
@@ -130,12 +167,25 @@ export const projectsData = {
           "Precision-crafted architectural concrete elements"
         ],
         gallery: [
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/247.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00010.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/252.jpg",
+          
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/205.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/220.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/223.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/247.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/235.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/260.jpg"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/224.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/228.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/233.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/241.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/230.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00013.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00014.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/KONDOTTY+WORK+PHOTOS/42.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/KONDOTTY+WORK+PHOTOS/7+(2).jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/KONDOTTY+WORK+PHOTOS/72.jpg"
+          
         ]
       },
        {
@@ -158,38 +208,48 @@ export const projectsData = {
         ],
         gallery: [
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4272.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2652.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/DJI_0065.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2435.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2652.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2542.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4420.jpg"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4420.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2493.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2510.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2554.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4466.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4417.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/TIARA+WORK+PHOTOS/IMG-20250120-WA0043.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/TIARA+WORK+PHOTOS/IMG-20250120-WA0279.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/TIARA+WORK+PHOTOS/IMG-20250120-WA0007.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/TIARA+WORK+PHOTOS/IMG-20250120-WA0187.jpg"
         ]
       },
-      {
-        id: "skaris-grand-residence",
-        title: "Skari's Grand Residence",
-        client: "Mr. Samad Kari",
-        status: "Completed ✓",
-        category: "Completed",
-        location: "Kochi, Kerala",
-        area: "7,800 sq.ft",
-        year: "2023",
-        scope: "Full-Cycle Turnkey Construction & Landscaping",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00012.jpg",
-        description: "A large-scale residence defined by generous proportions, double-height spaces, and detailed architectural finishes. The project brings together spacious interiors, custom stonework, and carefully executed structural elements to create a distinctive family home.",
-        highlights: [
-          "Reinforced seismic structural framework",
-          "Custom imported natural stone cladding",
-          "Panoramic floor-to-ceiling glass elevations",
-          "Lush landscaped water courtyards and private gardens"
-        ],
-        gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00001.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00010.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00011.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00012.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00004.jpg"
-        ]
-      },
+      // {
+      //   id: "skaris-grand-residence",
+      //   title: "Skari's Grand Residence",
+      //   client: "Mr. Samad Kari",
+      //   status: "Completed ✓",
+      //   category: "Completed",
+      //   location: "Kochi, Kerala",
+      //   area: "7,800 sq.ft",
+      //   year: "2023",
+      //   scope: "Full-Cycle Turnkey Construction & Landscaping",
+      //   bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00012.jpg",
+      //   description: "A large-scale residence defined by generous proportions, double-height spaces, and detailed architectural finishes. The project brings together spacious interiors, custom stonework, and carefully executed structural elements to create a distinctive family home.",
+      //   highlights: [
+      //     "Reinforced seismic structural framework",
+      //     "Custom imported natural stone cladding",
+      //     "Panoramic floor-to-ceiling glass elevations",
+      //     "Lush landscaped water courtyards and private gardens"
+      //   ],
+      //   gallery: [
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00001.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00010.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00011.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00012.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00004.jpg"
+      //   ]
+      // },
       {
         id: "Dr.-Sharath-Home",
         title: "RESIDENCE, Thirunnavaya",
@@ -209,41 +269,47 @@ export const projectsData = {
           "Precision-crafted architectural concrete elements"
         ],
         gallery: [
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00038.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00022.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00003.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00030.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00016.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00009.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00021.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00024.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00008.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00024.jpg"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00021.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Work+on+going+1.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Work+on+going+2.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Work+on+going.jpeg"
         ]
       },
-      {
-        id: "Seyed-Abu-Thahir-Residence",
-        title: "RESIDENCE, MALAPPURAM",
-        client: "Mr. Sayed Abu Thair",
-        status: "Completed ✓",
-        category: "Completed",
-        location: "MALAPPURAM,Kerala",
-        area: "5,200 sq.ft",
-        year: "2024",
-        scope: "Structural Engineering & Turnkey Finishing",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_81.jpg",
-        description: "A luxury modern villa featuring expansive glass facades, architectural lighting, and generous outdoor spaces. The project combines open-plan interiors with strong structural execution and detailed exterior finishing.",
-        highlights: [
-          "Floor-to-ceiling acoustic glazing panels",
-          "State-of-the-art climate automation system",
-          "Custom infinity pool with cantilevered terrace",
-          "Precision-crafted architectural concrete elements"
-        ],
-        gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_10.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_55.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_64.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_67.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_34.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_79.jpg"
-        ]
-      },
+      // {
+      //   id: "Seyed-Abu-Thahir-Residence",
+      //   title: "RESIDENCE, MALAPPURAM",
+      //   client: "Mr. Sayed Abu Thair",
+      //   status: "Completed ✓",
+      //   category: "Completed",
+      //   location: "MALAPPURAM,Kerala",
+      //   area: "5,200 sq.ft",
+      //   year: "2024",
+      //   scope: "Structural Engineering & Turnkey Finishing",
+      //   bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_81.jpg",
+      //   description: "A luxury modern villa featuring expansive glass facades, architectural lighting, and generous outdoor spaces. The project combines open-plan interiors with strong structural execution and detailed exterior finishing.",
+      //   highlights: [
+      //     "Floor-to-ceiling acoustic glazing panels",
+      //     "State-of-the-art climate automation system",
+      //     "Custom infinity pool with cantilevered terrace",
+      //     "Precision-crafted architectural concrete elements"
+      //   ],
+      //   gallery: [
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_10.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_55.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_64.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_67.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_34.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_79.jpg"
+      //   ]
+      // },
      
       //  {
       //   id: "Bawa-Jamjoom-Home",
@@ -307,7 +373,7 @@ export const projectsData = {
         area: "18,500 sq.ft",
         year: "2025",
         scope: "Commercial Healthcare Civil & MEP Works",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/WhatsApp+Image+2026-01-05+at+4.17.29+PM.jpeg",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f0.png",
         description: "A multi-storey commercial facility under construction in Calicut. With a contemporary glass facade and clean architectural lines, the project is being developed to accommodate modern office and commercial requirements.",
         highlights: [
           "Specialized medical gas pipeline structural framing",
@@ -318,11 +384,18 @@ export const projectsData = {
         gallery: [
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f.png",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f1.png",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f0.png"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f0.png",
+          "/images/racinterior1.png",
+          "/images/racinterior2.png",
+          "/images/racinterior3.png",
+          "/images/racinterior4.png",
+          "/images/racinterior6.png",
+          "/images/racinterior5.png",
+          
         ]
       },
 
-     
+
       {
         id: "Tiara-Walk-Perinthalmanna",
         title: "Tiara Walk Perinthalmanna",
@@ -345,7 +418,8 @@ export const projectsData = {
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0023.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0024.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0024.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0025.jpg"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0025.jpg",
+         
         ]
       },
 

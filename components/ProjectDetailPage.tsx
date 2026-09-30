@@ -16,10 +16,11 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
     notFound();
   }
 
-  // First 3 images for Row 1, next 3 images for Row 2
   const gallery = project.gallery || [];
-  const firstBlock = gallery.slice(0, 3);
-  const secondBlock = gallery.slice(3, 6);
+  const galleryBlocks: string[][] = [];
+  for (let i = 0; i < gallery.length; i += 3) {
+    galleryBlocks.push(gallery.slice(i, i + 3));
+  }
 
   return (
     <div className="min-h-screen bg-[#111318] text-white pt-24 md:pt-32 pb-24 font-['Menbere']">
@@ -88,106 +89,117 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
             <div className="flex-grow h-[1.5px] bg-white w-full sm:w-auto sm:mt-8"></div>
           </div>
 
-          {/* Image Gallery (6 Images using the signature 3-image layout structure) */}
-          {gallery.length > 0 && (
+          {/* Image Gallery (Dynamic alternating 3-image block pattern) */}
+          {galleryBlocks.length > 0 && (
             <div className="flex flex-col gap-6 md:gap-8">
-              {/* Block 1 (Images 1, 2, 3): Left 2 Stacked Horizontal Cards, Right 1 Tall Vertical Card */}
-              {firstBlock.length > 0 && (
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-stretch">
-                  {/* Left Column: 2 Stacked Horizontal Cards */}
-                  <div className="md:col-span-7 flex flex-col gap-6 md:gap-8">
-                    {firstBlock[0] && (
-                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
-                        <SafeImage
-                          src={firstBlock[0]}
-                          alt="Gallery Image 1"
-                          fill
-                          sizes="(max-width: 768px) 100vw, 60vw"
-                          quality={75}
-                          className="object-cover"
-                        />
-                      </div>
-                    )}
-                    {firstBlock[1] && (
-                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
-                        <SafeImage
-                          src={firstBlock[1]}
-                          alt="Gallery Image 2"
-                          fill
-                          sizes="(max-width: 768px) 100vw, 60vw"
-                          quality={75}
-                          className="object-cover"
-                        />
-                      </div>
-                    )}
-                  </div>
+              {galleryBlocks.map((block, blockIdx) => {
+                const isEvenBlock = blockIdx % 2 === 0;
+                const baseIndex = blockIdx * 3;
 
-                  {/* Right Column: 1 Tall Vertical Card */}
-                  <div className="md:col-span-5 flex">
-                    {firstBlock[2] && (
-                      <div className="w-full h-full min-h-[350px] md:min-h-full rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
-                        <SafeImage
-                          src={firstBlock[2]}
-                          alt="Gallery Image 3"
-                          fill
-                          sizes="(max-width: 768px) 100vw, 40vw"
-                          quality={75}
-                          className="object-cover"
-                        />
+                if (isEvenBlock) {
+                  return (
+                    <div
+                      key={blockIdx}
+                      className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-stretch"
+                    >
+                      {/* Left Column: 2 Stacked Horizontal Cards */}
+                      <div className="md:col-span-7 flex flex-col gap-6 md:gap-8">
+                        {block[0] && (
+                          <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                            <SafeImage
+                              src={block[0]}
+                              alt={`Gallery Image ${baseIndex + 1}`}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 60vw"
+                              quality={75}
+                              className="object-cover"
+                            />
+                          </div>
+                        )}
+                        {block[1] && (
+                          <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                            <SafeImage
+                              src={block[1]}
+                              alt={`Gallery Image ${baseIndex + 2}`}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 60vw"
+                              quality={75}
+                              className="object-cover"
+                            />
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
-                </div>
-              )}
 
-              {/* Block 2 (Images 4, 5, 6): Left 1 Tall Vertical Card, Right 2 Stacked Horizontal Cards */}
-              {secondBlock.length > 0 && (
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-stretch">
-                  {/* Left Column: 1 Tall Vertical Card */}
-                  <div className="md:col-span-5 flex">
-                    {secondBlock[0] && (
-                      <div className="w-full h-full min-h-[350px] md:min-h-full rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
-                        <SafeImage
-                          src={secondBlock[0]}
-                          alt="Gallery Image 4"
-                          fill
-                          sizes="(max-width: 768px) 100vw, 40vw"
-                          quality={75}
-                          className="object-cover"
-                        />
+                      {/* Right Column: 1 Tall Vertical Card */}
+                      <div className="md:col-span-5 flex">
+                        {block[2] && (
+                          <div className="w-full h-full min-h-[350px] md:min-h-full rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                            <SafeImage
+                              src={block[2]}
+                              alt={`Gallery Image ${baseIndex + 3}`}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 40vw"
+                              quality={75}
+                              className="object-cover"
+                            />
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
+                    </div>
+                  );
+                } else {
+                  return (
+                    <div
+                      key={blockIdx}
+                      className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-stretch"
+                    >
+                      {/* Left Column: 1 Tall Vertical Card */}
+                      <div className="md:col-span-5 flex">
+                        {block[0] && (
+                          <div className="w-full h-full min-h-[350px] md:min-h-full rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                            <SafeImage
+                              src={block[0]}
+                              alt={`Gallery Image ${baseIndex + 1}`}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 40vw"
+                              quality={75}
+                              className="object-cover"
+                            />
+                          </div>
+                        )}
+                      </div>
 
-                  {/* Right Column: 2 Stacked Horizontal Cards */}
-                  <div className="md:col-span-7 flex flex-col gap-6 md:gap-8">
-                    {secondBlock[1] && (
-                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
-                        <SafeImage
-                          src={secondBlock[1]}
-                          alt="Gallery Image 5"
-                          fill
-                          sizes="(max-width: 768px) 100vw, 60vw"
-                          quality={75}
-                          className="object-cover"
-                        />
+                      {/* Right Column: 2 Stacked Horizontal Cards */}
+                      <div className="md:col-span-7 flex flex-col gap-6 md:gap-8">
+                        {block[1] && (
+                          <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                            <SafeImage
+                              src={block[1]}
+                              alt={`Gallery Image ${baseIndex + 2}`}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 60vw"
+                              quality={75}
+                              className="object-cover"
+                            />
+                          </div>
+                        )}
+                        {block[2] && (
+                          <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
+                            <SafeImage
+                              src={block[2]}
+                              alt={`Gallery Image ${baseIndex + 3}`}
+                              fill
+                              sizes="(max-width: 768px) 100vw, 60vw"
+                              quality={75}
+                              className="object-cover"
+                            />
+                          </div>
+                        )}
                       </div>
-                    )}
-                    {secondBlock[2] && (
-                      <div className="w-full aspect-[16/10] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl relative bg-[#1a1d24]">
-                        <SafeImage
-                          src={secondBlock[2]}
-                          alt="Gallery Image 6"
-                          fill
-                          sizes="(max-width: 768px) 100vw, 60vw"
-                          quality={75}
-                          className="object-cover"
-                        />
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )}
+                    </div>
+                  );
+                }
+              })}
             </div>
           )}
         </motion.div>
