@@ -60,7 +60,7 @@ export const homeData = {
         title: "RAC calicut",
         client: "Shibili Rahman",
         status: "Under Construction",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/WhatsApp+Image+2026-01-05+at+4.17.29+PM.jpeg",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f0.png",
       },
       {
         id: "Tiara-Walk-Perinthalmanna",
