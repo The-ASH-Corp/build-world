@@ -3,28 +3,165 @@ export const projectsData = {
     tabs: ["Completed", "Under Construction"],
     works: [
       {
-        id: "residence-calicut",
-        title: "Maab Square ",
-        client: "Mr. Balagopal",
+        id: "arshads-residency",
+        title: "RESIDENCE, ARIPRA",
+        client: "Mr. Arshad Noufal",
         status: "Completed ✓",
         category: "Completed",
-        location: "Thirurkkad, Kerala",
-        area: "4,500 sq.ft",
+        location: "ARIPRA, Kerala",
+        area: "5,200 sq.ft",
         year: "2024",
-        scope: "Architectural Design, Structural Engineering & Interior Works",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Night+View.jpg",
-        description: "A modern commercial project designed to support active business operations. The building combines clean exterior lines, structural glazing, and efficient floor planning to create practical spaces with good natural light and flexibility for commercial use.",
+        scope: "Structural Engineering & Turnkey Finishing",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/1+N.jpg",
+        description: "A contemporary family residence designed around clean forms and open living spaces. The layout creates a natural connection between indoor and outdoor areas, with careful attention to functionality and finishing throughout the home.",
         highlights: [
-          "Custom cantilevered balconies and deep overhangs",
-          "Integrated ambient smart lighting systems",
-          "High-efficiency thermal insulation and ventilation",
-          "Premium Italian marble and bespoke woodwork craftsmanship"
+          "Floor-to-ceiling acoustic glazing panels",
+          "State-of-the-art climate automation system",
+          "Custom infinity pool with cantilevered terrace",
+          "Precision-crafted architectural concrete elements"
         ],
         gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Day+View.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Front+View.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Day+View.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Tirurkad++Exterior+view+option+2.jpg"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_4.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/4+N.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/7+N.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/5+N.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/16+N.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/8+N.jpg"
+        ]
+      },
+       {
+        id: "ajfan",
+        title: "Ajfan",
+        client: "Mr. Mohamed Kutty",
+        status: "Completed ✓",
+        category: "Completed",
+        location: "Kottakkal, Kerala",
+        area: "5,200 sq.ft",
+        year: "2024",
+        scope: "Structural Engineering & Turnkey Finishing",
+        bg: "/images/imgi_27_ajfan-banner.jpg",
+        description: "",
+        highlights: [
+          "Floor-to-ceiling acoustic glazing panels",
+          "State-of-the-art climate automation system",
+          "Custom infinity pool with cantilevered terrace",
+          "Precision-crafted architectural concrete elements"
+        ],
+        gallery: [
+         "/images/ChatGPT Image Sep 29, 2026, 03_46_28 PM.png",
+         "/images/ChatGPT Image Sep 29, 2026, 03_47_33 PM.png",
+         "/images/ChatGPT Image Sep 29, 2026, 03_48_35 PM.png",
+         "/images/ChatGPT Image Sep 29, 2026, 03_50_12 PM.png",
+         "/images/ChatGPT Image Sep 29, 2026, 03_49_36 PM.png",
+         "/images/ChatGPT Image Sep 29, 2026, 03_55_30 PM.png",
+         "/images/ChatGPT Image Sep 29, 2026, 03_56_17 PM.png"
+        ]
+      },
+       {
+        id: "era-nature-park",
+        title: "ERA Nature Park",
+        client: "ERA Developers & Resorts",
+        status: "Completed ✓",
+        category: "Completed",
+        location: "Wayanad, Kerala",
+        area: "15 Acres",
+        year: "2023",
+        scope: "Eco-Resort Infrastructure & Civil Development",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Design/VIEW+14.jpg",
+        description: "An eco-tourism and leisure development planned around its natural surroundings. The project involved strong civil and structural execution while taking care to work with the existing terrain and preserve the character of the site.",
+        highlights: [
+          "Eco-friendly slope stabilization & contour management",
+          "Sustainable storm-water drainage architecture",
+          "Heavy-timber and steel hybrid pavilions",
+          "Integrated nature walkways, footbridges & waterbodies"
+        ],
+        gallery: [
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00196.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00182.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00192.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00564.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00585.jpg"
+        ]
+      },
+
+        {
+        id: "Kayal-Pattinam-House",
+        title: "RESIDENCE , Kayalpattinam",
+        client: "unknown",
+        status: "Completed ✓",
+        category: "Completed",
+        location: "Kayal Pattinam, Tamil Nadu",
+        area: "5,200 sq.ft",
+        year: "2024",
+        scope: "Structural Engineering & Turnkey Finishing",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/61.jpg",
+        description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+        highlights: [
+          "Floor-to-ceiling acoustic glazing panels",
+          "State-of-the-art climate automation system",
+          "Custom infinity pool with cantilevered terrace",
+          "Precision-crafted architectural concrete elements"
+        ],
+        gallery: [
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/169.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/7.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/2.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/45.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/11.jpg"
+         
+        ]
+      },
+       {
+        id: "Kondotty-House",
+        title: "RESIDENCE Kondotty",
+        client: "Mr. Samad Kari",
+        status: "Completed ✓",
+        category: "Completed",
+        location: "Kondotty, Kerala",
+        area: "11000 sq.ft",
+        year: "2024",
+        scope: "Structural Engineering & Turnkey Finishing",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/250.jpg",
+        description: "A contemporary residence built around clean architectural lines and practical living spaces. The construction brings together structural strength, thoughtful planning, and careful finishing to create a comfortable modern home.",
+        highlights: [
+          "Floor-to-ceiling acoustic glazing panels",
+          "State-of-the-art climate automation system",
+          "Custom infinity pool with cantilevered terrace",
+          "Precision-crafted architectural concrete elements"
+        ],
+        gallery: [
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/205.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/220.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/223.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/247.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/235.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/260.jpg"
+        ]
+      },
+       {
+        id: "Tiara",
+        title: "Tiara",
+        client: "Tiara",
+        status: "Completed ✓",
+        category: "Completed",
+        location: "Malappuram, Kerala",
+        area: "5,200 sq.ft",
+        year: "2024",
+        scope: "Structural Engineering & Turnkey Finishing",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2460.jpg",
+        description: "A high-end hospitality project executed with close attention to structural precision, interior finishing, and essential building services. The project was delivered to meet the requirements of a modern hotel environment while maintaining a refined overall finish.",
+        highlights: [
+          "Floor-to-ceiling acoustic glazing panels",
+          "State-of-the-art climate automation system",
+          "Custom infinity pool with cantilevered terrace",
+          "Precision-crafted architectural concrete elements"
+        ],
+        gallery: [
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4272.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2652.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2435.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2542.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4420.jpg"
         ]
       },
       {
@@ -54,85 +191,6 @@ export const projectsData = {
         ]
       },
       {
-        id: "era-nature-park",
-        title: "ERA Nature Park",
-        client: "ERA Developers & Resorts",
-        status: "Completed ✓",
-        category: "Completed",
-        location: "Wayanad, Kerala",
-        area: "15 Acres",
-        year: "2023",
-        scope: "Eco-Resort Infrastructure & Civil Development",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Design/VIEW+14.jpg",
-        description: "An eco-tourism and leisure development planned around its natural surroundings. The project involved strong civil and structural execution while taking care to work with the existing terrain and preserve the character of the site.",
-        highlights: [
-          "Eco-friendly slope stabilization & contour management",
-          "Sustainable storm-water drainage architecture",
-          "Heavy-timber and steel hybrid pavilions",
-          "Integrated nature walkways, footbridges & waterbodies"
-        ],
-        gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00196.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00182.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00192.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00564.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00585.jpg"
-        ]
-      },
-      {
-        id: "arshads-residency",
-        title: "RESIDENCE, ARIPRA",
-        client: "Mr. Arshad Noufal",
-        status: "Completed ✓",
-        category: "Completed",
-        location: "ARIPRA, Kerala",
-        area: "5,200 sq.ft",
-        year: "2024",
-        scope: "Structural Engineering & Turnkey Finishing",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/1+N.jpg",
-        description: "A contemporary family residence designed around clean forms and open living spaces. The layout creates a natural connection between indoor and outdoor areas, with careful attention to functionality and finishing throughout the home.",
-        highlights: [
-          "Floor-to-ceiling acoustic glazing panels",
-          "State-of-the-art climate automation system",
-          "Custom infinity pool with cantilevered terrace",
-          "Precision-crafted architectural concrete elements"
-        ],
-        gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Photos/SLIT+HOME_Concetto+Design_4.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/4+N.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/7+N.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/5+N.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/16+N.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/Interior+views/8+N.jpg"
-        ]
-      },
-       {
-        id: "Bawa-Jamjoom-Home",
-        title: "RESIDENCE, Malappuram",
-        client: "Mr. Shabeer Jamjoom",
-        status: "Completed ✓",
-        category: "Completed",
-        location: "Malappuram, Kerala",
-        area: "5,200 sq.ft",
-        year: "2024",
-        scope: "Structural Engineering & Turnkey Finishing",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04105-01.jpeg",
-        description: "A multi-level modern residence combining strong architectural elements with spacious balconies and warm interior detailing. The home was planned for comfortable family living while maintaining a distinctive contemporary character.",
-        highlights: [
-          "Floor-to-ceiling acoustic glazing panels",
-          "State-of-the-art climate automation system",
-          "Custom infinity pool with cantilevered terrace",
-          "Precision-crafted architectural concrete elements"
-        ],
-        gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04094-01.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04144-01.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04213-01.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04210-01.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04270-01.jpeg"
-        ]
-      },
-       {
         id: "Dr.-Sharath-Home",
         title: "RESIDENCE, Thirunnavaya",
         client: "Dr. Sharath",
@@ -159,7 +217,7 @@ export const projectsData = {
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00024.jpg"
         ]
       },
-       {
+      {
         id: "Seyed-Abu-Thahir-Residence",
         title: "RESIDENCE, MALAPPURAM",
         client: "Mr. Sayed Abu Thair",
@@ -186,72 +244,19 @@ export const projectsData = {
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_79.jpg"
         ]
       },
-      {
-        id: "Kondotty-House",
-        title: "RESIDENCE Kondotty",
-        client: "Mr. Samad Kari",
-        status: "Completed ✓",
-        category: "Completed",
-        location: "Kondotty, Kerala",
-        area: "11000 sq.ft",
-        year: "2024",
-        scope: "Structural Engineering & Turnkey Finishing",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/250.jpg",
-        description: "A contemporary residence built around clean architectural lines and practical living spaces. The construction brings together structural strength, thoughtful planning, and careful finishing to create a comfortable modern home.",
-        highlights: [
-          "Floor-to-ceiling acoustic glazing panels",
-          "State-of-the-art climate automation system",
-          "Custom infinity pool with cantilevered terrace",
-          "Precision-crafted architectural concrete elements"
-        ],
-        gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/205.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/220.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/223.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/247.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/235.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/260.jpg"
-        ]
-      },
-      {
-        id: "Tiara",
-        title: "Tiara",
-        client: "Tiara",
-        status: "Completed ✓",
-        category: "Completed",
-        location: "Malappuram, Kerala",
-        area: "5,200 sq.ft",
-        year: "2024",
-        scope: "Structural Engineering & Turnkey Finishing",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2460.jpg",
-        description: "A high-end hospitality project executed with close attention to structural precision, interior finishing, and essential building services. The project was delivered to meet the requirements of a modern hotel environment while maintaining a refined overall finish.",
-        highlights: [
-          "Floor-to-ceiling acoustic glazing panels",
-          "State-of-the-art climate automation system",
-          "Custom infinity pool with cantilevered terrace",
-          "Precision-crafted architectural concrete elements"
-        ],
-        gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4272.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2652.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2435.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP2542.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Build+world++Tiara/Interior/_PEP4420.jpg"
-        ]
-      },
-      
+     
       //  {
-      //   id: "Kayal-Pattinam-House",
-      //   title: "RESIDENCE , Kayalpattinam",
-      //   client: "unknown",
+      //   id: "Bawa-Jamjoom-Home",
+      //   title: "RESIDENCE, Malappuram",
+      //   client: "Mr. Shabeer Jamjoom",
       //   status: "Completed ✓",
       //   category: "Completed",
-      //   location: "Kayal Pattinam, Tamil Nadu",
+      //   location: "Malappuram, Kerala",
       //   area: "5,200 sq.ft",
       //   year: "2024",
       //   scope: "Structural Engineering & Turnkey Finishing",
-      //   bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/61.jpg",
-      //   description: "An ultra-modern villa project emphasizing clean geometric lines, open floor plans, and seamless indoor-outdoor transitions for upscale family living.",
+      //   bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04105-01.jpeg",
+      //   description: "A multi-level modern residence combining strong architectural elements with spacious balconies and warm interior detailing. The home was planned for comfortable family living while maintaining a distinctive contemporary character.",
       //   highlights: [
       //     "Floor-to-ceiling acoustic glazing panels",
       //     "State-of-the-art climate automation system",
@@ -259,15 +264,38 @@ export const projectsData = {
       //     "Precision-crafted architectural concrete elements"
       //   ],
       //   gallery: [
-      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/169.jpg",
-      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/7.jpg",
-      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/2.jpg",
-      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/45.jpg",
-      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/11.jpg"
-         
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04094-01.jpeg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04144-01.jpeg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04213-01.jpeg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04210-01.jpeg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04270-01.jpeg"
       //   ]
       // },
-
+      // {
+        //   id: "residence-calicut",
+        //   title: "Maab Square ",
+        //   client: "Mr. Balagopal",
+        //   status: "Completed ✓",
+      //   category: "Completed",
+      //   location: "Thirurkkad, Kerala",
+      //   area: "4,500 sq.ft",
+      //   year: "2024",
+      //   scope: "Architectural Design, Structural Engineering & Interior Works",
+      //   bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Night+View.jpg",
+      //   description: "A modern commercial project designed to support active business operations. The building combines clean exterior lines, structural glazing, and efficient floor planning to create practical spaces with good natural light and flexibility for commercial use.",
+      //   highlights: [
+      //     "Custom cantilevered balconies and deep overhangs",
+      //     "Integrated ambient smart lighting systems",
+      //     "High-efficiency thermal insulation and ventilation",
+      //     "Premium Italian marble and bespoke woodwork craftsmanship"
+      //   ],
+      //   gallery: [
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Day+View.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Front+View.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Day+View.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Maab+Square+Thirurkkad/Tirurkad++Exterior+view+option+2.jpg"
+      //   ]
+      // },
 
       {
         id: "RAC",
@@ -346,8 +374,8 @@ export const projectsData = {
         ]
       },
       {
-        id:"Arya-Perl-Hotel",
-        title:"Arya Perl Hotel",
+        id:"Ayra-Perl-Hotel",
+        title:"Ayra Perl Hotel",
         client: "unknown",
         status:"Under Construction",
         category:"Under Construction",
