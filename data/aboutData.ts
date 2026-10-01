@@ -40,7 +40,7 @@ export const aboutData = {
           name: "Er. Feroz Kalathil",
           role: "CEO & CO-FOUNDER",
           description: "Er. Feroz Kalathil is the CEO and Co-Founder of Build World Constructions Pvt. Ltd., with more than 25 years of experience in the construction industry. His professional experience includes involvement in major projects such as the Makkah Haram Masjid and the American Consulate in Jeddah, KSA, as well as the Shifa Al-Jazeera Medical Center in Sharjah, UAE. His experience continues to shape Build World’s approach to quality, precision, and responsible execution. His leadership and technical background continue to guide the team in maintaining high standards throughout the construction process.",
-          image: "/images/laShQCkW1gKUyFZ61FN0jwJXQ.png"
+          image: "/images/firoz.png"
         },
         {
           name: "Mr. Abdul Muneer",
