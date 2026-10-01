@@ -180,7 +180,7 @@ export default function LeadershipSection() {
                 transition={{ duration: 0.35, ease: "easeInOut" }}
                 src={member.image}
                 alt={member.name}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-top translate-y-15"
               />
             </AnimatePresence>
           </div>

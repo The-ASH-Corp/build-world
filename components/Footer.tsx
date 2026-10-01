@@ -67,11 +67,11 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%] py-8 flex flex-col lg:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-[10px]">&copy; 2026 BuildWorld Construction LLC. All rights reserved.</p>
-          <div className="flex gap-6">
+          {/* <div className="flex gap-6">
             <Link href="#" className="hover:text-gray-300 transition-colors text-[10px]">Safety Act Compliance</Link>
             <Link href="#" className="hover:text-gray-300 transition-colors text-[10px]">Terms of Estimate</Link>
             <Link href="#" className="hover:text-gray-300 transition-colors text-[10px]">Privacy Protocol</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
