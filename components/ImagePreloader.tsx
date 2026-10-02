@@ -97,7 +97,12 @@ export default function ImagePreloader() {
       }
     };
 
-    preloadAllImages();
+    // Delay the preloader by 5 seconds so it doesn't block the Hero images from loading quickly!
+    const delayTimer = setTimeout(() => {
+      preloadAllImages();
+    }, 5000);
+    
+    return () => clearTimeout(delayTimer);
   }, []);
 
   return null;
