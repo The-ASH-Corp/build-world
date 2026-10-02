@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import { homeData } from "@/data/homeData";
 import { useRef } from "react";
 
@@ -24,13 +25,21 @@ export default function Hero() {
 
       {/* LAYER 1: Background Sky */}
       <motion.div
-        className="absolute inset-0 bg-cover bg-top bg-no-repeat z-0"
+        className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('/images/png2.png')",
           y: skyY,
           scale: skyScale,
         }}
-      />
+      >
+        <Image
+          src="/images/png2.png"
+          alt="Sky Background"
+          fill
+          priority
+          className="object-cover object-top"
+          sizes="100vw"
+        />
+      </motion.div>
 
       {/* Top Gradient for navbar contrast (above sky) */}
       <div className="absolute top-0 left-0 w-full h-48 bg-gradient-to-b from-black/60 to-transparent z-10 pointer-events-none" />
@@ -65,14 +74,22 @@ export default function Hero() {
 
       {/* LAYER 3: Foreground House */}
       <motion.div 
-        className="absolute inset-0 bg-cover bg-top bg-no-repeat z-20 pointer-events-none"
+        className="absolute inset-0 z-20 pointer-events-none"
         style={{ 
-          backgroundImage: `url(${hero.bgImage})`,
           y: houseY,
           scale: houseScale,
           transformOrigin: "bottom center",
         }}
-      />
+      >
+        <Image
+          src={hero.bgImage}
+          alt="Build World Hero"
+          fill
+          priority
+          className="object-cover object-top"
+          sizes="100vw"
+        />
+      </motion.div>
 
       {/* Bottom Gradient for buttons contrast (above house) */}
       <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-black/90 via-black/50 to-transparent z-20 pointer-events-none" />
