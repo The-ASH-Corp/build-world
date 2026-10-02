@@ -82,7 +82,7 @@ export default function Hero() {
         }}
       >
         <Image
-          src={hero.bgImage}
+          src="/images/png1.png"
           alt="Build World Hero"
           fill
           priority
