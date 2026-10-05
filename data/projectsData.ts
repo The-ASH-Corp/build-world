@@ -444,7 +444,9 @@ export const projectsData = {
         gallery: [
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/2.jpeg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/1.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/4.jpeg"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/4.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/5.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/3.jpeg",
         ]
       },
       {
