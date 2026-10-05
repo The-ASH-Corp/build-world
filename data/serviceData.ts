@@ -8,19 +8,19 @@ export const serviceData = [
   {
     title: "STRUCTURAL WORKS",
     description: "Our structural engineering team focuses on creating buildings that are strong, safe, and durable. We work closely with designers and project teams to ensure that structural requirements are met while keeping the overall design and functionality of the project in mind.",
-    image: "/images/6aATekDLTIngAm0ATP8I4Ny4os.png",
+    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Work+Photos/IMG-20250117-WA0174.jpg",
     imageLeft: false
   },
   {
     title: "INTERIOR & FINISHING WORKS",
     description: "We work alongside designers to bring interior plans to life, with careful attention to finishing, functionality, and detail. Our team focuses on executing each element as planned while creating spaces that feel comfortable, practical, and well finished.",
-    image: "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png",
+    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/New+folder/229.jpg",
     imageLeft: true
   },
   {
     title: "LANDSCAPING WORKS",
     description: "Our landscaping team works with designers to execute landscape plans that complement the building and its surroundings. We focus on creating outdoor spaces that are practical, visually appealing, and thoughtfully connected to the overall property.",
-    image: "/images/3lh7Gp608PyUSoL6ChW02fTk1lY.png",
+    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_21.jpg",
     imageLeft: false
   },
   {

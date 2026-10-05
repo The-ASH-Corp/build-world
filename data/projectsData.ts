@@ -89,7 +89,7 @@ export const projectsData = {
         area: "15 Acres",
         year: "2023",
         scope: "Eco-Resort Infrastructure & Civil Development",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Design/VIEW+14.jpg",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00165.jpg",
         description: "An eco-tourism and leisure development planned around its natural surroundings. The project involved strong civil and structural execution while taking care to work with the existing terrain and preserve the character of the site.",
         highlights: [
           "Eco-friendly slope stabilization & contour management",
@@ -106,7 +106,11 @@ export const projectsData = {
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00178.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00184.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00165.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00195+(1).jpg"
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00195+(1).jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Photos+and+Videos/IMG-20250124-WA0035.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Photos+and+Videos/IMG-20250124-WA1103.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Photos+and+Videos/IMG-20250124-WA1047.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Photos+and+Videos/IMG-20250124-WA1212.jpg"
         ]
       },
 
@@ -120,7 +124,7 @@ export const projectsData = {
         area: "5,200 sq.ft",
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/61.jpg",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_18.jpg",
         description: "A contemporary villa featuring clean architectural lines, spacious interiors and seamless indoor-outdoor living. Designed to balance modern aesthetics with comfort, the residence offers a refined setting for family life.",
         highlights: [
           "Floor-to-ceiling acoustic glazing panels",
@@ -130,7 +134,7 @@ export const projectsData = {
         ],
         gallery: [
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/169.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Design/24.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_7.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/59.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/3.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/House+Warming/Interior/6.jpg",
@@ -250,39 +254,39 @@ export const projectsData = {
       //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/Design/Skaris+residence'_00004.jpg"
       //   ]
       // },
-      {
-        id: "Dr.-Sharath-Home",
-        title: "RESIDENCE, Thirunnavaya",
-        client: "Dr. Sharath",
-        status: "Completed ✓",
-        category: "Completed",
-        location: "Thirunnavaya, Kerala",
-        area: "5,200 sq.ft",
-        year: "2024",
-        scope: "Structural Engineering & Turnkey Finishing",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00006.jpg",
-        description: "A modern residence focused on simple design, practical planning, and lasting construction. Natural light, ventilation, and comfortable living spaces were considered throughout, with clean finishing tailored to everyday family life.",
-        highlights: [
-          "Floor-to-ceiling acoustic glazing panels",
-          "State-of-the-art climate automation system",
-          "Custom infinity pool with cantilevered terrace",
-          "Precision-crafted architectural concrete elements"
-        ],
-        gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00038.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00022.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00003.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00030.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00016.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00009.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00024.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00008.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00021.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Work+on+going+1.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Work+on+going+2.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Work+on+going.jpeg"
-        ]
-      },
+      // {
+      //   id: "Dr.-Sharath-Home",
+      //   title: "RESIDENCE, Thirunnavaya",
+      //   client: "Dr. Sharath",
+      //   status: "Completed ✓",
+      //   category: "Completed",
+      //   location: "Thirunnavaya, Kerala",
+      //   area: "5,200 sq.ft",
+      //   year: "2024",
+      //   scope: "Structural Engineering & Turnkey Finishing",
+      //   bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00006.jpg",
+      //   description: "A modern residence focused on simple design, practical planning, and lasting construction. Natural light, ventilation, and comfortable living spaces were considered throughout, with clean finishing tailored to everyday family life.",
+      //   highlights: [
+      //     "Floor-to-ceiling acoustic glazing panels",
+      //     "State-of-the-art climate automation system",
+      //     "Custom infinity pool with cantilevered terrace",
+      //     "Precision-crafted architectural concrete elements"
+      //   ],
+      //   gallery: [
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00038.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00022.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00003.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00030.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00016.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00009.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00024.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00008.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Photo/Oneiro_00021.jpg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Work+on+going+1.jpeg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Work+on+going+2.jpeg",
+      //     "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Dr.+Sharath+Home+-+Thirunnavaya/Final+Handover/Work+on+going.jpeg"
+      //   ]
+      // },
       // {
       //   id: "Seyed-Abu-Thahir-Residence",
       //   title: "RESIDENCE, MALAPPURAM",
