@@ -151,17 +151,17 @@ export const homeData = {
       {
         title: "STRUCTURAL WORKS",
         text: "Our Skilled Structural Engineers Construct Buildings That Are Strong, Durable, And Aesthetically Pleasing. We Work In Consultation With Designers To Ensure That Our Structures Meet The Client’s Vision And Are Safe, Efficient, And Sustainable.",
-        img: "/images/6aATekDLTIngAm0ATP8I4Ny4os.png",
+        img: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Work+Photos/IMG-20250117-WA0174.jpg",
       },
       {
         title: "INTERIOR & FINISHING WORKS",
         text: "We Specialize In The Execution Of Interior Design Plans. We Work With Designers To Ensure That Their Visions Are Brought To Life, Transforming Spaces Into Personalized Havens That Reflect Your Unique Style And Preferences.",
-        img: "/images/XOpOtgpX7kcQ7Cc30bXSxgAJlY.png",
+        img: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/New+folder/229.jpg",
       },
       {
         title: "LANDSCAPING WORKS",
         text: "We Are A Team Of Experienced Landscapers Who Specialize In The Execution Of Landscape Design Plans. We Work With Designers To Ensure That Their Visions Are Brought To Life, Delivering High-Quality Landscaping That Is Both Beautiful And Functional.",
-        img: "/images/3lh7Gp608PyUSoL6ChW02fTk1lY.png",
+        img: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_21.jpg",
       },
     ],
   },

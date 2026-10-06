@@ -65,12 +65,12 @@ export default function AwardsPage() {
               className="w-full flex flex-col lg:flex-row bg-[#0d0e12] rounded-[24px] md:rounded-[28px] lg:rounded-[32px] overflow-hidden shadow-2xl"
             >
               {/* Image Side */}
-              <div className="w-full lg:w-[55%] xl:w-[60%] aspect-video lg:aspect-auto relative lg:min-h-[400px] bg-[#1a1d24] self-stretch">
+              <div className="w-full lg:w-[55%] xl:w-[60%] aspect-video relative bg-[#1a1d24] self-stretch">
                 <SafeImage
                   src={award.image}
                   alt={award.title}
                   fill
-                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 60vw, 1200px"
+                  sizes="(max-width: 1024px) 100vw, 60vw"
                   className="w-full h-full object-cover absolute inset-0"
                   priority={index < 2}
                   quality={85}
@@ -94,7 +94,6 @@ export default function AwardsPage() {
             </motion.div>
           ))}
         </div>
-
       </div>
     </div>
   );
