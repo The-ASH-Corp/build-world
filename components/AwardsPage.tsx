@@ -17,9 +17,9 @@ export default function AwardsPage() {
   return (
     <div ref={containerRef} className="w-full pt-32 pb-24 overflow-hidden relative min-h-screen bg-[#06070a]">
       <div className="w-full px-6 xl:px-24 2xl:px-[8%] flex flex-col items-center">
-        
+
         {/* Main Heading */}
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -29,24 +29,24 @@ export default function AwardsPage() {
         </motion.h1>
 
         {/* Certificates Grid */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-24 md:mb-40 max-w-4xl w-full"
         >
           {awardsData.certificates.map((cert, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               style={{ x: index === 0 ? xLeft : xRight }}
               className="w-full bg-white p-2 md:p-4 rounded-xl shadow-2xl flex items-center justify-center aspect-[4/5] overflow-hidden relative"
             >
-              <SafeImage 
-                src={cert} 
-                alt={`Certificate ${index + 1}`} 
-                fill 
-                sizes="(max-width: 768px) 100vw, 400px" 
-                className="object-contain p-2 md:p-4" 
+              <SafeImage
+                src={cert}
+                alt={`Certificate ${index + 1}`}
+                fill
+                sizes="(max-width: 768px) 100vw, 400px"
+                className="object-contain p-2 md:p-4"
                 quality={85}
               />
             </motion.div>
@@ -56,7 +56,7 @@ export default function AwardsPage() {
         {/* Awards List */}
         <div className="w-full flex flex-col gap-10 md:gap-16">
           {awardsData.awards.map((award, index) => (
-            <motion.div 
+            <motion.div
               key={award.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -66,9 +66,9 @@ export default function AwardsPage() {
             >
               {/* Image Side */}
               <div className="w-full md:w-[55%] lg:w-[60%] aspect-video md:aspect-auto  relative md:min-h-[400px]  bg-[#1a1d24] self-stretch">
-                <SafeImage 
-                  src={award.image} 
-                  alt={award.title} 
+                <SafeImage
+                  src={award.image}
+                  alt={award.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 1200px"
                   className="w-full h-full object-fit absolute inset-0"
@@ -86,7 +86,7 @@ export default function AwardsPage() {
                     {award.title}
                   </h3>
                 </div>
-                
+
                 <p className="font-['Menbere'] text-[14px] md:text-[16px] text-[#b0b0b0] leading-[1.8] mt-8 md:mt-16 xl:mt-24 text-left">
                   {award.description}
                 </p>
