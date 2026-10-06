@@ -16,14 +16,14 @@ export default function AwardsPage() {
 
   return (
     <div ref={containerRef} className="w-full pt-32 pb-24 overflow-hidden relative min-h-screen bg-[#06070a]">
-      <div className="w-full px-6 xl:px-24 2xl:px-[8%] flex flex-col items-center">
+      <div className="w-full px-6 md:px-12 xl:px-24 2xl:px-[8%] flex flex-col items-center">
 
         {/* Main Heading */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="font-['Menbere'] text-[36px] md:text-[60px] xl:text-[85px] font-bold text-white mb-16 md:mb-24 leading-[1.1] capitalize tracking-tight text-center"
+          className="font-['Menbere'] text-[36px] sm:text-[44px] md:text-[54px] lg:text-[64px] xl:text-[85px] font-bold text-white mb-12 sm:mb-16 md:mb-20 lg:mb-24 leading-[1.1] capitalize tracking-tight text-center"
         >
           {awardsData.title}
         </motion.h1>
@@ -33,7 +33,7 @@ export default function AwardsPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-24 md:mb-40 max-w-4xl w-full"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 mb-16 sm:mb-20 md:mb-24 lg:mb-36 max-w-4xl w-full"
         >
           {awardsData.certificates.map((cert, index) => (
             <motion.div
@@ -45,7 +45,7 @@ export default function AwardsPage() {
                 src={cert}
                 alt={`Certificate ${index + 1}`}
                 fill
-                sizes="(max-width: 768px) 100vw, 400px"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                 className="object-contain p-2 md:p-4"
                 quality={85}
               />
@@ -54,7 +54,7 @@ export default function AwardsPage() {
         </motion.div>
 
         {/* Awards List */}
-        <div className="w-full flex flex-col gap-10 md:gap-16">
+        <div className="w-full flex flex-col gap-8 sm:gap-10 md:gap-12 lg:gap-16">
           {awardsData.awards.map((award, index) => (
             <motion.div
               key={award.id}
@@ -62,39 +62,38 @@ export default function AwardsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="w-full flex flex-col md:flex-row bg-[#0d0e12] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl"
+              className="w-full flex flex-col lg:flex-row bg-[#0d0e12] rounded-[24px] md:rounded-[28px] lg:rounded-[32px] overflow-hidden shadow-2xl"
             >
               {/* Image Side */}
-              <div className="w-full md:w-[55%] lg:w-[60%] aspect-video md:aspect-auto  relative md:min-h-[400px]  bg-[#1a1d24] self-stretch">
+              <div className="w-full lg:w-[55%] xl:w-[60%] aspect-video relative bg-[#1a1d24] self-stretch">
                 <SafeImage
                   src={award.image}
                   alt={award.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 1200px"
-                  className="w-full h-full object-fit absolute inset-0"
+                  sizes="(max-width: 1024px) 100vw, 60vw"
+                  className="w-full h-full object-cover absolute inset-0"
                   priority={index < 2}
                   quality={85}
                 />
               </div>
 
               {/* Text Side */}
-              <div className="w-full md:w-[45%] lg:w-[40%] p-8 sm:p-10 md:p-12 lg:p-16 flex flex-col justify-center">
-                <div className="flex gap-3 md:gap-4 items-start">
+              <div className="w-full lg:w-[45%] xl:w-[40%] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 flex flex-col justify-center">
+                <div className="flex gap-3 sm:gap-4 items-start">
                   {/* Blue bar */}
-                  <div className="w-1.5 h-4 md:h-5 bg-[#2991ce] mt-1.5 md:mt-1 shrink-0"></div>
-                  <h3 className="font-['Menbere'] text-[18px] md:text-[20px] lg:text-[22px] font-bold text-white leading-snug">
+                  <div className="w-1.5 h-4 sm:h-5 bg-[#2991ce] mt-1 shrink-0"></div>
+                  <h3 className="font-['Menbere'] text-[18px] sm:text-[20px] lg:text-[22px] font-bold text-white leading-snug">
                     {award.title}
                   </h3>
                 </div>
 
-                <p className="font-['Menbere'] text-[14px] md:text-[16px] text-[#b0b0b0] leading-[1.8] mt-8 md:mt-16 xl:mt-24 text-left">
+                <p className="font-['Menbere'] text-[14px] sm:text-[15px] lg:text-[16px] text-[#b0b0b0] leading-[1.8] mt-6 sm:mt-8 lg:mt-12 xl:mt-16 text-left">
                   {award.description}
                 </p>
               </div>
             </motion.div>
           ))}
         </div>
-
       </div>
     </div>
   );
