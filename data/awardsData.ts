@@ -15,7 +15,7 @@ export const awardsData = {
       id: 2,
       title: "100 Malayalees Business Stars 2024",
       description: "Er. Feroz Kalathil and Managing Director Mr. Abdul Muneer received the Visionary Builder Award from film actor Abu Salim, in recognition of outstanding excellence in construction.",
-      image: "/images/award3.png" // placeholder
+      image: "/images/a631623d-4062-4d75-b5ac-334dc5f1c8cf.png" // placeholder
     },
     {
       id: 3,
