@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 export default function Partners() {
   const logos = [
-    { name: "FORMZ", img: "/images/imgi_48_for.png" },
-    { name: "JB GROUP", img: "/images/YKGuGPXFgwy4fRmG9drVHiSJ1c.png" },
-    { name: "d&e ARCHITECTS", img: "/images/tEnd1qHzR0WFFdeDnkabeYjJk.png" },
-    { name: "CONCETTO", img: "/images/imgi_47_co.png" }
+    { name: "FORMZ", img: "/images/imgi_48_for.webp" },
+    { name: "JB GROUP", img: "/images/YKGuGPXFgwy4fRmG9drVHiSJ1c.webp" },
+    { name: "d&e ARCHITECTS", img: "/images/tEnd1qHzR0WFFdeDnkabeYjJk.webp" },
+    { name: "CONCETTO", img: "/images/imgi_47_co.webp" }
   ];
 
   // Duplicate logos multiple times for a seamless infinite loop

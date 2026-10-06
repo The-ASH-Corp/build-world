@@ -41,7 +41,7 @@ export default function Navigation() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image 
-            src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.png" 
+            src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.webp" 
             alt="Build World Logo" 
             width={200} 
             height={60} 
@@ -93,7 +93,7 @@ export default function Navigation() {
             <div className="flex justify-between items-center mb-16">
               <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
                 <Image 
-                  src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.png" 
+                  src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.webp" 
                   alt="Build World Logo" 
                   width={200} 
                   height={60} 

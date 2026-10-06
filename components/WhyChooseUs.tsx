@@ -138,7 +138,7 @@ export default function WhyChooseUs() {
                     {/* Top Text */}
                     <div className="absolute top-6 left-6 right-6 flex items-center gap-3">
                        <div className="w-10 h-10 shrink-0 rounded-full bg-black/80 border border-white/20 p-1.5 flex items-center justify-center overflow-hidden backdrop-blur-sm">
-                          <img src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.png" className="w-full h-full object-contain brightness-0 invert" alt="Build World Logo" />
+                          <img src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.webp" className="w-full h-full object-contain brightness-0 invert" alt="Build World Logo" />
                        </div>
                        <div className="flex flex-col">
                          <p className="font-['Menbere'] text-white font-bold text-[15px] md:text-[18px] leading-tight line-clamp-1 drop-shadow-md">

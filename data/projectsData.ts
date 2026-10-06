@@ -48,7 +48,7 @@ export const projectsData = {
         area: "5,200 sq.ft",
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
-        bg: "/images/imgi_27_ajfan-banner.jpg",
+        bg: "/images/imgi_27_ajfan-banner.webp",
         description: "A flagship commercial building project executed in Kottakkal, featuring modern architectural facades, sophisticated interior lighting, and premium turnkey finishing tailored for a luxurious retail experience.",
         highlights: [
           "High performance glazing systems with precise detailing and installation",
@@ -57,19 +57,19 @@ export const projectsData = {
           "Premium interior finishes with attention to lighting and experience"
         ],
         gallery: [
-         "/images/ajfanExterior1.png",
-         "/images/ajfanExterior2.png",
-         "/images/ajfanExterior3.png",
-         "/images/ajfanInterior1.png",
-         "/images/ajfanInterior2.png",
-         "/images/ajfanInterior3.png",
-         "/images/ajfanInterior4.png",
-         "/images/ajfanInterior5.png",
-         "/images/ajfanInterior6.png",
-        //  "/images/ajfanInterior7.png",
-         "/images/ajfanInterior8.png",
-         "/images/ajfanInterior9.png",
-         "/images/ajfanInterior10.png",
+         "/images/ajfanExterior1.webp",
+         "/images/ajfanExterior2.webp",
+         "/images/ajfanExterior3.webp",
+         "/images/ajfanInterior1.webp",
+         "/images/ajfanInterior2.webp",
+         "/images/ajfanInterior3.webp",
+         "/images/ajfanInterior4.webp",
+         "/images/ajfanInterior5.webp",
+         "/images/ajfanInterior6.webp",
+        //  "/images/ajfanInterior7.webp",
+         "/images/ajfanInterior8.webp",
+         "/images/ajfanInterior9.webp",
+         "/images/ajfanInterior10.webp",
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Ajfan/AJFAN+WORK+PHOTOS+1/IMG-20250206-WA0058.jpg",
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Ajfan/AJFAN+WORK+PHOTOS+1/IMG-20250206-WA0052.jpg",
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Ajfan/AJFAN+WORK+PHOTOS+1/IMG-20250206-WA0054.jpg",
@@ -89,7 +89,7 @@ export const projectsData = {
         area: "15 Acres",
         year: "2023",
         scope: "Eco-Resort Infrastructure & Civil Development",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/From+Thaj/ERA+PHOTOS/POP00165.jpg",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00585.jpg",
         description: "An eco-tourism and leisure development planned around its natural surroundings. The project involved strong civil and structural execution while taking care to work with the existing terrain and preserve the character of the site.",
         highlights: [
           "Eco-friendly slope stabilization & contour management",
@@ -389,12 +389,12 @@ export const projectsData = {
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f.png",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f1.png",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f0.png",
-          "/images/racinterior1.png",
-          "/images/racinterior2.png",
-          "/images/racinterior3.png",
-          "/images/racinterior4.png",
-          "/images/racinterior6.png",
-          "/images/racinterior5.png",
+          "/images/racinterior1.webp",
+          "/images/racinterior2.webp",
+          "/images/racinterior3.webp",
+          "/images/racinterior4.webp",
+          "/images/racinterior6.webp",
+          "/images/racinterior5.webp",
           
         ]
       },
@@ -463,7 +463,7 @@ export const projectsData = {
         area:"28,000 sq.ft",
         year:"2026",
         scope:"Hotel Architecture and Interior Design",
-        bg:"/images/Screenshot From 2026-09-04 11-15-00.png",
+        bg:"/images/Screenshot From 2026-09-04 11-15-00.webp",
         description:" A 75-room hotel development currently underway in Kozhikode. The project includes multi-level structural works, a double-height entrance lobby, rooftop facilities, and carefully planned spaces suited to modern hospitality.",
         highlights:[
           "75-room boutique hotel with premium interiors",
@@ -472,12 +472,12 @@ export const projectsData = {
           "Fine-dining restaurants and banquet halls for up to 500 guests"
         ],
         gallery:[
-          "/images/Screenshot From 2026-09-04 11-19-40.png",
-          "/images/Screenshot From 2026-09-04 11-19-31.png",
-          "/images/Screenshot From 2026-09-04 11-19-25.png",
-          "/images/Screenshot From 2026-09-04 11-19-12.png",
-          "/images/Screenshot From 2026-09-04 11-19-03.png",
-          "/images/Screenshot From 2026-09-04 11-15-00.png",
+          "/images/Screenshot From 2026-09-04 11-19-40.webp",
+          "/images/Screenshot From 2026-09-04 11-19-31.webp",
+          "/images/Screenshot From 2026-09-04 11-19-25.webp",
+          "/images/Screenshot From 2026-09-04 11-19-12.webp",
+          "/images/Screenshot From 2026-09-04 11-19-03.webp",
+          "/images/Screenshot From 2026-09-04 11-15-00.webp",
         ]
       },
        {
@@ -490,7 +490,7 @@ export const projectsData = {
         area:"30,000 sq.ft",
         year:"2026",
         scope:"Residential Complex Architecture and Interior Design",
-        bg:"/images/Screenshot From 2026-09-04 11-54-00.png",
+        bg:"/images/Screenshot From 2026-09-04 11-54-00.webp",
         description:"A contemporary hotel project under construction, combining textured facade elements, structural glazing, and practical interior planning. The development is designed to accommodate guest rooms, dining areas, and essential service spaces within a well-organised layout.",
         highlights:[
           "Multi-level layouts with private balconies",
@@ -499,11 +499,11 @@ export const projectsData = {
           "Development is currently under construction, scheduled for completion in 2026"
         ],
         gallery:[
-          "/images/Screenshot From 2026-09-04 12-00-00.png",
-          "/images/Screenshot From 2026-09-04 11-59-48.png",
-          "/images/Screenshot From 2026-09-04 11-54-00.png",
-          "/images/Screenshot From 2026-09-04 11-59-06.png",
-          "/images/Screenshot From 2026-09-04 12-00-10.png",
+          "/images/Screenshot From 2026-09-04 12-00-00.webp",
+          "/images/Screenshot From 2026-09-04 11-59-48.webp",
+          "/images/Screenshot From 2026-09-04 11-54-00.webp",
+          "/images/Screenshot From 2026-09-04 11-59-06.webp",
+          "/images/Screenshot From 2026-09-04 12-00-10.webp",
         ]
       },
        {
@@ -516,7 +516,7 @@ export const projectsData = {
         area:"36,000 sq.ft",
         year:"2026",
         scope:"Architecture and Interior Design",
-        bg:"/images/Screenshot From 2026-09-04 12-09-42.png",
+        bg:"/images/Screenshot From 2026-09-04 12-09-42.webp",
         description:"A 36,000 sq. ft. luxury residential estate currently under construction in Malappuram. Planned for a multi-generational family, the project includes spacious living areas, integrated recreational facilities, multi-car parking, and landscaped outdoor spaces.",
         highlights:[
           "Multi-level layouts with private balconies",
@@ -525,11 +525,11 @@ export const projectsData = {
           "Development is currently under construction, scheduled for completion in 2026"
         ],
         gallery:[
-          "/images/Screenshot From 2026-09-04 12-09-34.png",
-          "/images/Screenshot From 2026-09-04 12-09-27.png",
-          "/images/Screenshot From 2026-09-04 12-09-17.png",
-          "/images/Screenshot From 2026-09-04 12-10-25.png",
-          "/images/Screenshot From 2026-09-04 12-09-42.png",
+          "/images/Screenshot From 2026-09-04 12-09-34.webp",
+          "/images/Screenshot From 2026-09-04 12-09-27.webp",
+          "/images/Screenshot From 2026-09-04 12-09-17.webp",
+          "/images/Screenshot From 2026-09-04 12-10-25.webp",
+          "/images/Screenshot From 2026-09-04 12-09-42.webp",
         ]
       }
    

@@ -7,7 +7,7 @@ export const galleryData = [
   },
   {
     id: 2,
-    image: "/images/image2gallery.avif",
+    image: "/images/image2gallery.webp",
     alt: "Certificate presentation event",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
   },
@@ -38,7 +38,7 @@ export const galleryData = [
   },
   {
     id: 8,
-    image: "/images/p4uyIbEy3HSZxkgDksJHaTmoif0.png",
+    image: "/images/p4uyIbEy3HSZxkgDksJHaTmoif0.webp",
     alt: "Award ceremony celebration",
     className: "md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-5",
   },
@@ -92,13 +92,13 @@ export const galleryData = [
   },
   {
     id: 17,
-    image: "/images/image5gallery.avif",
+    image: "/images/image5gallery.webp",
     alt: "Completed project showcase",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
   },
    {
     id: 4,
-    image: "/images/image4gallery.avif",
+    image: "/images/image4gallery.webp",
     alt: "Team award recognition",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
   },

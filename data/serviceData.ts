@@ -62,7 +62,7 @@ export const serviceData = [
   {
     title: "ELV (EXTRA LOW VOLTAGE) WORKS",
     description: "We install low-voltage systems that support security, communication, and automation across a property. Our work includes CCTV, access control, fire detection, and smart automation systems, planned to work together reliably.",
-    image: "/images/elv_cctv_security.png",
+    image: "/images/elv_cctv_security.webp",
     imageLeft:true
   }
 ];

@@ -7,8 +7,8 @@ export const homeData = {
       link: "https://wa.me/919037863030?text=Hello%20Build%20World%2C%20I%20would%20like%20to%20launch%20a%20project%20request.",
     },
     secondaryButton: { text: "EXPLORE OUR PORTFOLIO", link: "/projects" },
-    // bgImage: "/images/a8ncra2SSE0thOySygQJ1YTffE.png" // Using the main hero image
-    bgImage: "/images/png1.png",
+    // bgImage: "/images/a8ncra2SSE0thOySygQJ1YTffE.webp" // Using the main hero image
+    bgImage: "/images/png1.webp",
   },
   about: {
     title: "Shaping A Legacy Of Excellence",
@@ -23,10 +23,10 @@ export const homeData = {
     button1: { text: "More\nAbout Us", link: "/about" },
     button2: { text: "Download\nCompany Profile", link: "#" },
     images: [
-      "/images/image3.png",
-      // "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.png",
-      // "/images/huW5kybTw53dpOEUqem1TSexsY.png",
-      // "/images/sGzGlZPk9QItK6xOL48GEKTAkI.png"
+      "/images/image3.webp",
+      // "/images/qS4W9GiovjEpK0YWTLrxzT8Djo.webp",
+      // "/images/huW5kybTw53dpOEUqem1TSexsY.webp",
+      // "/images/sGzGlZPk9QItK6xOL48GEKTAkI.webp"
     ],
   },
   team: {
@@ -39,14 +39,14 @@ export const homeData = {
         role: "CEO & CO-FOUNDER",
         description:
           "Er. Feroz Kalathil is the CEO and Co-Founder of Build World Constructions Pvt. Ltd., with more than 25 years of experience in the construction industry. His professional experience includes involvement in major projects such as the Makkah Haram Masjid and the American Consulate in Jeddah, KSA, as well as the Shifa Al-Jazeera Medical Center in Sharjah, UAE. His experience continues to shape Build World’s approach to quality, precision, and responsible execution. Working closely with the team, he focuses on maintaining high standards throughout the construction process.",
-        image: "/images/firoz.png",
+        image: "/images/firoz.webp",
       },
       {
         name: "Mr. Abdul Muneer",
         role: "MANAGING DIRECTOR & CO-FOUNDER",
         description:
           "Mr. Abdul Muneer is the Managing Director and Co-Founder of Build World Constructions Pvt. Ltd. Alongside Er. Feroz Kalathil, he played a key role in establishing the company and continues to contribute to its growth and direction. With practical engineering knowledge and extensive leadership experience, he has been involved in the execution of major building and infrastructure projects across South India and the Middle East. Working closely with the team, he oversees business operations and project delivery, with a focus on maintaining consistent quality, structural reliability, and long-term value for every client.",
-        image: "/images/871b0ae1a34942218aa43d6253c2422e-removebg-preview.png",
+        image: "/images/871b0ae1a34942218aa43d6253c2422e-removebg-preview.webp",
       },
     ],
   },
@@ -74,14 +74,14 @@ export const homeData = {
         title: "Ayra Perl Hotel",
         client: "unknown",
         status: "Under Construction",
-        bg: "/images/ScreenshotFrom2026-09-0411-15-00.png",
+        bg: "/images/ScreenshotFrom2026-09-0411-15-00.webp",
       },
       {
         id: "The-Heavenly-Daze",
         title: "The Heavenly Daze",
         client: "Sameer",
         status: "Under Construction",
-        bg: "/images/ScreenshotFrom2026-09-0412-09-42.png",
+        bg: "/images/ScreenshotFrom2026-09-0412-09-42.webp",
       },
       {
         id: "Ville-Project-Coimbatur",
