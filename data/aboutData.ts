@@ -8,7 +8,7 @@ export const aboutData = {
         "Together, they turned that shared vision into Build World — a company built on knowledge, dedication, and purpose.",
         "Over the years, Build World has grown through hands-on experience, technical expertise, and exposure to projects across different markets. Today, that experience continues to shape the way we work, helping us create spaces that are practical, well-built, and suited to the people who use them."
       ],
-      image: "/images/sgv3COzIUIRzvVo3O1WZ3hdHY.png"
+      image: "/images/sgv3COzIUIRzvVo3O1WZ3hdHY.webp"
     },
     approach: {
       title: "Our Approach to Excellence",
@@ -40,13 +40,13 @@ export const aboutData = {
           name: "Er. Feroz Kalathil",
           role: "CEO & CO-FOUNDER",
           description: "Er. Feroz Kalathil is the CEO and Co-Founder of Build World Constructions Pvt. Ltd., with more than 25 years of experience in the construction industry. His professional experience includes involvement in major projects such as the Makkah Haram Masjid and the American Consulate in Jeddah, KSA, as well as the Shifa Al-Jazeera Medical Center in Sharjah, UAE. His experience continues to shape Build World’s approach to quality, precision, and responsible execution. His leadership and technical background continue to guide the team in maintaining high standards throughout the construction process.",
-          image: "/images/firoz.png"
+          image: "/images/firoz.webp"
         },
         {
           name: "Mr. Abdul Muneer",
           role: "MANAGING DIRECTOR & CO-FOUNDER",
           description: "Mr. Abdul Muneer is the Managing Director and Co-Founder of Build World Constructions Pvt. Ltd. Alongside Er. Feroz Kalathil, he played a key role in establishing the company and continues to contribute to its growth and direction. With practical engineering knowledge and extensive leadership experience, he has been involved in the execution of major building and infrastructure projects across South India and the Middle East. Working closely with the team, he oversees business operations and project delivery, with a focus on maintaining consistent quality, structural reliability, and long-term value for every client.",
-          image: "/images/871b0ae1a34942218aa43d6253c2422e-removebg-preview.png"
+          image: "/images/871b0ae1a34942218aa43d6253c2422e-removebg-preview.webp"
         }
       ]
     }

@@ -32,7 +32,7 @@ export default function Hero() {
         }}
       >
         <Image
-          src="/images/png2.png"
+          src="/images/png2.webp"
           alt="Sky Background"
           fill
           priority
@@ -82,7 +82,7 @@ export default function Hero() {
         }}
       >
         <Image
-          src="/images/png1.png"
+          src="/images/png1.webp"
           alt="Build World Hero"
           fill
           priority
