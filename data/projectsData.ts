@@ -374,7 +374,7 @@ export const projectsData = {
         area: "18,500 sq.ft",
         year: "2025",
         scope: "Commercial Healthcare Civil & MEP Works",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f0.png",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/rac3.webp",
         description: "A multi-storey commercial facility under construction in Calicut. With a contemporary glass facade and clean architectural lines, the project is being developed to accommodate modern office and commercial requirements.",
         highlights: [
           "Specialized medical gas pipeline structural framing",
@@ -383,15 +383,15 @@ export const projectsData = {
           "24/7 uninterrupted emergency power redundancy integration"
         ],
         gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f.png",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f1.png",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/RAC/Exterior/f0.png",
-          "/images/racinterior1.png",
-          "/images/racinterior2.webp",
-          "/images/racinterior3.webp",
-          "/images/racinterior4.webp",
-          "/images/racinterior6.webp",
-          "/images/racinterior5.png",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/rac1.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/rac2.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/rac3.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/racinterior1.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/racinterior2.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/racinterior3.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/racinterior4.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/racinterior6.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/racinterior5.webp",
           
         ]
       },
@@ -407,7 +407,7 @@ export const projectsData = {
         area: "32,000 sq.ft",
         year: "2025",
         scope: "Commercial Complex & Steel Structure Engineering",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0022.jpg",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/tiaraWalk/tiaraimg1.webp",
         description: "An ongoing commercial development planned around retail and dining spaces. The project combines distinctive exterior architecture, open paved areas, and hardscaping to create a welcoming environment for visitors.",
         highlights: [
           "Deep foundation piling and earth retention system",
@@ -416,25 +416,29 @@ export const projectsData = {
           "Integrated automated building management & fire suppression"
         ],
         gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0023.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0024.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0024.jpg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Tiara+Walk+Perinthalmanna/IMG-20250822-WA0025.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/tiaraWalk/tiaraimg2.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/tiaraWalk/tiaraimg3.webp",
+          
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/tiaraWalk/tiara5.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/tiaraWalk/tiaraimg4.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/tiaraWalk/tiaraimg1.webp",
+          
+          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/tiaraWalk/tiaraimg5.webp",
          
         ]
       },
 
       {
-        id: "Ville-Project-Coimbatur",
-        title: "Ville Project Coimbatur",
+        id: "Ville-Project-Coimbatore",
+        title: "Ville Project Coimbatore",
         client: "MPS Group",
         status: "Under Construction",
         category: "Under Construction",
-        location: "Coimbatur, Tamil Nadu",
+        location: "Coimbatore, Tamil Nadu",
         area: "32,000 sq.ft",
         year: "2025",
         scope: "Commercial Complex & Steel Structure Engineering",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/5.jpeg",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ville-project/villeimg1.webp",
         description: "A residential development currently underway in Coimbatore, including a defined entrance, boundary walls, internal roads, and associated civil works. The project is being developed with a focus on organised access, practical planning, and consistent execution.",
         highlights: [
           "Deep foundation piling and earth retention system",
@@ -443,11 +447,13 @@ export const projectsData = {
           "Integrated automated building management & fire suppression"
         ],
         gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/2.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/1.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/4.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/5.jpeg",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/3.jpeg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ville-project/villeimg2.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ville-project/villeimg3.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ville-project/villeimg4.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ville-project/villeimg5.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ville-project/villeimg6.webp"
+        
+          
         ]
       },
       {
@@ -460,7 +466,7 @@ export const projectsData = {
         area:"28,000 sq.ft",
         year:"2026",
         scope:"Hotel Architecture and Interior Design",
-        bg:"/images/Screenshot From 2026-09-04 11-15-00.webp",
+        bg:"https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ayra/ayraimg1.webp",
         description:" A 75-room hotel development currently underway in Kozhikode. The project includes multi-level structural works, a double-height entrance lobby, rooftop facilities, and carefully planned spaces suited to modern hospitality.",
         highlights:[
           "75-room boutique hotel with premium interiors",
@@ -469,12 +475,12 @@ export const projectsData = {
           "Fine-dining restaurants and banquet halls for up to 500 guests"
         ],
         gallery:[
-          "/images/Screenshot From 2026-09-04 11-19-40.webp",
-          "/images/Screenshot From 2026-09-04 11-19-31.webp",
-          "/images/Screenshot From 2026-09-04 11-19-25.webp",
-          "/images/Screenshot From 2026-09-04 11-19-12.webp",
-          "/images/Screenshot From 2026-09-04 11-19-03.webp",
-          "/images/Screenshot From 2026-09-04 11-15-00.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ayra/ayraimg2.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ayra/ayraimg3.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ayra/ayraimg4.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ayra/ayraimg6.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ayra/ayraimg5.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ayra/ayraimg1.webp"
         ]
       },
        {
