@@ -44,7 +44,7 @@ export const serviceData = [
   {
     title: "HVAC WORKS",
     description: "Our technical teams handle the installation and setup of heating, ventilation, and air conditioning systems. We focus on proper planning, efficient ductwork, and balanced airflow to maintain comfortable indoor environments and reliable system performance.",
-    image: "/images/imgi_19_hvac.webp",
+    image: "/images/IMG-20250206-WA0282.jpg",
     imageLeft: false
   },
   {
@@ -56,7 +56,7 @@ export const serviceData = [
   {
     title: "SWIMMING POOL CONSTRUCTION",
     description: "We design and build swimming pools to suit the layout and requirements of each property. From excavation and waterproofing to structural work and final finishes, our team focuses on sound construction, reliable systems, and clean finishing.",
-    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Nathan/256.jpg",
+    image: "/images/Seyed Abu Thahir_s Residence_70.webp",
     imageLeft:false
   },
   {
