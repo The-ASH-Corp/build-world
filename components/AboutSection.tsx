@@ -63,13 +63,13 @@ export default function AboutSection() {
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-center md:text-left">
+                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-justify">
                   {about.description3}
                 </p>
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-center md:text-left">
+                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-justify">
                   {about.description4}
                 </p>
               </motion.div>

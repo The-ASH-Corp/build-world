@@ -35,7 +35,7 @@ export default function ProjectsPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="font-['Menbere'] text-[36px] md:text-[96px] font-bold text-[#e0e0e0] capitalize leading-none tracking-tight mb-8"
+            className="font-['Menbere'] text-white text-[48px] md:text-[60px] xl:text-[85px] leading-[1.1] capitalize tracking-tight font-bold mb-8 md:mb-10"
           >
             Our Projects
           </motion.h1>
