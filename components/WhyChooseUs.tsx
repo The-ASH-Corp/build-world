@@ -34,10 +34,11 @@ export default function WhyChooseUs() {
         {/* Top Content */}
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-16 xl:gap-24 mb-16 lg:mb-24">
           <motion.h2
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-['Menbere'] text-[36px] md:text-[60px] lg:text-[72px] xl:text-[90px] font-bold text-white capitalize leading-[1.1] tracking-tight lg:w-[45%] xl:w-[40%] whitespace-pre-line"
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="w-full lg:w-[45%] xl:w-[40%] font-['Menbere'] text-[36px] md:text-[60px] lg:text-[72px] xl:text-[90px] font-bold text-white capitalize leading-[1.1] tracking-tight text-center lg:text-left whitespace-normal lg:whitespace-pre-line"
           >
             {whyChooseUs.title}
           </motion.h2>
