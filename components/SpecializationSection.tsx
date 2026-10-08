@@ -116,13 +116,14 @@ export default function SpecializationSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-20 flex justify-center w-full"
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex justify-center mt-8 md:mt-10 w-full"
         >
           <Link
             href="/service"
-            className="group flex items-center justify-between w-full max-w-[280px] h-[60px] border border-white rounded-[32px] px-8 hover:bg-white/10 transition-all"
+            className="group flex items-center justify-between min-w-50 h-15 border border-[#333] rounded-4xl px-8 hover:border-white transition-all cursor-pointer"
           >
-            <span className="font-['Menbere'] font-bold text-[14px] text-white uppercase tracking-wider">
+            <span className="font-['Menbere'] font-bold text-[14px] text-white uppercase tracking-wider mr-4">
               {specializations.buttonText}
             </span>
             <div className="text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
