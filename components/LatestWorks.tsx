@@ -27,7 +27,7 @@ export default function LatestWorks() {
   };
 
   return (
-    <section className="w-full bg-[#050505] py-24 overflow-hidden relative">
+    <section className="w-full bg-[#050505] pt-2 md:pt-4 lg:pt-6 xl:pt-8 pb-16 md:pb-20 overflow-hidden relative">
       <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%]">
         {/* Header */}
         <div className="mb-10 md:mb-16 text-left">

@@ -29,7 +29,7 @@ export default function WhyChooseUs() {
   };
 
   return (
-    <section className="w-full bg-[#050505] py-32 overflow-hidden relative">
+    <section className="w-full bg-[#050505] pt-2 md:pt-4 lg:pt-6 xl:pt-8 pb-16 md:pb-20 xl:pb-24 overflow-hidden relative">
       <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%]">
         {/* Top Content */}
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-16 xl:gap-24 mb-16 lg:mb-24">

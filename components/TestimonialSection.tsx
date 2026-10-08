@@ -26,7 +26,7 @@ export default function TestimonialSection() {
   }, [testimonials.clients.length]);
 
   return (
-    <section className="relative w-full bg-[#050505] py-24 xl:py-32 overflow-hidden">
+    <section className="relative w-full bg-[#050505] pt-2 md:pt-4 lg:pt-6 xl:pt-8 pb-16 md:pb-20 xl:pb-24 overflow-hidden">
       {/* Background Thick Swoosh */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
         <svg
