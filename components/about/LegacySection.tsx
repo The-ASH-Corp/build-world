@@ -61,7 +61,7 @@ export default function LegacySection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="w-full md:w-7/12 flex flex-col justify-end text-white text-[13px] md:text-[16px] leading-[1.8] space-y-4 md:space-y-6 font-['Menbere'] max-w-[700px] md:pl-10"
+            className="w-full md:w-7/12 flex flex-col justify-end text-white text-[13px] md:text-[16px] leading-[1.8] space-y-4 md:space-y-6 font-['Menbere'] max-w-[700px] md:pl-10 text-justify"
           >
             {aboutPage.legacy.paragraphs.map((para, idx) => (
               <motion.p variants={itemVariants} key={idx}>

@@ -145,7 +145,7 @@ export default function LeadershipSection() {
                   <p className="font-['Menbere'] text-[#7bb0ce] text-[10px] md:text-[12px] lg:text-[14px] font-bold tracking-widest uppercase mb-6 md:mb-8">
                     {member.role}
                   </p>
-                  <p className="font-['Menbere'] text-white/90 text-[12px] md:text-[13px] leading-[1.8] text-left max-w-[650px]">
+                  <p className="font-['Menbere'] text-white/90 text-[12px] md:text-[13px] leading-[1.8] max-w-[650px] text-justify">
                     {member.description}
                   </p>
                 </motion.div>

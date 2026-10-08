@@ -84,8 +84,16 @@ export default function TestimonialSection() {
                   />
                   <img
                     ref={(el) => {
-                      if (el && el.complete && el.naturalWidth > 0 && !loadedAvatars[index]) {
-                        setLoadedAvatars((prev) => ({ ...prev, [index]: true }));
+                      if (
+                        el &&
+                        el.complete &&
+                        el.naturalWidth > 0 &&
+                        !loadedAvatars[index]
+                      ) {
+                        setLoadedAvatars((prev) => ({
+                          ...prev,
+                          [index]: true,
+                        }));
                       }
                     }}
                     src={client.avatar}
@@ -138,7 +146,7 @@ export default function TestimonialSection() {
                   <p className="font-['Menbere'] text-[12px] md:text-[14px] text-[#777] uppercase font-bold tracking-widest mb-6">
                     {testimonials.clients[activeIndex].role}
                   </p>
-                  <p className="font-['Menbere'] text-[#aaa] text-[14px] md:text-[16px] leading-[1.8] text-left max-w-lg mx-0">
+                  <p className="font-['Menbere'] text-[#aaa] text-[14px] md:text-[16px] leading-[1.8] text-justify max-w-lg mx-0">
                     {testimonials.clients[activeIndex].text}
                   </p>
                 </div>
@@ -154,7 +162,12 @@ export default function TestimonialSection() {
                     />
                     <img
                       ref={(el) => {
-                        if (el && el.complete && el.naturalWidth > 0 && loadedFeaturedIndex !== activeIndex) {
+                        if (
+                          el &&
+                          el.complete &&
+                          el.naturalWidth > 0 &&
+                          loadedFeaturedIndex !== activeIndex
+                        ) {
                           setLoadedFeaturedIndex(activeIndex);
                         }
                       }}

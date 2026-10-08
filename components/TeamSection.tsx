@@ -41,7 +41,6 @@ export default function TeamSection() {
         >
           {/* Content Container (Left Side) */}
           <div className="relative z-10 w-full lg:w-[58%] xl:w-[60%] p-6 md:p-10 lg:p-12 xl:p-16 flex flex-col justify-between h-full min-h-[380px] lg:min-h-full">
-            
             {/* Animating Text Content - Locked Grid Cell */}
             <div className="grid grid-cols-1 grid-rows-1 min-h-[240px] md:min-h-[220px] lg:min-h-[240px]">
               <AnimatePresence mode="wait">
@@ -62,7 +61,7 @@ export default function TeamSection() {
                     </p>
                   </div>
 
-                  <p className="font-['Menbere'] text-[14px] md:text-[16px] text-[#cfcfcf] md:text-white leading-[1.8] text-left font-medium">
+                  <p className="font-['Menbere'] text-[14px] md:text-[16px] text-[#cfcfcf] md:text-white leading-[1.8] text-justify font-medium">
                     {member.description}
                   </p>
                 </motion.div>

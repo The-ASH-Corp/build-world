@@ -16,7 +16,7 @@ export default function IntroductionSection() {
         <h1 className="font-['Menbere'] text-white text-[48px] md:text-[60px] xl:text-[85px] leading-[1.1] capitalize tracking-tight font-bold mb-8 md:mb-10">
           About us
         </h1>
-        <p className="font-['Menbere'] text-[13px] md:text-[16px] text-[#b0b0b0] leading-[2] md:leading-[1.8] max-w-[1000px] text-justify md:text-center">
+        <p className="font-['Menbere'] text-[13px] md:text-[16px] text-[#b0b0b0] leading-[2] md:leading-[1.8] max-w-[1000px] text-justify ">
           {aboutPage.introText}
         </p>
       </motion.div>

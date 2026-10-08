@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
             viewport={{ once: true }}
             className="w-full lg:w-[55%] xl:w-[60%] border-l border-white/20 pl-6 md:pl-10 py-2"
           >
-            <p className="font-['Menbere'] text-[#aaa] text-[15px] md:text-[16px] leading-[1.8]">
+            <p className="font-['Menbere'] text-[#aaa] text-[15px] md:text-[16px] leading-[1.8] text-justify">
               {whyChooseUs.description}
             </p>
           </motion.div>
@@ -80,7 +80,7 @@ export default function WhyChooseUs() {
                   {item.title}
                 </h3>
               </div>
-              <p className="font-['Menbere'] text-[#999] text-[14px] md:text-[15px] leading-[1.6] capitalize mt-1">
+              <p className="font-['Menbere'] text-[#999] text-[14px] md:text-[15px] leading-[1.6] capitalize mt-1 text-justify">
                 {item.text}
               </p>
             </motion.div>
@@ -146,8 +146,16 @@ export default function WhyChooseUs() {
                     />
                     <img
                       ref={(el) => {
-                        if (el && el.complete && el.naturalWidth > 0 && !loadedVideos[index]) {
-                          setLoadedVideos((prev) => ({ ...prev, [index]: true }));
+                        if (
+                          el &&
+                          el.complete &&
+                          el.naturalWidth > 0 &&
+                          !loadedVideos[index]
+                        ) {
+                          setLoadedVideos((prev) => ({
+                            ...prev,
+                            [index]: true,
+                          }));
                         }
                       }}
                       src={video.img}
