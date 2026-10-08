@@ -145,14 +145,17 @@ export default function WhyChooseUs() {
                       aria-hidden="true"
                     />
                     <img
+                      ref={(el) => {
+                        if (el && el.complete && el.naturalWidth > 0 && !loadedVideos[index]) {
+                          setLoadedVideos((prev) => ({ ...prev, [index]: true }));
+                        }
+                      }}
                       src={video.img}
                       alt={video.title}
                       onLoad={() =>
                         setLoadedVideos((prev) => ({ ...prev, [index]: true }))
                       }
-                      className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-105 ${
-                        loadedVideos[index] ? "opacity-100" : "opacity-0"
-                      }`}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       onError={(e) => {
                         setLoadedVideos((prev) => ({ ...prev, [index]: true }));
                         // Fallback to sddefault if maxresdefault is unavailable

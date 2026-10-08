@@ -69,14 +69,20 @@ export default function LatestWorks() {
                     aria-hidden="true"
                   />
                   <img
+                    ref={(el) => {
+                      if (el && el.complete && el.naturalWidth > 0 && !loadedWorks[idx]) {
+                        setLoadedWorks((prev) => ({ ...prev, [idx]: true }));
+                      }
+                    }}
                     src={work.bg}
                     alt={work.title}
                     onLoad={() =>
                       setLoadedWorks((prev) => ({ ...prev, [idx]: true }))
                     }
-                    className={`w-full h-full object-cover object-center transition-all duration-700 group-hover:scale-105 ${
-                      loadedWorks[idx] ? "opacity-100" : "opacity-0"
-                    }`}
+                    onError={() =>
+                      setLoadedWorks((prev) => ({ ...prev, [idx]: true }))
+                    }
+                    className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
 

@@ -77,14 +77,20 @@ export default function SpecializationSection() {
                   aria-hidden="true"
                 />
                 <img
+                  ref={(el) => {
+                    if (el && el.complete && el.naturalWidth > 0 && !loadedItems[index]) {
+                      setLoadedItems((prev) => ({ ...prev, [index]: true }));
+                    }
+                  }}
                   src={item.img}
                   alt={item.title}
                   onLoad={() =>
                     setLoadedItems((prev) => ({ ...prev, [index]: true }))
                   }
-                  className={`w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110 ${
-                    loadedItems[index] ? "opacity-100" : "opacity-0"
-                  }`}
+                  onError={() =>
+                    setLoadedItems((prev) => ({ ...prev, [index]: true }))
+                  }
+                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
 
