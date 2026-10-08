@@ -20,9 +20,9 @@ export default function Service() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white tracking-wide"
+              className="font-['Menbere'] text-white text-[48px] md:text-[60px] xl:text-[85px] leading-[1.1] capitalize tracking-tight font-bold"
             >
-              Our Speciallizations
+              Our Specializations
             </motion.h1>
           </div>
 
