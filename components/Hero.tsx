@@ -25,11 +25,11 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative w-full h-[100vh] min-h-[800px] flex flex-col justify-end overflow-hidden bg-[#050505]"
+      className="relative w-full h-[100vh] min-h-[700px] md:min-h-[800px] flex flex-col justify-end overflow-hidden bg-[#050505]"
     >
       {/* LAYER 1: Background Sky */}
       <motion.div
-        className="absolute inset-0 z-0 bg-[#050505]"
+        className="absolute inset-0 z-0 bg-[#050505] will-change-transform"
         style={{
           y: skyY,
           scale: skyScale,
@@ -46,6 +46,7 @@ export default function Hero() {
           alt="Sky Background"
           fill
           priority
+          unoptimized
           onLoad={() => setSkyLoaded(true)}
           className={`object-cover object-top transition-opacity duration-700 ${
             skyLoaded ? "opacity-100" : "opacity-0"
@@ -55,7 +56,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Top Gradient for navbar contrast (above sky) */}
-      <div className="absolute top-0 left-0 w-full h-48 bg-gradient-to-b from-black/60 to-transparent z-10 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full h-28 md:h-44 bg-gradient-to-b from-black/60 to-transparent z-10 pointer-events-none" />
 
       {/* LAYER 2: Massive Background Text - "Build World" (Set z-25 so scaling image does not cover it) */}
       <div className="absolute top-[10%] left-0 w-full flex justify-center pointer-events-none select-none z-25 overflow-hidden">
@@ -93,7 +94,7 @@ export default function Hero() {
 
       {/* LAYER 3: Foreground House */}
       <motion.div
-        className="absolute inset-0 z-20 pointer-events-none"
+        className="absolute inset-0 z-20 pointer-events-none will-change-transform"
         style={{
           y: houseY,
           scale: houseScale,
@@ -105,6 +106,7 @@ export default function Hero() {
           alt="Build World Hero"
           fill
           priority
+          unoptimized
           onLoad={() => setHouseLoaded(true)}
           className={`object-cover object-top transition-opacity duration-700 ${
             houseLoaded ? "opacity-100" : "opacity-0"
@@ -114,7 +116,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Bottom Gradient for buttons contrast (above house) */}
-      <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-black/90 via-black/50 to-transparent z-20 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-full h-[180px] md:h-[280px] bg-gradient-to-t from-black/90 via-black/40 to-transparent z-20 pointer-events-none" />
 
       {/* LAYER 4: Bottom Action Bar */}
       <div className="relative z-30 w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%] pb-12 xl:pb-16 flex flex-col lg:flex-row justify-between items-center lg:items-end gap-8">
