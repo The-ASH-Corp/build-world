@@ -81,14 +81,16 @@ export default function AboutSection() {
             {/* Top Image - Fully Responsive View */}
             <motion.div
               variants={itemVariants}
-              className="hidden md:block w-[70%] mx-auto md:h-[420px] lg:h-[380px] xl:h-[440px] 2xl:h-[540px] min-[1920px]:h-[640px] min-[2560px]:h-[760px] rounded-[32px] relative shadow-2xl overflow-hidden bg-[#12141a]"
+              style={{ aspectRatio: "1365 / 2048" }}
+              className="hidden md:block w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[360px] xl:max-w-[400px] 2xl:max-w-[440px] mx-auto relative aspect-[1365/2048]"
             >
               <SafeImage
                 src={about.images[0]}
-                alt="About Image 1"
+                alt="Tiara by MPS"
                 fill
-                sizes="(max-width: 1024px) 70vw, 50vw"
-                className="object-cover object-center rounded-[32px]"
+                sizes="(max-width: 640px) 260px, (max-width: 768px) 300px, (max-width: 1024px) 340px, (max-width: 1280px) 400px, 440px"
+                className="object-contain object-center"
+                skeletonClassName="!bg-transparent"
               />
             </motion.div>
 

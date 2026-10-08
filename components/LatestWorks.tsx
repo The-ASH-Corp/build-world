@@ -123,7 +123,7 @@ export default function LatestWorks() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex justify-center mt-8"
+          className="flex justify-center mt-2"
         >
           <Link
             href={latestWorks.buttonLink || "/projects"}
