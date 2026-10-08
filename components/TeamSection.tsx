@@ -21,7 +21,7 @@ export default function TeamSection() {
   const member = team.members[currentIndex];
 
   return (
-    <section className="relative w-full bg-[#050505] py-24 xl:py-32 overflow-hidden">
+    <section className="relative w-full bg-[#050505] pt-2 md:pt-4 lg:pt-6 xl:pt-8 pb-16 md:pb-20 xl:pb-24 overflow-hidden">
       <div className="w-full px-0 md:px-6 lg:px-16 xl:px-24 2xl:px-[8%]">
         {/* Header */}
         <div className="flex flex-col items-start md:items-center mb-10 md:mb-16 lg:mb-20 xl:mb-24 text-left md:text-center px-6 md:px-0">

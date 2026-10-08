@@ -27,7 +27,7 @@ export default function SpecializationSection() {
   };
 
   return (
-    <section className="w-full bg-[#050505] py-32 overflow-hidden relative">
+    <section className="w-full bg-[#050505] pt-2 md:pt-4 lg:pt-6 xl:pt-8 pb-16 md:pb-20 xl:pb-24 overflow-hidden relative">
       {/* Background Thick Swoosh */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
         <svg
@@ -77,14 +77,20 @@ export default function SpecializationSection() {
                   aria-hidden="true"
                 />
                 <img
+                  ref={(el) => {
+                    if (el && el.complete && el.naturalWidth > 0 && !loadedItems[index]) {
+                      setLoadedItems((prev) => ({ ...prev, [index]: true }));
+                    }
+                  }}
                   src={item.img}
                   alt={item.title}
                   onLoad={() =>
                     setLoadedItems((prev) => ({ ...prev, [index]: true }))
                   }
-                  className={`w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110 ${
-                    loadedItems[index] ? "opacity-100" : "opacity-0"
-                  }`}
+                  onError={() =>
+                    setLoadedItems((prev) => ({ ...prev, [index]: true }))
+                  }
+                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
 

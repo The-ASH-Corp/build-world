@@ -14,7 +14,7 @@ export default function Partners() {
   const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
 
   return (
-    <section className="py-12 bg-[#0a2e42] border-y border-white/10 overflow-hidden relative">
+    <section className="pt-4 md:pt-6 pb-6 md:pb-8 bg-[#0a2e42] border-y border-white/10 overflow-hidden relative">
       <div className="opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500 flex w-full">
         <motion.div 
           className="flex whitespace-nowrap items-center w-max"

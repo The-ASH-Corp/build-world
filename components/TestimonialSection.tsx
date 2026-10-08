@@ -26,7 +26,7 @@ export default function TestimonialSection() {
   }, [testimonials.clients.length]);
 
   return (
-    <section className="relative w-full bg-[#050505] py-24 xl:py-32 overflow-hidden">
+    <section className="relative w-full bg-[#050505] pt-2 md:pt-4 lg:pt-6 xl:pt-8 pb-16 md:pb-20 xl:pb-24 overflow-hidden">
       {/* Background Thick Swoosh */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
         <svg
@@ -76,21 +76,27 @@ export default function TestimonialSection() {
                 }`}
               >
                 <div className="w-[92%] h-[92%] rounded-full overflow-hidden relative">
-                  {!loadedAvatars[index] && (
-                    <div
-                      className="skeleton-shimmer z-10 pointer-events-none rounded-full"
-                      aria-hidden="true"
-                    />
-                  )}
+                  <div
+                    className={`skeleton-shimmer z-10 pointer-events-none rounded-full transition-opacity duration-300 ${
+                      loadedAvatars[index] ? "opacity-0" : "opacity-100"
+                    }`}
+                    aria-hidden="true"
+                  />
                   <img
+                    ref={(el) => {
+                      if (el && el.complete && el.naturalWidth > 0 && !loadedAvatars[index]) {
+                        setLoadedAvatars((prev) => ({ ...prev, [index]: true }));
+                      }
+                    }}
                     src={client.avatar}
                     alt={client.name}
                     onLoad={() =>
                       setLoadedAvatars((prev) => ({ ...prev, [index]: true }))
                     }
-                    className={`w-full h-full object-cover transition-all duration-300 ${activeIndex === index ? "" : "grayscale"} ${
-                      loadedAvatars[index] ? "opacity-100" : "opacity-0"
-                    }`}
+                    onError={() =>
+                      setLoadedAvatars((prev) => ({ ...prev, [index]: true }))
+                    }
+                    className={`w-full h-full object-cover transition-all duration-300 ${activeIndex === index ? "" : "grayscale"}`}
                   />
                 </div>
               </button>
@@ -147,12 +153,16 @@ export default function TestimonialSection() {
                       aria-hidden="true"
                     />
                     <img
+                      ref={(el) => {
+                        if (el && el.complete && el.naturalWidth > 0 && loadedFeaturedIndex !== activeIndex) {
+                          setLoadedFeaturedIndex(activeIndex);
+                        }
+                      }}
                       src={testimonials.clients[activeIndex].avatar}
                       alt={testimonials.clients[activeIndex].name}
                       onLoad={() => setLoadedFeaturedIndex(activeIndex)}
-                      className={`w-full h-full object-cover rounded-full transition-opacity duration-500 ${
-                        isFeaturedLoaded ? "opacity-100" : "opacity-0"
-                      }`}
+                      onError={() => setLoadedFeaturedIndex(activeIndex)}
+                      className="w-full h-full object-cover rounded-full"
                     />
                   </div>
                 </div>
