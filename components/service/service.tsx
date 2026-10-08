@@ -70,7 +70,7 @@ export default function Service() {
                   <h3 className="text-xl sm:text-2xl lg:text-[28px] font-bold text-white mb-3 lg:mb-4 uppercase font-sans tracking-normal">
                     {service.title}
                   </h3>
-                  <p className="text-white text-sm sm:text-[15px] md:text-base leading-relaxed font-normal font-sans">
+                  <p className="text-white text-sm sm:text-[15px] md:text-base leading-relaxed font-normal font-sans text-justify">
                     {service.description}
                   </p>
                 </div>
@@ -82,4 +82,3 @@ export default function Service() {
     </>
   );
 }
-

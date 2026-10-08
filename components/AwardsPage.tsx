@@ -87,7 +87,7 @@ export default function AwardsPage() {
                   </h3>
                 </div>
 
-                <p className="font-['Menbere'] text-[14px] sm:text-[15px] lg:text-[16px] text-[#b0b0b0] leading-[1.8] mt-6 sm:mt-8 lg:mt-12 xl:mt-16 text-left">
+                <p className="font-['Menbere'] text-[14px] sm:text-[15px] lg:text-[16px] text-[#b0b0b0] leading-[1.8] mt-6 sm:mt-8 lg:mt-12 xl:mt-16 text-justify">
                   {award.description}
                 </p>
               </div>

@@ -49,15 +49,15 @@ export default function AboutSection() {
         >
           {/* Left Side: Text */}
           <div className="w-full lg:w-5/12 flex flex-col justify-start gap-8 lg:gap-10 pt-2">
-            <div className="flex flex-col gap-6 md:gap-8 lg:gap-8 w-full text-center md:text-left">
+            <div className="flex flex-col gap-6 md:gap-8 lg:gap-8 w-full text-justify">
               <motion.div variants={itemVariants}>
-                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-center md:text-left">
+                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-justify">
                   {about.description1}
                 </p>
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-center md:text-left">
+                <p className="font-['Menbere'] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-[#b0b0b0] leading-[1.8] text-justify">
                   {about.description2}
                 </p>
               </motion.div>

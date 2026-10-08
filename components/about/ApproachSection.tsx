@@ -23,26 +23,28 @@ export default function ApproachSection() {
           animate={{ x: ["0%", "-20%"] }}
           transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
         >
-          {[...aboutPage.approach.images, ...aboutPage.approach.images].map((imgSrc, idx) => (
-            <div key={idx} className="pr-3 shrink-0">
-              <div className="relative w-32 h-20 md:w-56 md:h-36 shrink-0 overflow-hidden rounded-[50px] shadow-lg bg-[#1a1d24]">
-                <SafeImage
-                  src={imgSrc}
-                  alt={`Approach ${idx}`}
-                  className="w-full h-full object-cover"
-                  fill
-                  sizes="(max-width: 768px) 256px, 448px"
-                  priority={idx < 4}
-                  quality={85}
-                />
+          {[...aboutPage.approach.images, ...aboutPage.approach.images].map(
+            (imgSrc, idx) => (
+              <div key={idx} className="pr-3 shrink-0">
+                <div className="relative w-32 h-20 md:w-56 md:h-36 shrink-0 overflow-hidden rounded-[50px] shadow-lg bg-[#1a1d24]">
+                  <SafeImage
+                    src={imgSrc}
+                    alt={`Approach ${idx}`}
+                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 256px, 448px"
+                    priority={idx < 4}
+                    quality={85}
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            ),
+          )}
         </motion.div>
       </div>
 
       {/* Blue Banner */}
-      <motion.div 
+      <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
@@ -53,21 +55,21 @@ export default function ApproachSection() {
           className="absolute inset-0 bg-[#3797ca]"
           variants={{
             hidden: { clipPath: "circle(0% at 100% 100%)" },
-            visible: { 
+            visible: {
               clipPath: "circle(150% at 100% 100%)",
-              transition: { duration: 1.2, ease: "easeInOut" }
-            }
+              transition: { duration: 1.2, ease: "easeInOut" },
+            },
           }}
         />
 
         <motion.div
           variants={{
             hidden: { opacity: 0, y: 30 },
-            visible: { 
-              opacity: 1, 
+            visible: {
+              opacity: 1,
               y: 0,
-              transition: { delay: 0.4, duration: 0.8, ease: "easeOut" }
-            }
+              transition: { delay: 0.4, duration: 0.8, ease: "easeOut" },
+            },
           }}
           className="relative z-10 w-full 2xl:px-[8%] flex flex-col"
         >
@@ -97,7 +99,7 @@ export default function ApproachSection() {
                 <h3 className="font-['Menbere'] text-[18px] md:text-[24px] font-bold text-white mb-2">
                   {item.title}
                 </h3>
-                <p className="font-['Menbere'] text-white/90 text-[12px] md:text-[15px] whitespace-pre-line leading-[1.6]">
+                <p className="font-['Menbere'] text-white/90 text-[12px] md:text-[15px] whitespace-pre-line leading-[1.6] text-justify">
                   {item.text}
                 </p>
               </motion.div>

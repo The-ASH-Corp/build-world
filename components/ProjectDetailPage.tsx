@@ -67,7 +67,7 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
             </p>
 
             <div className="font-['Menbere'] text-[14px] md:text-[16px] text-[#b0b0b0] leading-[1.8] space-y-6 max-w-[600px] text-left md:text-justify">
-              {project.description.split('\n\n').map((para, idx) => (
+              {project.description.split("\n\n").map((para, idx) => (
                 <p key={idx}>{para}</p>
               ))}
             </div>
