@@ -14,13 +14,13 @@ export const serviceData = [
   {
     title: "INTERIOR & FINISHING WORKS",
     description: "We work alongside designers to bring interior plans to life, with careful attention to finishing, functionality, and detail. Our team focuses on executing each element as planned while creating spaces that feel comfortable, practical, and well finished.",
-    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/New+folder/229.jpg",
+    image: "/images/229.webp",
     imageLeft: true
   },
   {
     title: "LANDSCAPING WORKS",
     description: "Our landscaping team works with designers to execute landscape plans that complement the building and its surroundings. We focus on creating outdoor spaces that are practical, visually appealing, and thoughtfully connected to the overall property.",
-    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_21.jpg",
+    image: "/images/Seyed+Abu+Thahir_s+Residence_21.webp",
     imageLeft: false
   },
   {
@@ -50,7 +50,7 @@ export const serviceData = [
   {
     title: "HARDSCAPING WORKS",
     description: "Our team handles outdoor hardscaping such as patios, walkways, retaining walls, and paved areas. We focus on durable construction and practical design, using materials that work well with the building and its surroundings.",
-    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/253.jpg",
+    image: "/images/253.webp",
     imageLeft: true
   },
   {

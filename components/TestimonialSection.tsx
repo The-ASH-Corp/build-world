@@ -7,10 +7,19 @@ import { useState, useEffect } from "react";
 export default function TestimonialSection() {
   const { testimonials } = homeData;
   const [activeIndex, setActiveIndex] = useState(0);
+  const [loadedAvatars, setLoadedAvatars] = useState<Record<number, boolean>>(
+    {},
+  );
+  const [loadedFeaturedIndex, setLoadedFeaturedIndex] = useState<number | null>(
+    null,
+  );
+  const isFeaturedLoaded = loadedFeaturedIndex === activeIndex;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.clients.length);
+      setActiveIndex(
+        (prevIndex) => (prevIndex + 1) % testimonials.clients.length,
+      );
     }, 3000);
 
     return () => clearInterval(interval);
@@ -66,11 +75,22 @@ export default function TestimonialSection() {
                     : "scale-100 opacity-60 hover:opacity-100 border-transparent z-10"
                 }`}
               >
-                <div className="w-[92%] h-[92%] rounded-full overflow-hidden">
+                <div className="w-[92%] h-[92%] rounded-full overflow-hidden relative">
+                  {!loadedAvatars[index] && (
+                    <div
+                      className="skeleton-shimmer z-10 pointer-events-none rounded-full"
+                      aria-hidden="true"
+                    />
+                  )}
                   <img
                     src={client.avatar}
                     alt={client.name}
-                    className={`w-full h-full object-cover transition-all duration-300 ${activeIndex === index ? "" : "grayscale"}`}
+                    onLoad={() =>
+                      setLoadedAvatars((prev) => ({ ...prev, [index]: true }))
+                    }
+                    className={`w-full h-full object-cover transition-all duration-300 ${activeIndex === index ? "" : "grayscale"} ${
+                      loadedAvatars[index] ? "opacity-100" : "opacity-0"
+                    }`}
                   />
                 </div>
               </button>
@@ -84,7 +104,7 @@ export default function TestimonialSection() {
         {/* Main Testimonial Block */}
         <div className="w-full max-w-[1200px] flex items-center justify-between gap-8 relative min-h-[420px] sm:min-h-[340px] md:min-h-[300px]">
           {/* Huge Left Quote Icon */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -120,10 +140,19 @@ export default function TestimonialSection() {
                 {/* Round Featured Client Image */}
                 <div className="relative w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[240px] lg:h-[240px] xl:w-[260px] xl:h-[260px] aspect-square shrink-0 group">
                   <div className="w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-white/10 bg-[#111] relative z-10">
+                    <div
+                      className={`skeleton-shimmer z-10 pointer-events-none rounded-full transition-opacity duration-500 ${
+                        isFeaturedLoaded ? "opacity-0" : "opacity-100"
+                      }`}
+                      aria-hidden="true"
+                    />
                     <img
                       src={testimonials.clients[activeIndex].avatar}
                       alt={testimonials.clients[activeIndex].name}
-                      className="w-full h-full object-cover rounded-full"
+                      onLoad={() => setLoadedFeaturedIndex(activeIndex)}
+                      className={`w-full h-full object-cover rounded-full transition-opacity duration-500 ${
+                        isFeaturedLoaded ? "opacity-100" : "opacity-0"
+                      }`}
                     />
                   </div>
                 </div>
@@ -132,7 +161,7 @@ export default function TestimonialSection() {
           </div>
 
           {/* Huge Right Quote Icon */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

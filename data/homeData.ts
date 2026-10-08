@@ -156,12 +156,12 @@ export const homeData = {
       {
         title: "INTERIOR & FINISHING WORKS",
         text: "We Specialize In The Execution Of Interior Design Plans. We Work With Designers To Ensure That Their Visions Are Brought To Life, Transforming Spaces Into Personalized Havens That Reflect Your Unique Style And Preferences.",
-        img: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/New+folder/229.jpg",
+        img: "/images/229.webp",
       },
       {
         title: "LANDSCAPING WORKS",
         text: "We Are A Team Of Experienced Landscapers Who Specialize In The Execution Of Landscape Design Plans. We Work With Designers To Ensure That Their Visions Are Brought To Life, Delivering High-Quality Landscaping That Is Both Beautiful And Functional.",
-        img: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Architectural+Photos/Seyed+Abu+Thahir_s+Residence_Kayalpattinam/Seyed+Abu+Thahir_s+Residence_21.jpg",
+        img: "/images/Seyed+Abu+Thahir_s+Residence_21.webp",
       },
     ],
   },

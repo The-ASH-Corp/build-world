@@ -107,7 +107,7 @@ export default function TeamSection() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-[85%] xl:w-[90%] h-[85%] xl:h-[90%] object-contain object-bottom scale-[1.2] translate-y-10" 
+                    className="w-[85%] xl:w-[90%] h-[85%] xl:h-[90%] object-contain object-bottom scale-[1.2] translate-y-10"
                   />
 
                   {/* Name tag overlaid on image */}
