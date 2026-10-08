@@ -2,6 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import { homeData } from "@/data/homeData";
+import SafeImage from "@/components/SafeImage";
 
 export default function AboutSection() {
   const { about } = homeData;
@@ -80,12 +81,14 @@ export default function AboutSection() {
             {/* Top Image - Fully Responsive View */}
             <motion.div
               variants={itemVariants}
-              className="hidden md:block w-[70%] mx-auto md:h-[420px] lg:h-[380px] xl:h-[440px] 2xl:h-[540px] min-[1920px]:h-[640px] min-[2560px]:h-[760px] rounded-[32px] relative shadow-2xl overflow-hidden "
+              className="hidden md:block w-[70%] mx-auto md:h-[420px] lg:h-[380px] xl:h-[440px] 2xl:h-[540px] min-[1920px]:h-[640px] min-[2560px]:h-[760px] rounded-[32px] relative shadow-2xl overflow-hidden bg-[#12141a]"
             >
-              <img
+              <SafeImage
                 src={about.images[0]}
                 alt="About Image 1"
-                className="absolute inset-0 w-full h-full object-fit object-center rounded-[32px]"
+                fill
+                sizes="(max-width: 1024px) 70vw, 50vw"
+                className="object-cover object-center rounded-[32px]"
               />
             </motion.div>
 

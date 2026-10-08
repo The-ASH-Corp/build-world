@@ -1,11 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import { motion, Variants } from "framer-motion";
 import { homeData } from "@/data/homeData";
 import Link from "next/link";
 
 export default function SpecializationSection() {
   const { specializations } = homeData;
+  const [loadedItems, setLoadedItems] = useState<Record<number, boolean>>({});
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -66,11 +68,23 @@ export default function SpecializationSection() {
               variants={itemVariants}
               className={`flex flex-col ${index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"} bg-[#111] rounded-[32px] overflow-hidden items-stretch min-h-[240px] w-full p-4 md:p-6 lg:p-4 gap-4 md:gap-6 lg:gap-12 group border border-white/5 shadow-2xl`}
             >
-              {/* Image */}
-              <div className="w-full lg:w-[400px] shrink-0 h-[200px] md:h-[240px] relative overflow-hidden rounded-[24px]">
+              {/* Image with Skeleton Animation */}
+              <div className="w-full lg:w-[400px] shrink-0 h-[200px] md:h-[240px] relative overflow-hidden rounded-[24px] bg-[#14161f]">
                 <div
-                  className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  style={{ backgroundImage: `url(${item.img})` }}
+                  className={`skeleton-shimmer z-10 pointer-events-none transition-opacity duration-500 ${
+                    loadedItems[index] ? "opacity-0" : "opacity-100"
+                  }`}
+                  aria-hidden="true"
+                />
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  onLoad={() =>
+                    setLoadedItems((prev) => ({ ...prev, [index]: true }))
+                  }
+                  className={`w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110 ${
+                    loadedItems[index] ? "opacity-100" : "opacity-0"
+                  }`}
                 />
               </div>
 

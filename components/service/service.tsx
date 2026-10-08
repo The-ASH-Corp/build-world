@@ -3,6 +3,7 @@
 import React from "react";
 import { serviceData as services } from "@/data/serviceData";
 import { motion } from "framer-motion";
+import SafeImage from "@/components/SafeImage";
 
 export default function Service() {
   return (
@@ -48,13 +49,15 @@ export default function Service() {
 
                 {/* Image Container */}
                 <div className="relative w-full md:w-[28%] lg:w-[28%] flex-shrink-0 h-[220px] sm:h-[280px] md:h-auto md:min-h-[250px]">
-                  <div className="absolute inset-0 w-full h-full rounded-[1.5rem] overflow-hidden shadow-lg">
-                    <img
+                  <div className="absolute inset-0 w-full h-full rounded-[1.5rem] overflow-hidden shadow-lg bg-[#14161f]">
+                    <SafeImage
                       src={service.image}
                       alt={service.title}
-                      className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 30vw"
+                      className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                     />
-                    <div className="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.3)] pointer-events-none"></div>
+                    <div className="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.3)] pointer-events-none z-20"></div>
                   </div>
                 </div>
 

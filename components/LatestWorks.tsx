@@ -1,32 +1,37 @@
 "use client";
 
+import { useState } from "react";
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import { homeData } from "@/data/homeData";
 
 export default function LatestWorks() {
   const { latestWorks } = homeData;
+  const [loadedWorks, setLoadedWorks] = useState<Record<number, boolean>>({});
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
-    visible: { 
+    visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.15 }
-    }
+      transition: { staggerChildren: 0.15 },
+    },
   };
 
   const itemVariants: Variants = {
     hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } }
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   return (
     <section className="w-full bg-[#050505] py-24 overflow-hidden relative">
       <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%]">
-        
         {/* Header */}
         <div className="mb-10 md:mb-16 text-left">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -38,7 +43,7 @@ export default function LatestWorks() {
         </div>
 
         {/* Carousel / Grid */}
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -46,24 +51,44 @@ export default function LatestWorks() {
           className="flex flex-col md:flex-row md:overflow-x-auto pb-12 gap-6 md:gap-8 scrollbar-hide snap-y md:snap-x"
         >
           {latestWorks.works.map((work, idx) => (
-            <Link key={idx} href={`/projects/${work.id}`} className="shrink-0 block">
-              <motion.div 
+            <Link
+              key={idx}
+              href={`/projects/${work.id}`}
+              className="shrink-0 block"
+            >
+              <motion.div
                 variants={itemVariants}
                 className="relative w-full md:w-154.5 lg:w-[480px] xl:w-154.5 h-55 md:h-100 rounded-3xl md:rounded-[40px] overflow-hidden group snap-center cursor-pointer border border-[#222]"
               >
-                {/* Background Image */}
-                <div 
-                  className="absolute -inset-5 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                  style={{ backgroundImage: `url(${work.bg})` }}
-                />
-                
+                {/* Background Image with Skeleton Animation */}
+                <div className="absolute -inset-5 overflow-hidden bg-[#161822]">
+                  <div
+                    className={`skeleton-shimmer z-10 pointer-events-none transition-opacity duration-500 ${
+                      loadedWorks[idx] ? "opacity-0" : "opacity-100"
+                    }`}
+                    aria-hidden="true"
+                  />
+                  <img
+                    src={work.bg}
+                    alt={work.title}
+                    onLoad={() =>
+                      setLoadedWorks((prev) => ({ ...prev, [idx]: true }))
+                    }
+                    className={`w-full h-full object-cover object-center transition-all duration-700 group-hover:scale-105 ${
+                      loadedWorks[idx] ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                </div>
+
                 {/* Gradient Overlays */}
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 md:via-black/10 to-black/10 md:to-black/10 transition-opacity duration-300 group-hover:opacity-80" />
-                
+
                 {/* Status Badge */}
                 <div className="absolute top-4 left-4 right-4 md:top-6 md:left-6 md:right-6">
                   <div className="inline-flex items-center justify-center border border-[#2991ce] bg-gray-100/10 backdrop-blur-md rounded-full px-4 py-1.5 md:px-5 md:py-2 text-white font-['Menbere'] text-[10px] md:text-[12px] capitalize overflow-hidden relative shadow-lg">
-                    <span className="relative z-10 font-bold">{work.status}</span>
+                    <span className="relative z-10 font-bold">
+                      {work.status}
+                    </span>
                   </div>
                 </div>
 
@@ -87,14 +112,14 @@ export default function LatestWorks() {
         </motion.div>
 
         {/* Bottom Button */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex justify-center mt-8"
         >
-          <Link 
+          <Link
             href={latestWorks.buttonLink || "/projects"}
             className="group flex items-center justify-between min-w-50 h-15 border border-[#333] rounded-4xl px-8 hover:border-white transition-all cursor-pointer"
           >
@@ -102,7 +127,18 @@ export default function LatestWorks() {
               {latestWorks.buttonText}
             </span>
             <div className="text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
-               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M7 17l9.2-9.2M17 17V7H7" />
+              </svg>
             </div>
           </Link>
         </motion.div>

@@ -3,11 +3,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { homeData } from "@/data/homeData";
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 export default function Hero() {
   const { hero } = homeData;
   const ref = useRef(null);
+  const [skyLoaded, setSkyLoaded] = useState(false);
+  const [houseLoaded, setHouseLoaded] = useState(false);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -21,22 +23,33 @@ export default function Hero() {
   const houseScale = useTransform(scrollYProgress, [0, 1], [1, 1.35]);
 
   return (
-    <section ref={ref} className="relative w-full h-[100vh] min-h-[800px] flex flex-col justify-end overflow-hidden bg-[#050505]">
-
+    <section
+      ref={ref}
+      className="relative w-full h-[100vh] min-h-[800px] flex flex-col justify-end overflow-hidden bg-[#050505]"
+    >
       {/* LAYER 1: Background Sky */}
       <motion.div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 bg-[#050505]"
         style={{
           y: skyY,
           scale: skyScale,
         }}
       >
+        <div
+          className={`skeleton-shimmer z-0 pointer-events-none transition-opacity duration-700 ${
+            skyLoaded ? "opacity-0" : "opacity-100"
+          }`}
+          aria-hidden="true"
+        />
         <Image
           src="/images/png2.webp"
           alt="Sky Background"
           fill
           priority
-          className="object-cover object-top"
+          onLoad={() => setSkyLoaded(true)}
+          className={`object-cover object-top transition-opacity duration-700 ${
+            skyLoaded ? "opacity-100" : "opacity-0"
+          }`}
           sizes="100vw"
         />
       </motion.div>
@@ -58,13 +71,19 @@ export default function Hero() {
           >
             <span
               className="text-transparent bg-clip-text block md:inline"
-              style={{ backgroundImage: "linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.1) 100%)" }}
+              style={{
+                backgroundImage:
+                  "linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.1) 100%)",
+              }}
             >
               Build
             </span>
             <span
               className="text-transparent bg-clip-text block md:inline md:ml-[4vw] xl:ml-[60px]"
-              style={{ backgroundImage: "linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.1) 100%)" }}
+              style={{
+                backgroundImage:
+                  "linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.1) 100%)",
+              }}
             >
               World
             </span>
@@ -73,9 +92,9 @@ export default function Hero() {
       </div>
 
       {/* LAYER 3: Foreground House */}
-      <motion.div 
+      <motion.div
         className="absolute inset-0 z-20 pointer-events-none"
-        style={{ 
+        style={{
           y: houseY,
           scale: houseScale,
           transformOrigin: "bottom center",
@@ -86,7 +105,10 @@ export default function Hero() {
           alt="Build World Hero"
           fill
           priority
-          className="object-cover object-top"
+          onLoad={() => setHouseLoaded(true)}
+          className={`object-cover object-top transition-opacity duration-700 ${
+            houseLoaded ? "opacity-100" : "opacity-0"
+          }`}
           sizes="100vw"
         />
       </motion.div>
@@ -96,7 +118,6 @@ export default function Hero() {
 
       {/* LAYER 4: Bottom Action Bar */}
       <div className="relative z-30 w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%] pb-12 xl:pb-16 flex flex-col lg:flex-row justify-between items-center lg:items-end gap-8">
-
         {/* Left Side: Subtitle */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -120,25 +141,55 @@ export default function Hero() {
           {/* Primary Button */}
           <a
             href={hero.primaryButton.link}
-            target={hero.primaryButton.link.startsWith("http") ? "_blank" : "_self"}
+            target={
+              hero.primaryButton.link.startsWith("http") ? "_blank" : "_self"
+            }
             rel="noopener noreferrer"
             className="group relative bg-[#2a9df4] text-white h-[50px] md:h-[60px] pl-6 pr-2 md:pl-8 md:pr-2 rounded-full font-bold hover:bg-[#1f87d6] transition-all flex items-center justify-between md:justify-center gap-4 md:gap-6 text-[10px] md:text-[11px] xl:text-[13px] tracking-widest uppercase font-['Menbere'] shadow-lg pointer-events-auto w-full md:w-auto"
           >
-            <span className="relative z-10 mt-[2px] w-full text-center md:text-left md:w-auto flex-1">{hero.primaryButton.text}</span>
+            <span className="relative z-10 mt-[2px] w-full text-center md:text-left md:w-auto flex-1">
+              {hero.primaryButton.text}
+            </span>
             <div className="relative z-10 bg-white/90 text-[#2a9df4] rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-transform group-hover:rotate-45 shadow-sm shrink-0">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7" /></svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M7 17l9.2-9.2M17 17V7H7" />
+              </svg>
             </div>
           </a>
 
           {/* Secondary Button */}
-          <a href={hero.secondaryButton.link} className="group relative bg-transparent border border-white/50 text-white h-[50px] md:h-[60px] px-6 md:px-8 rounded-full font-bold hover:bg-white hover:text-black transition-all flex items-center justify-between md:justify-center gap-3 text-[10px] md:text-[11px] xl:text-[13px] tracking-widest uppercase font-['Menbere'] pointer-events-auto w-full md:w-auto">
-            <span className="mt-[2px] w-full text-center md:text-left md:w-auto flex-1">{hero.secondaryButton.text}</span>
+          <a
+            href={hero.secondaryButton.link}
+            className="group relative bg-transparent border border-white/50 text-white h-[50px] md:h-[60px] px-6 md:px-8 rounded-full font-bold hover:bg-white hover:text-black transition-all flex items-center justify-between md:justify-center gap-3 text-[10px] md:text-[11px] xl:text-[13px] tracking-widest uppercase font-['Menbere'] pointer-events-auto w-full md:w-auto"
+          >
+            <span className="mt-[2px] w-full text-center md:text-left md:w-auto flex-1">
+              {hero.secondaryButton.text}
+            </span>
             <div className="bg-transparent text-white group-hover:text-black w-4 h-4 flex items-center justify-center transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 shrink-0">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7" /></svg>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M7 17l9.2-9.2M17 17V7H7" />
+              </svg>
             </div>
           </a>
         </motion.div>
-
       </div>
     </section>
   );

@@ -91,7 +91,7 @@ export default function ImagePreloader() {
       };
 
       if (typeof window !== "undefined" && "requestIdleCallback" in window) {
-        (window as any).requestIdleCallback(runBatch);
+        (window as Window & { requestIdleCallback: (cb: () => void) => void }).requestIdleCallback(runBatch);
       } else {
         setTimeout(runBatch, 1500);
       }
