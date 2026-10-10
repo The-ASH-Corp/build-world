@@ -5,17 +5,18 @@ import Image from "next/image";
 
 export default function Partners() {
   const logos = [
-    { name: "FORMZ", img: "/images/imgi_48_for.png" },
+    // { name: "FORMZ", img: "/images/imgi_48_for.png" },
+    {name:"FORMZ" , img :"/images/imgi_48_for_white.png"},
     { name: "JB GROUP", img: "/images/imgi_46_Logo-3.png" },
     { name: "d&e ARCHITECTS", img: "/images/imgi_45_Logo-2.png" },
-    { name: "CONCETTO", img: "/images/imgi_47_co.png" },
+    { name: "CONCETTO", img: "/images/imgi_47_co.webp" },
     { name: "and", img: "/images/imgi_44_Logo-1.png" },
   ];
 
   const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
 
   return (
-    <section className="pt-4 md:pt-6 pb-6 md:pb-8 bg-[#c2e1eb] border-y border-white/10 overflow-hidden relative">
+    <section className="pt-4 md:pt-6 pb-6 md:pb-8 bg-[#0a2e42] border-y border-white/10 overflow-hidden relative">
       <div className="flex w-full">
         <motion.div
           className="flex whitespace-nowrap items-center w-max"
