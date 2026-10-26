@@ -26,7 +26,7 @@ export const serviceData = [
   {
     title: "ELECTRICAL & PLUMBING WORKS",
     description: "We handle electrical and plumbing installations based on approved technical drawings and project requirements. Our team focuses on safe installation, proper layouts, and reliable supply, drainage, and power systems.",
-    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/TIARA+WORK+PHOTOS/IMG-20250120-WA0226.jpg",
+    image: "/images/IMG-20261026-WA0021.jpg.jpeg",
     imageLeft: true
   },
   {
