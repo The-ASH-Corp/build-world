@@ -1,9 +1,67 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { serviceData as services } from "@/data/serviceData";
 import { motion } from "framer-motion";
 import SafeImage from "@/components/SafeImage";
+
+function ServiceCardImage({
+  images,
+  title,
+}: {
+  images: string[];
+  title: string;
+}) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  return (
+    <div className="relative w-full md:w-[28%] lg:w-[28%] flex-shrink-0 h-[220px] sm:h-[280px] md:h-auto md:min-h-[250px]">
+      <div className="absolute inset-0 w-full h-full rounded-[1.5rem] overflow-hidden shadow-lg bg-[#14161f]">
+        {images.map((imgSrc, imgIndex) => (
+          <div
+            key={imgSrc}
+            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
+              imgIndex === currentIndex
+                ? "opacity-100 z-10"
+                : "opacity-0 z-0 pointer-events-none"
+            }`}
+          >
+            <SafeImage
+              src={imgSrc}
+              alt={`${title} - ${imgIndex + 1}`}
+              fill
+              sizes="(max-width: 768px) 100vw, 30vw"
+              className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+          </div>
+        ))}
+        <div className="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.3)] pointer-events-none z-20"></div>
+
+        {images.length > 1 && (
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-30 px-2.5 py-1 rounded-full bg-black/40 backdrop-blur-sm pointer-events-none">
+            {images.map((_, dotIdx) => (
+              <span
+                key={dotIdx}
+                className={`h-1.5 rounded-full transition-all duration-500 ${
+                  currentIndex === dotIdx ? "w-4 bg-white" : "w-1.5 bg-white/40"
+                }`}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function Service() {
   return (
@@ -48,18 +106,14 @@ export default function Service() {
                 <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
                 {/* Image Container */}
-                <div className="relative w-full md:w-[28%] lg:w-[28%] flex-shrink-0 h-[220px] sm:h-[280px] md:h-auto md:min-h-[250px]">
-                  <div className="absolute inset-0 w-full h-full rounded-[1.5rem] overflow-hidden shadow-lg bg-[#14161f]">
-                    <SafeImage
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 30vw"
-                      className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                    />
-                    <div className="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.3)] pointer-events-none z-20"></div>
-                  </div>
-                </div>
+                <ServiceCardImage
+                  images={
+                    service.images && service.images.length > 0
+                      ? service.images
+                      : [service.image]
+                  }
+                  title={service.title}
+                />
 
                 {/* Text Container */}
                 <div
