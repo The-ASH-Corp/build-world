@@ -17,24 +17,26 @@ export const serviceData = [
     image: "/images/229.webp",
     imageLeft: true
   },
-  {
-    title: "LANDSCAPING WORKS",
-    description: "Our landscaping team works with designers to execute landscape plans that complement the building and its surroundings. We focus on creating outdoor spaces that are practical, visually appealing, and thoughtfully connected to the overall property.",
-    image: "/images/Seyed+Abu+Thahir_s+Residence_21.webp",
-    imageLeft: false
-  },
+ 
   {
     title: "ELECTRICAL & PLUMBING WORKS",
     description: "We handle electrical and plumbing installations based on approved technical drawings and project requirements. Our team focuses on safe installation, proper layouts, and reliable supply, drainage, and power systems.",
     image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/TIARA+WORK+PHOTOS/IMG-20250120-WA0226.jpg",
     imageLeft: true
   },
-  {
+   {
     title: "CARPENTRY WORKS",
     description: "Our carpentry team handles custom woodwork and fittings with close attention to material quality and site execution. From doors and timber work to panelling and customised fittings, we focus on accurate installation and a clean finish.",
     image: "/images/imgi_13_carpontary.webp",
     imageLeft: false
   },
+   {
+    title: "LANDSCAPING WORKS",
+    description: "Our landscaping team works with designers to execute landscape plans that complement the building and its surroundings. We focus on creating outdoor spaces that are practical, visually appealing, and thoughtfully connected to the overall property.",
+    image: "/images/Seyed+Abu+Thahir_s+Residence_21.webp",
+    imageLeft: false
+  },
+ 
   {
     title: "CONSTRUCTION SERVICES",
     description: "We manage construction projects from the initial site preparation through to completion. Our team coordinates civil and structural works, building construction, equipment installation, and exterior finishing to keep the entire process organised and consistent.",
