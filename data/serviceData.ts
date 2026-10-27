@@ -34,13 +34,13 @@ export const serviceData: ServiceItem[] = [
       "/images/IMG-20261026-WA0021.jpg.jpeg",
       "/images/IMG-20250120-WA0107.jpg"
     ],
-    imageLeft: true
+    imageLeft: false
   },
    {
     title: "CARPENTRY WORKS",
     description: "Our carpentry team handles custom woodwork and fittings with close attention to material quality and site execution. From doors and timber work to panelling and customised fittings, we focus on accurate installation and a clean finish.",
     image: "/images/imgi_13_carpontary.webp",
-    imageLeft: false
+    imageLeft: true
   },
    {
     title: "LANDSCAPING WORKS",
