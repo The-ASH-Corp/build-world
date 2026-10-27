@@ -12,7 +12,7 @@ export const projectsData = {
         area: "5,200 sq.ft",
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image1.webp",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image4.webp",
         description: "A contemporary family residence designed around clean forms and open living spaces. The layout creates a natural connection between indoor and outdoor areas, with careful attention to functionality and finishing throughout the home.",
         highlights: [
           "Floor-to-ceiling acoustic glazing panels",
@@ -39,16 +39,16 @@ export const projectsData = {
         ]
       },
        {
-        id: "ajfan",
-        title: "Ajfan",
-        client: "Mr. Mohamed Kutty",
+        id: "Chef-Lebanon",
+        title: "Chef Lebanon ",
+        client: "Mr. Mohamed Kutty ( Ajfan )",
         status: "Completed ✓",
         category: "Completed",
         location: "Kottakkal, Kerala",
         area: "5,200 sq.ft",
         year: "2024",
         scope: "Structural Engineering & Turnkey Finishing",
-        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/imgi_27_ajfan-banner.webp",
+        bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanExterior2.webp",
         description: "A flagship commercial building project executed in Kottakkal, featuring modern architectural facades, sophisticated interior lighting, and premium turnkey finishing tailored for a luxurious retail experience.",
         highlights: [
           "High performance glazing systems with precise detailing and installation",
@@ -82,7 +82,7 @@ export const projectsData = {
        {
         id: "era-nature-park",
         title: "ERA Nature Park",
-        client: "ERA Developers & Resorts",
+        client: "Mr. Eramu Kakka",
         status: "Completed ✓",
         category: "Completed",
         location: "Wayanad, Kerala",
@@ -191,8 +191,8 @@ export const projectsData = {
       },
        {
         id: "Tiara",
-        title: "Tiara",
-        client: "Tiara",
+        title: "Tiara Five Star Hotel",
+        client: "MPS Group",
         status: "Completed ✓",
         category: "Completed",
         location: "Malappuram, Kerala",

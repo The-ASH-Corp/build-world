@@ -1,14 +1,52 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import Link from "next/link";
 import SafeImage from "@/components/SafeImage";
 import { projectsData } from "@/data/projectsData";
 
-export default function ProjectsPage() {
+function ProjectsContent() {
   const { projectsPage } = projectsData;
-  const [activeTab, setActiveTab] = useState(projectsPage.tabs[0]);
+  const searchParams = useSearchParams();
+  const tabParam = searchParams.get("tab") || searchParams.get("category");
+
+  const getMatchedTab = (param: string | null) => {
+    if (!param) return null;
+    const normalized = decodeURIComponent(param).toLowerCase().replace(/[-_]/g, " ").trim();
+    return projectsPage.tabs.find((t) => t.toLowerCase() === normalized) || null;
+  };
+
+  const getParam = () => {
+    if (tabParam) return tabParam;
+    if (typeof window !== "undefined") {
+      const sp = new URLSearchParams(window.location.search);
+      const urlTab = sp.get("tab") || sp.get("category");
+      if (urlTab) return urlTab;
+      if (window.location.hash) {
+        return window.location.hash.replace("#", "");
+      }
+    }
+    return null;
+  };
+
+  const [activeTab, setActiveTab] = useState(() => {
+    return getMatchedTab(getParam()) || projectsPage.tabs[0];
+  });
+
+  useEffect(() => {
+    const currentParam = getParam();
+    const matched = getMatchedTab(currentParam);
+    if (matched) {
+      setActiveTab(matched);
+      if (typeof window !== "undefined") {
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+    } else {
+      setActiveTab(projectsPage.tabs[0]);
+    }
+  }, [tabParam, searchParams]);
 
   const filteredWorks = projectsPage.works.filter(work => work.category === activeTab);
 
@@ -30,7 +68,7 @@ export default function ProjectsPage() {
       <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%]">
         
         {/* Header */}
-        <div className="mb-12 text-center">
+        <div className="mb-12 text-center" id="under-construction">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -50,7 +88,15 @@ export default function ProjectsPage() {
             {projectsPage.tabs.map((tab) => (
               <button
                 key={tab}
-                onClick={() => setActiveTab(tab)}
+                onClick={() => {
+                  setActiveTab(tab);
+                  if (typeof window !== "undefined") {
+                    const url = tab === projectsPage.tabs[0] 
+                      ? "/projects" 
+                      : `/projects?tab=${encodeURIComponent(tab.toLowerCase().replace(/\s+/g, "-"))}`;
+                    window.history.replaceState(null, "", url);
+                  }
+                }}
                 className={`px-6 py-2 rounded-full border transition-all flex items-center ${
                   activeTab === tab 
                     ? "bg-[#e0e0e0] border-[#e0e0e0] text-[#050505]" 
@@ -132,5 +178,13 @@ export default function ProjectsPage() {
 
       </div>
     </div>
+  );
+}
+
+export default function ProjectsPage() {
+  return (
+    <Suspense fallback={<div className="w-full pt-32 pb-24 min-h-screen bg-[#050505]" />}>
+      <ProjectsContent />
+    </Suspense>
   );
 }

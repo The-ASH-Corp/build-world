@@ -126,7 +126,7 @@ export default function LatestWorks() {
           className="flex justify-center mt-2"
         >
           <Link
-            href={latestWorks.buttonLink || "/projects"}
+            href={latestWorks.buttonLink || "/projects?tab=under-construction"}
             className="group flex items-center justify-between min-w-50 h-15 border border-[#333] rounded-4xl px-8 hover:border-white transition-all cursor-pointer"
           >
             <span className="font-['Menbere'] font-bold text-[14px] text-white uppercase tracking-wider mr-4">
