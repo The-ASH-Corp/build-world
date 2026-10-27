@@ -1,4 +1,12 @@
-export const serviceData = [
+export interface ServiceItem {
+  title: string;
+  description: string;
+  image: string;
+  images?: string[];
+  imageLeft: boolean;
+}
+
+export const serviceData: ServiceItem[] = [
   {
     title: "DIGITAL SURVEY",
     description: "Accurate surveying is an important part of getting a project off to the right start. Our digital survey services provide precise measurements, location marking, and elevation control to support accurate positioning and set-out work on site.",
@@ -27,6 +35,10 @@ export const serviceData = [
     title: "ELECTRICAL & PLUMBING WORKS",
     description: "We handle electrical and plumbing installations based on approved technical drawings and project requirements. Our team focuses on safe installation, proper layouts, and reliable supply, drainage, and power systems.",
     image: "/images/IMG-20261026-WA0021.jpg.jpeg",
+    images: [
+      "/images/IMG-20261026-WA0021.jpg.jpeg",
+      "/images/IMG-20250120-WA0107.jpg"
+    ],
     imageLeft: true
   },
   {
