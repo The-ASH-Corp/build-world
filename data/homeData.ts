@@ -53,7 +53,7 @@ export const homeData = {
   latestWorks: {
     title: "Latest Works",
     buttonText: "EXPLORE MORE",
-    buttonLink: "/projects",
+    buttonLink: "/projects?tab=under-construction",
     works: [
       {
         id: "RAC",
