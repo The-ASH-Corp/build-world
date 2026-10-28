@@ -4,7 +4,7 @@ export const projectsData = {
     works: [
       {
         id: "arshads-residency",
-        title: "RESIDENCE, ARIPRA",
+        title:"Residence Aripra",
         client: "Mr. Arshad Noufal",
         status: "Completed ✓",
         category: "Completed",
@@ -81,11 +81,11 @@ export const projectsData = {
       },
        {
         id: "era-nature-park",
-        title: "ERA Nature Park",
+        title: "ERA Nature Park Perinthalmanna",
         client: "Mr. Eramu Kakka",
         status: "Completed ✓",
         category: "Completed",
-        location: "Wayanad, Kerala",
+        location: "Perinthalmanna, Kerala",
         area: "15 Acres",
         year: "2023",
         scope: "Eco-Resort Infrastructure & Civil Development",
@@ -116,7 +116,7 @@ export const projectsData = {
 
         {
         id: "Kayal-Pattinam-House",
-        title: "RESIDENCE , Kayalpattinam",
+        title:"Residence KayalPattinam",
         client: "Mr. Sayed Abu Thair",
         status: "Completed ✓",
         category: "Completed",
@@ -153,7 +153,7 @@ export const projectsData = {
       },
        {
         id: "Kondotty-House",
-        title: "RESIDENCE Kondotty",
+        title:"Residence Kondotty",
         client: "Mr. Samad Kari",
         status: "Completed ✓",
         category: "Completed",
@@ -191,7 +191,7 @@ export const projectsData = {
       },
        {
         id: "Tiara",
-        title: "Tiara Five Star Hotel",
+        title: "Tiara Five Star Hotel Calicut",
         client: "MPS Group",
         status: "Completed ✓",
         category: "Completed",
@@ -367,7 +367,7 @@ export const projectsData = {
       {
         id: "RAC",
         title: "RAC calicut",
-        client: "Shibili Rahman",
+        client: "Mr. Shibili Rahman",
         status: "Under Construction",
         category: "Under Construction",
         location: "Calicut, Kerala",
@@ -400,7 +400,7 @@ export const projectsData = {
       {
         id: "Tiara-Walk-Perinthalmanna",
         title: "Tiara Walk Perinthalmanna",
-        client: "Tiara",
+        client: "MPS Group",
         status: "Under Construction",
         category: "Under Construction",
         location: "Perinthalmanna, Kerala",
@@ -459,7 +459,7 @@ export const projectsData = {
       {
         id:"Ayra-Perl-Hotel",
         title:"Ayra Perl Hotel",
-        client: "unknown",
+        client: "Dr.Rasheed",
         status:"Under Construction",
         category:"Under Construction",
         location:"Kozhikkode",

@@ -58,21 +58,21 @@ export const homeData = {
       {
         id: "RAC",
         title: "RAC calicut",
-        client: "Shibili Rahman",
+        client: "Mr. Shibili Rahman",
         status: "Under Construction",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/rac3.webp",
       },
       {
         id: "Tiara-Walk-Perinthalmanna",
         title: "Tiara Walk Perinthalmanna",
-        client: "Tiara",
+        client: "MPS Group",
         status: "Under Construction",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/tiaraWalk/tiaraimg1.webp",
       },
       {
         id: "Ayra-Perl-Hotel",
         title: "Ayra Perl Hotel",
-        client: "unknown",
+        client: "Dr.Rasheed",
         status: "Under Construction",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ayra/ayraimg1.webp",
       },
@@ -144,7 +144,7 @@ export const homeData = {
     buttonText: "EXPLORE MORE",
     items: [
       {
-        title: "DIGITAL SURVEY",
+        title: "Digital Survey",
         text: "Our Digital Survey Services Involve Precise Measurements And Location Marking For Construction Activities, Ensuring Accurate Positioning, Dimensions, And Elevation Control Of Structures, Ultimately Supporting Efficient Project Execution.",
         img: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Photos+and+Videos/IMG-20250124-WA0047.jpg",
       },
