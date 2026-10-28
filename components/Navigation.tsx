@@ -13,6 +13,7 @@ const links = [
   { name: "Projects", href: "/projects" },
   { name: "Achievements", href: "/achievements" },
   { name: "Gallery", href: "/gallery" },
+  { name: "Videos", href: "/videos" },
 ];
 
 export default function Navigation() {
