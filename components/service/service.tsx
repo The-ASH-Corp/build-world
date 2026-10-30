@@ -121,7 +121,7 @@ export default function Service() {
                   ${service.imageLeft ? "md:pr-10 lg:pr-16" : "md:pl-10 lg:pl-16"}
                 `}
                 >
-                  <h3 className="text-xl sm:text-2xl lg:text-[28px] font-bold text-white mb-3 lg:mb-4 uppercase font-sans tracking-normal">
+                  <h3 className="text-xl sm:text-2xl lg:text-[28px] font-bold text-white mb-3 lg:mb-4 font-sans tracking-normal">
                     {service.title}
                   </h3>
                   <p className="text-white text-sm sm:text-[15px] md:text-base leading-relaxed font-normal font-sans text-justify">

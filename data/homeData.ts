@@ -57,22 +57,22 @@ export const homeData = {
     works: [
       {
         id: "RAC",
-        title: "RAC calicut",
-        client: "Shibili Rahman",
+        title: "RAC Calicut",
+        client: "Mr. Shibili Rahman",
         status: "Under Construction",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/RAC/rac3.webp",
       },
       {
         id: "Tiara-Walk-Perinthalmanna",
         title: "Tiara Walk Perinthalmanna",
-        client: "Tiara",
+        client: "MPS Group",
         status: "Under Construction",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/tiaraWalk/tiaraimg1.webp",
       },
       {
         id: "Ayra-Perl-Hotel",
         title: "Ayra Perl Hotel",
-        client: "unknown",
+        client: "Dr. Rasheed",
         status: "Under Construction",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/ayra/ayraimg1.webp",
       },
@@ -85,7 +85,7 @@ export const homeData = {
       },
       {
         id: "Ville-Project-Coimbatur",
-        title: "Ville Project Coimbatur",
+        title: "Ville Project Coimbatore",
         client: "MPS Group",
         status: "Under Construction",
         bg: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Running+Projects/Pearl+Ville+Coimbatur/5.jpeg",
@@ -132,7 +132,7 @@ export const homeData = {
       },
       {
         name: "Mr. Sayed Abu Thahir",
-        role: "Tami Nadu",
+        role: "Tamil Nadu",
         text: "Build World surpassed our expectations in managing our home. Their meticulous attention to detail and commitment to excellence resulted in the creation of a stunning living space. We are immensely satisfied with Build World's expertise and highly recommend them for any residential project.",
         avatar: "/images/imgi_43_sayed-abu-thahir.webp",
         largeImage: "/images/imgi_43_sayed-abu-thahir.webp",
@@ -144,23 +144,23 @@ export const homeData = {
     buttonText: "EXPLORE MORE",
     items: [
       {
-        title: "DIGITAL SURVEY",
-        text: "Our Digital Survey Services Involve Precise Measurements And Location Marking For Construction Activities, Ensuring Accurate Positioning, Dimensions, And Elevation Control Of Structures, Ultimately Supporting Efficient Project Execution.",
+        title: "Digital Survey",
+        text: "Our digital survey services involve precise measurements and location marking for construction activities, ensuring accurate positioning, dimensions, and elevation control of structures, ultimately supporting efficient project execution.",
         img: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Photos+and+Videos/IMG-20250124-WA0047.jpg",
       },
       {
-        title: "STRUCTURAL WORKS",
-        text: "Our Skilled Structural Engineers Construct Buildings That Are Strong, Durable, And Aesthetically Pleasing. We Work In Consultation With Designers To Ensure That Our Structures Meet The Client’s Vision And Are Safe, Efficient, And Sustainable.",
+        title: "Structural Works",
+        text: "Our skilled structural engineers construct buildings that are strong, durable, and aesthetically pleasing. We work in consultation with designers to ensure that our structures meet the client’s vision and are safe, efficient, and sustainable.",
         img: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Kayal+Pattinam/Work+Photos/IMG-20250117-WA0174.jpg",
       },
       {
-        title: "INTERIOR & FINISHING WORKS",
-        text: "We Specialize In The Execution Of Interior Design Plans. We Work With Designers To Ensure That Their Visions Are Brought To Life, Transforming Spaces Into Personalized Havens That Reflect Your Unique Style And Preferences.",
+        title: "Interior & Finishing Works",
+        text: "We specialize in the execution of interior design plans. We work with designers to ensure that their visions are brought to life, transforming spaces into personalized havens that reflect your unique style and preferences.",
         img: "/images/229.webp",
       },
       {
-        title: "LANDSCAPING WORKS",
-        text: "We Are A Team Of Experienced Landscapers Who Specialize In The Execution Of Landscape Design Plans. We Work With Designers To Ensure That Their Visions Are Brought To Life, Delivering High-Quality Landscaping That Is Both Beautiful And Functional.",
+        title: "Landscaping Works",
+        text: "We are a team of experienced landscapers who specialize in the execution of landscape design plans. We work with designers to ensure that their visions are brought to life, delivering high-quality landscaping that is both beautiful and functional.",
         img: "/images/Seyed+Abu+Thahir_s+Residence_21.webp",
       },
     ],
@@ -197,7 +197,7 @@ export const homeData = {
     ],
     videos: [
       {
-        title: "ERA NATURE PARK - A WORLD CLASS DESTINATION FOR NATURE LOVER.",
+        title: "ERA Nature Park - A World Class Destination for Nature Lovers",
         img: "https://img.youtube.com/vi/z7jy5AitYJ4/maxresdefault.jpg",
         channel: "Build world",
         youtubeId: "z7jy5AitYJ4",

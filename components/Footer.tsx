@@ -2,6 +2,34 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { FaInstagram, FaFacebookF, FaXTwitter, FaYoutube } from "react-icons/fa6";
+
+const socialLinks = [
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com",
+    icon: FaInstagram,
+    hoverClass: "hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:border-transparent hover:text-white hover:shadow-pink-500/30",
+  },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com",
+    icon: FaFacebookF,
+    hoverClass: "hover:bg-[#1877F2] hover:border-[#1877F2] hover:text-white hover:shadow-blue-600/30",
+  },
+  {
+    name: "X",
+    href: "https://x.com",
+    icon: FaXTwitter,
+    hoverClass: "hover:bg-white hover:border-white hover:text-black hover:shadow-white/20",
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com",
+    icon: FaYoutube,
+    hoverClass: "hover:bg-[#FF0000] hover:border-[#FF0000] hover:text-white hover:shadow-red-600/30",
+  },
+];
 
 export default function Footer() {
   return (
@@ -12,9 +40,31 @@ export default function Footer() {
         <div className="w-full lg:w-1/3 flex flex-col items-start">
         
           <Image src="/images/GZGE9BLDIEh0JDNrm7SHDbdU8y4.webp" alt="Build World Logo" width={200} height={60} className="h-12 md:h-16 w-auto object-contain" />
-          <p className="text-gray-400 text-sm leading-loose pr-4 lg:pr-8 font-bold text-justify">
+          <p className="text-gray-400 text-sm leading-loose pr-4 lg:pr-8 font-bold text-justify mb-6">
             At Build World, we are dedicated to achieving excellence and ensuring customer happiness. With our uncompromising willpower and years of experience, we have built a strong reputation in the construction business.
           </p>
+
+          {/* Social Icons */}
+          <div className="flex flex-col gap-3">
+            <span className="text-[#2a9df4] text-xs font-bold tracking-widest uppercase">FOLLOW US</span>
+            <div className="flex items-center gap-3">
+              {socialLinks.map((social) => {
+                const IconComponent = social.icon;
+                return (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Follow Build World on ${social.name}`}
+                    className={`w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 transition-all duration-300 shadow-md hover:scale-110 active:scale-95 ${social.hoverClass}`}
+                  >
+                    <IconComponent className="w-4 h-4" />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
         {/* Column 2 - Quick Links */}
@@ -26,6 +76,8 @@ export default function Footer() {
             <li><Link href="/service" className="hover:text-white transition-colors">Services</Link></li>
             <li><Link href="/projects" className="hover:text-white transition-colors">Projects</Link></li>
             <li><Link href="/achievements" className="hover:text-white transition-colors">Achievements</Link></li>
+            <li><Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link></li>
+            <li><Link href="/videos" className="hover:text-white transition-colors">Videos</Link></li>
           </ul>
         </div>
 
@@ -64,12 +116,24 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%] py-8 flex flex-col lg:flex-row justify-between items-center gap-4">
+        <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%] py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-[10px]">&copy; 2026 BuildWorld Construction LLC. All rights reserved.</p>
-          {/* <div className="flex gap-6">
-            <Link href="#" className="hover:text-gray-300 transition-colors text-[10px]">Safety Act Compliance</Link>
-            <Link href="#" className="hover:text-gray-300 transition-colors text-[10px]">Terms of Estimate</Link>
-            <Link href="#" className="hover:text-gray-300 transition-colors text-[10px]">Privacy Protocol</Link>
+          {/* <div className="flex items-center gap-4">
+            {socialLinks.map((social) => {
+              const IconComponent = social.icon;
+              return (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.name}
+                  className="text-gray-400 hover:text-white transition-colors p-1"
+                >
+                  <IconComponent className="w-3.5 h-3.5" />
+                </a>
+              );
+            })}
           </div> */}
         </div>
       </div>
