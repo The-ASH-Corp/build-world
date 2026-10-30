@@ -118,7 +118,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%] py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-[10px]">&copy; 2026 BuildWorld Construction LLC. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             {socialLinks.map((social) => {
               const IconComponent = social.icon;
               return (
@@ -134,7 +134,7 @@ export default function Footer() {
                 </a>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

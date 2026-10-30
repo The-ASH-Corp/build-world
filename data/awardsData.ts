@@ -34,6 +34,12 @@ export const awardsData = {
       title: "Skaris Residence Project",
       description: "D&E Global Consulting honoured Er. Feroz Kalathil and Mr. Abdul Muneer for the successful completion of the Skarts Residence Project entrusted to Build World.",
       image: "/images/award4.webp" // placeholder
-    }
+    },
+     {
+    id: 6,
+    title:"Team award recognition",
+    description: "Team award recognition",
+    image: "/images/image4gallery.webp",
+  },
   ]
 };
