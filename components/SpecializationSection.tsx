@@ -104,7 +104,7 @@ export default function SpecializationSection() {
                 <h3 className="font-['Menbere'] text-[18px] md:text-[20px] lg:text-[22px] font-bold text-white mb-2 md:mb-4 uppercase">
                   {item.title}
                 </h3>
-                <p className="font-['Menbere'] text-[#aaa] text-[13px] md:text-[14px] lg:text-[15px] leading-[1.6] md:leading-[1.8] capitalize max-w-[700px] text-justify">
+                <p className="font-['Menbere'] text-[#aaa] text-[13px] md:text-[14px] lg:text-[15px] leading-[1.6] md:leading-[1.8] max-w-[700px] text-justify">
                   {item.text}
                 </p>
               </div>

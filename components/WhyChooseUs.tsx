@@ -81,7 +81,7 @@ export default function WhyChooseUs() {
                   {item.title}
                 </h3>
               </div>
-              <p className="font-['Menbere'] text-[#999] text-[14px] md:text-[15px] leading-[1.6] capitalize mt-1 text-justify">
+              <p className="font-['Menbere'] text-[#999] text-[14px] md:text-[15px] leading-[1.6] mt-1 text-justify">
                 {item.text}
               </p>
             </motion.div>

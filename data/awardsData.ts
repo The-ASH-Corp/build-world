@@ -19,27 +19,27 @@ export const awardsData = {
     },
     {
       id: 3,
-      title: "ERA Nature Park Project Entrusted To Build World",
-      description: "Mr. Abdul Muneer Receives The Award From Minister V. Abdurahiman, MLA Najeeb Kanthapuram, And Mr. Eramukakka, Chairman Of ERA Group, For The Successful Completion Of The ERA Nature Park Project Entrusted To Build World.",
+      title: "ERA Nature Park Project Entrusted to Build World",
+      description: "Mr. Abdul Muneer received the award from Minister V. Abdurahiman, MLA Najeeb Kanthapuram, and Mr. Eramukakka, Chairman of ERA Group, for the successful completion of the ERA Nature Park Project entrusted to Build World.",
       image:"/images/award2.webp" // placeholder
     },
     {
       id: 4,
-      title: "Tiara 5 Star Hotel Project.",
+      title: "Tiara 5 Star Hotel Project",
       description: "Build World received recognition for the successful completion of the Tiara 5 Star Hotel Project, with the award presented by Shamsudheen.",
       image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/Tiara+Inauguration/New/f1a.jpg" // placeholder
     },
     {
       id: 5,
       title: "Skaris Residence Project",
-      description: "D&E Global Consulting honoured Er. Feroz Kalathil and Mr. Abdul Muneer for the successful completion of the Skarts Residence Project entrusted to Build World.",
+      description: "D&E Global Consulting honoured Er. Feroz Kalathil and Mr. Abdul Muneer for the successful completion of the Skaris Residence Project entrusted to Build World.",
       image: "/images/award4.webp" // placeholder
     },
-     {
-    id: 6,
-    title:"Team award recognition",
-    description: "Team award recognition",
-    image: "/images/image4gallery.webp",
-  },
+    {
+      id: 6,
+      title: "Scale Up 2024 Award",
+      description: "Build World was honoured with the Scale Up 2024 award for excellence in construction, presented by Sri Najeeb Kanthapuram, MLA.",
+      image: "/images/image4gallery.webp",
+    },
   ]
 };
