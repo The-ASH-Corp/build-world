@@ -1,21 +1,35 @@
 export interface VideoItem {
   id: string;
   title: string;
-  category: string;
+  category?: string;
   description: string;
   channel?: string;
   duration?: string;
   date?: string;
-  type: "youtube" | "direct" | "file";
+  type?: "youtube" | "direct" | "file";
   youtubeId?: string;
   videoUrl?: string;
-  thumbnail: string;
+  thumbnail?: string;
   featured?: boolean;
   className?: string;
   isCustom?: boolean;
 }
 
 export const videosData: VideoItem[] = [
+  {
+    id: "vid-house-tour",
+    title: "Signature Residence Walkthrough: Complete Interior & Structural Tour",
+    category: "Luxury Residences",
+    description: "An exclusive cinematic walkthrough of a contemporary residence crafted by Build World, exploring turnkey architectural planning, premium woodwork, and structural finishings.",
+    channel: "Build World",
+    duration: "03:30",
+    date: "2025",
+    type: "direct",
+    videoUrl: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/House+Video.mp4",
+    thumbnail: "/images/house.webp",
+    featured: true,
+    className: "md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2",
+  },
   {
     id: "vid-1",
     title: "ERA NATURE PARK - A World Class Destination For Nature Lovers",
@@ -28,7 +42,7 @@ export const videosData: VideoItem[] = [
     youtubeId: "z7jy5AitYJ4",
     thumbnail: "https://img.youtube.com/vi/z7jy5AitYJ4/maxresdefault.jpg",
     featured: true,
-    className: "md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2",
+    className: "md:col-span-1 md:row-span-2 lg:col-span-1 lg:row-span-2",
   },
   {
     id: "vid-2",
