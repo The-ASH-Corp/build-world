@@ -7,25 +7,25 @@ import { FaInstagram, FaFacebookF, FaXTwitter, FaYoutube } from "react-icons/fa6
 const socialLinks = [
   {
     name: "Instagram",
-    href: "https://www.instagram.com",
+    href: "https://www.instagram.com/buildworld_constructions?srtk=aXltNTluZDFjM2tk",
     icon: FaInstagram,
     hoverClass: "hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:border-transparent hover:text-white hover:shadow-pink-500/30",
   },
   {
     name: "Facebook",
-    href: "https://www.facebook.com",
+    href: "https://www.facebook.com/share/18Vpnh4yuW/",
     icon: FaFacebookF,
     hoverClass: "hover:bg-[#1877F2] hover:border-[#1877F2] hover:text-white hover:shadow-blue-600/30",
   },
-  {
-    name: "X",
-    href: "https://x.com",
-    icon: FaXTwitter,
-    hoverClass: "hover:bg-white hover:border-white hover:text-black hover:shadow-white/20",
-  },
+  // {
+  //   name: "X",
+  //   href: "https://x.com",
+  //   icon: FaXTwitter,
+  //   hoverClass: "hover:bg-white hover:border-white hover:text-black hover:shadow-white/20",
+  // },
   {
     name: "YouTube",
-    href: "https://www.youtube.com",
+    href: "https://youtube.com/@buildworld?si=WTJfhLk9HnbV_-HP",
     icon: FaYoutube,
     hoverClass: "hover:bg-[#FF0000] hover:border-[#FF0000] hover:text-white hover:shadow-red-600/30",
   },
