@@ -1,16 +1,16 @@
 export const galleryData = [
-  {
-    id: 1,
-    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Pepper/DSC_0457.jpg",
-    alt: "Awards and achievements celebration",
-    className: "md:col-span-1 md:row-span-2 lg:col-span-1 lg:row-span-5",
-  },
-  {
-    id: 2,
-    image: "/images/image2gallery.webp",
-    alt: "Certificate presentation event",
-    className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
-  },
+  // {
+  //   id: 1,
+  //   image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Pepper/DSC_0457.jpg",
+  //   alt: "Awards and achievements celebration",
+  //   className: "md:col-span-1 md:row-span-2 lg:col-span-1 lg:row-span-5",
+  // },
+  // {
+  //   id: 2,
+  //   image: "/images/image2gallery.webp",
+  //   alt: "Certificate presentation event",
+  //   className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
+  // },
   {
     id: 3,
     image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Era/Inauguration/Photos/POP00291.jpg",
@@ -36,12 +36,12 @@ export const galleryData = [
     alt: "Major project ribbon cutting",
     className: "md:col-span-1 md:row-span-2 lg:col-span-1 lg:row-span-5",
   },
-  {
-    id: 8,
-    image: "/images/p4uyIbEy3HSZxkgDksJHaTmoif0.webp",
-    alt: "Award ceremony celebration",
-    className: "md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-5",
-  },
+  // {
+  //   id: 8,
+  //   image: "/images/p4uyIbEy3HSZxkgDksJHaTmoif0.webp",
+  //   alt: "Award ceremony celebration",
+  //   className: "md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-5",
+  // },
   {
     id: 9,
     image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Samed+Bhai+Kondoty/From+Pepper/DSC_0398.jpg",
@@ -84,22 +84,22 @@ export const galleryData = [
     alt: "Team award recognition",
     className: "md:col-span-1 md:row-span-2 lg:col-span-1 lg:row-span-5",
   },
-  {
-    id: 16,
-    image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/TIARA+WORK+PHOTOS/IMG-20250120-WA0170.jpg",
-    alt: "Team award recognition",
-    className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
-  },
-  {
-    id: 17,
-    image: "/images/image5gallery.webp",
-    alt: "Completed project showcase",
-    className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
-  },
-   {
-    id: 4,
-    image: "/images/image4gallery.webp",
-    alt: "Team award recognition",
-    className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
-  },
+  // {
+  //   id: 16,
+  //   image: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/TIARA/TIARA+WORK+PHOTOS/IMG-20250120-WA0170.jpg",
+  //   alt: "Team award recognition",
+  //   className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
+  // },
+  // {
+  //   id: 17,
+  //   image: "/images/image5gallery.webp",
+  //   alt: "Completed project showcase",
+  //   className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
+  // },
+  //  {
+  //   id: 4,
+  //   image: "/images/image4gallery.webp",
+  //   alt: "Team award recognition",
+  //   className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-4",
+  // },
 ];
