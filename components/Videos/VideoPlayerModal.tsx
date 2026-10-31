@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { VideoItem } from "@/data/videosData";
+import { isYouTubeVideo, getYouTubeId, formatVideoUrl } from "./videoUtils";
 
 interface VideoPlayerModalProps {
   video: VideoItem | null;
@@ -64,8 +65,8 @@ export default function VideoPlayerModal({
     }
   };
 
-  const isYouTube = video.type === "youtube" || (!video.type && !!video.youtubeId);
-  const ytId = video.youtubeId || "z7jy5AitYJ4";
+  const isYouTube = isYouTubeVideo(video);
+  const ytId = getYouTubeId(video) || "z7jy5AitYJ4";
 
   return (
     <AnimatePresence>
@@ -90,9 +91,6 @@ export default function VideoPlayerModal({
           {/* Header Bar */}
           <div className="flex items-center justify-between px-5 md:px-8 py-4 border-b border-white/10 bg-[#07080a]">
             <div className="flex items-center gap-3 overflow-hidden">
-              <span className="shrink-0 px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-[#2a9df4]/10 text-[#2a9df4] border border-[#2a9df4]/30">
-                {video.category}
-              </span>
               <h3 className="font-['Menbere'] text-sm md:text-base font-bold text-white truncate max-w-[280px] sm:max-w-md md:max-w-xl">
                 {video.title}
               </h3>
@@ -139,12 +137,18 @@ export default function VideoPlayerModal({
               />
             ) : video.videoUrl ? (
               <video
-                src={video.videoUrl}
+                key={video.id}
+                src={formatVideoUrl(video.videoUrl)}
                 controls
                 autoPlay
                 playsInline
+                preload="auto"
                 className="w-full h-full object-contain bg-black"
+                onCanPlay={(e) => {
+                  e.currentTarget.play().catch(() => {});
+                }}
               >
+                <source src={formatVideoUrl(video.videoUrl)} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             ) : (
@@ -174,80 +178,15 @@ export default function VideoPlayerModal({
           </div>
 
           {/* Details Footer */}
-          <div className="p-5 md:p-6 bg-[#090a0d] overflow-y-auto">
-            <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
-              <div className="flex-1">
-                <h2 className="font-['Menbere'] text-lg md:text-xl font-bold text-white mb-2 leading-tight">
-                  {video.title}
-                </h2>
-                <p className="text-gray-400 text-sm leading-relaxed max-w-3xl">
-                  {video.description || "Experience the architectural and structural craftsmanship of Build World through this cinematic showcase."}
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3 shrink-0 text-xs text-gray-400 bg-white/5 px-4 py-2.5 rounded-xl border border-white/5">
-                <div>
-                  <span className="block text-[10px] uppercase tracking-wider text-gray-500">Channel / Project</span>
-                  <span className="font-bold text-white">{video.channel || "Build World"}</span>
-                </div>
-                {video.duration && (
-                  <div className="border-l border-white/10 pl-3">
-                    <span className="block text-[10px] uppercase tracking-wider text-gray-500">Duration</span>
-                    <span className="font-mono text-[#2a9df4]">{video.duration}</span>
-                  </div>
-                )}
-                {video.date && (
-                  <div className="border-l border-white/10 pl-3">
-                    <span className="block text-[10px] uppercase tracking-wider text-gray-500">Year</span>
-                    <span className="text-white">{video.date}</span>
-                  </div>
-                )}
-              </div>
-            </div>
-
-            {/* Quick Playlist Strip */}
-            <div className="mt-5 pt-4 border-t border-white/10">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-xs uppercase font-bold tracking-widest text-[#2a9df4]">
-                  More Videos ({allVideos.length})
-                </span>
-                <span className="text-xs text-gray-500">
-                  {currentIndex + 1} of {allVideos.length}
-                </span>
-              </div>
-              <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
-                {allVideos.map((item) => {
-                  const isActive = item.id === video.id;
-                  return (
-                    <button
-                      key={item.id}
-                      onClick={() => onSelectVideo(item)}
-                      className={`shrink-0 flex items-center gap-2.5 p-1.5 pr-3 rounded-xl border text-left transition-all ${
-                        isActive
-                          ? "bg-[#2a9df4]/15 border-[#2a9df4] text-white"
-                          : "bg-white/5 border-white/10 text-gray-400 hover:text-white hover:bg-white/10"
-                      }`}
-                    >
-                      <div className="w-12 h-8 rounded-lg overflow-hidden bg-black/40 shrink-0 relative">
-                        <img
-                          src={item.thumbnail}
-                          alt={item.title}
-                          className="w-full h-full object-cover"
-                        />
-                        {isActive && (
-                          <div className="absolute inset-0 bg-[#2a9df4]/40 flex items-center justify-center">
-                            <div className="w-2 h-2 rounded-full bg-white animate-pulse" />
-                          </div>
-                        )}
-                      </div>
-                      <span className="text-xs font-medium truncate max-w-[150px]">
-                        {item.title}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
+          <div className="p-5 md:p-6 bg-[#090a0d] overflow-y-auto scrollbar-hide">
+            <h2 className="font-['Menbere'] text-lg md:text-xl font-bold text-white mb-2 leading-tight">
+              {video.title}
+            </h2>
+            {video.description && (
+              <p className="text-gray-400 text-sm leading-relaxed max-w-3xl">
+                {video.description}
+              </p>
+            )}
           </div>
         </motion.div>
       </div>
