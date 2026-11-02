@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { VideoItem } from "@/data/videosData";
 import { isYouTubeVideo, getYouTubeId, formatVideoUrl } from "./videoUtils";
@@ -18,7 +18,6 @@ export default function VideoPlayerModal({
   onClose,
   onSelectVideo,
 }: VideoPlayerModalProps) {
-  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     if (!video) return;
@@ -56,15 +55,7 @@ export default function VideoPlayerModal({
     }
   };
 
-  const handleShare = () => {
-    const url = typeof window !== "undefined" ? window.location.href : "";
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(url);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2500);
-    }
-  };
-
+ 
   const isYouTube = isYouTubeVideo(video);
   const ytId = getYouTubeId(video) || "z7jy5AitYJ4";
 
@@ -97,37 +88,7 @@ export default function VideoPlayerModal({
             </div>
 
             <div className="flex items-center gap-2 shrink-0">
-              {/* Open in YouTube Button */}
-              {isYouTube && ytId && (
-                <a
-                  href={`https://www.youtube.com/watch?v=${ytId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-white bg-[#ff0000] hover:bg-[#d90000] transition-colors shadow-md"
-                  title="Watch on YouTube"
-                >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                  </svg>
-                  <span>Open YouTube</span>
-                </a>
-              )}
 
-              {/* Share Button */}
-              <button
-                onClick={handleShare}
-                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-gray-300 hover:text-white bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
-                title="Copy share link"
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
-                  <polyline points="16 6 12 2 8 6" />
-                  <line x1="12" y1="2" x2="12" y2="15" />
-                </svg>
-                <span>{copied ? "Link Copied!" : "Share"}</span>
-              </button>
-
-              {/* Close Button */}
               <button
                 onClick={onClose}
                 className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors shadow-md"

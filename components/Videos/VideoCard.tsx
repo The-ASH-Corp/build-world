@@ -19,26 +19,42 @@ export default function VideoCard({
   layoutMode = "dynamic",
 }: VideoCardProps) {
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [imageError, setImageError] = useState(false);
 
   const isYt = isYouTubeVideo(video);
   const ytId = getYouTubeId(video);
-  const fallbackYtThumbnail = ytId
-    ? `https://img.youtube.com/vi/${ytId}/maxresdefault.jpg`
+  const defaultYtThumb = ytId
+    ? `https://i.ytimg.com/vi/${ytId}/hq720.jpg`
     : undefined;
 
-  const [currentThumb, setCurrentThumb] = useState(
-    video.thumbnail || fallbackYtThumbnail || (isYt ? "/images/image2gallery.webp" : undefined)
+  const [currentThumb, setCurrentThumb] = useState<string>(
+    video.thumbnail || defaultYtThumb || "/images/image2gallery.webp"
   );
 
-  const handleImageError = () => {
-    // If maxresdefault failed, fallback to hqdefault which is always present
-    if (isYt && ytId && currentThumb?.includes("maxresdefault.jpg")) {
-      setCurrentThumb(`https://i.ytimg.com/vi/${ytId}/hqdefault.jpg`);
-    } else {
-      setImageError(true);
-      setImageLoaded(true);
+  const handleImageLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget;
+    // YouTube returns a 120x90 dummy image when hq720/maxres is missing
+    if (isYt && ytId && img.naturalWidth <= 120) {
+      if (!currentThumb.includes("hqdefault.jpg")) {
+        setCurrentThumb(`https://i.ytimg.com/vi/${ytId}/hqdefault.jpg`);
+        return;
+      }
     }
+    setImageLoaded(true);
+  };
+
+  const handleImageError = () => {
+    if (isYt && ytId) {
+      if (!currentThumb.includes("hqdefault.jpg")) {
+        setCurrentThumb(`https://i.ytimg.com/vi/${ytId}/hqdefault.jpg`);
+        return;
+      }
+      if (!currentThumb.includes("mqdefault.jpg")) {
+        setCurrentThumb(`https://i.ytimg.com/vi/${ytId}/mqdefault.jpg`);
+        return;
+      }
+    }
+    setCurrentThumb("/images/image2gallery.webp");
+    setImageLoaded(true);
   };
 
   return (
@@ -64,13 +80,18 @@ export default function VideoCard({
           <div className="skeleton-shimmer z-10 pointer-events-none" />
         )}
 
-        {currentThumb && !imageError ? (
+        {currentThumb ? (
           <img
             src={currentThumb}
             alt={video.title}
-            onLoad={() => setImageLoaded(true)}
+            loading="lazy"
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onLoad={handleImageLoad}
             onError={handleImageError}
-            className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-108"
+            className={`w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-108 ${
+              imageLoaded ? "opacity-100" : "opacity-0"
+            }`}
           />
         ) : video.videoUrl ? (
           <video
