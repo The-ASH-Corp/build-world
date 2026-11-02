@@ -16,21 +16,6 @@ export interface VideoItem {
 }
 
 export const videosData: VideoItem[] = [
-  // {
-  //   id: "vid-house-tour",
-  //   title: "Signature Residence Walkthrough: Complete Interior & Structural Tour",
-  //   category: "Luxury Residences",
-  //   description:
-  //     "An exclusive cinematic walkthrough of a contemporary residence crafted by Build World, exploring turnkey architectural planning, premium woodwork, and structural finishings.",
-  //   channel: "Build World",
-  //   duration: "03:30",
-  //   date: "2025",
-  //   type: "direct",
-  //   videoUrl: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Arshad/House+Video.mp4",
-  //   thumbnail: "/images/house.webp",
-  //   featured: true,
-  //   className: "md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2",
-  // },
   {
     id: "vid-corp-film",
     title: "BUILD WORLD CORPORATE FILM | Construction Company & Engineering Legacy",
@@ -42,7 +27,7 @@ export const videosData: VideoItem[] = [
     date: "2023",
     type: "youtube",
     youtubeId: "46_VFagAdNI",
-    thumbnail: "https://img.youtube.com/vi/46_VFagAdNI/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/46_VFagAdNI/hq720.jpg",
     featured: true,
     className: "md:col-span-1 md:row-span-2 lg:col-span-1 lg:row-span-2",
   },
@@ -57,7 +42,7 @@ export const videosData: VideoItem[] = [
     date: "2025",
     type: "youtube",
     youtubeId: "z7jy5AitYJ4",
-    thumbnail: "https://img.youtube.com/vi/z7jy5AitYJ4/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/z7jy5AitYJ4/hq720.jpg",
     featured: true,
     className: "md:col-span-1 md:row-span-2 lg:col-span-1 lg:row-span-2",
   },
@@ -72,7 +57,7 @@ export const videosData: VideoItem[] = [
     date: "2024",
     type: "youtube",
     youtubeId: "ycRJ8xh_V9s",
-    thumbnail: "https://img.youtube.com/vi/ycRJ8xh_V9s/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/ycRJ8xh_V9s/hq720.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -86,7 +71,7 @@ export const videosData: VideoItem[] = [
     date: "2024",
     type: "youtube",
     youtubeId: "X1m_7Yylq-A",
-    thumbnail: "https://img.youtube.com/vi/X1m_7Yylq-A/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/X1m_7Yylq-A/hq720.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -100,7 +85,7 @@ export const videosData: VideoItem[] = [
     date: "2024",
     type: "youtube",
     youtubeId: "zmr1xnqZAlA",
-    thumbnail: "https://img.youtube.com/vi/zmr1xnqZAlA/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/zmr1xnqZAlA/hq720.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -114,7 +99,7 @@ export const videosData: VideoItem[] = [
     date: "2021",
     type: "youtube",
     youtubeId: "HfArb7SzTw8",
-    thumbnail: "https://img.youtube.com/vi/HfArb7SzTw8/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/HfArb7SzTw8/hq720.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -128,7 +113,7 @@ export const videosData: VideoItem[] = [
     date: "2025",
     type: "youtube",
     youtubeId: "BauzMqw3_5s",
-    thumbnail: "https://img.youtube.com/vi/BauzMqw3_5s/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/BauzMqw3_5s/hq720.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -142,7 +127,7 @@ export const videosData: VideoItem[] = [
     date: "2022",
     type: "youtube",
     youtubeId: "AmJfr6kLQcQ",
-    thumbnail: "https://img.youtube.com/vi/AmJfr6kLQcQ/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/AmJfr6kLQcQ/hq720.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -156,7 +141,7 @@ export const videosData: VideoItem[] = [
     date: "2022",
     type: "youtube",
     youtubeId: "XAo6TLva6No",
-    thumbnail: "https://img.youtube.com/vi/XAo6TLva6No/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/XAo6TLva6No/hq720.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -170,7 +155,7 @@ export const videosData: VideoItem[] = [
     date: "2022",
     type: "youtube",
     youtubeId: "wA5TXoyFp9w",
-    thumbnail: "https://img.youtube.com/vi/wA5TXoyFp9w/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/wA5TXoyFp9w/hq720.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -184,7 +169,7 @@ export const videosData: VideoItem[] = [
     date: "2022",
     type: "youtube",
     youtubeId: "RDA1YwoQ5k4",
-    thumbnail: "https://img.youtube.com/vi/RDA1YwoQ5k4/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/RDA1YwoQ5k4/hq720.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -198,7 +183,7 @@ export const videosData: VideoItem[] = [
     date: "2022",
     type: "youtube",
     youtubeId: "-zwX-gXlphY",
-    thumbnail: "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/Completed+Projects/Bawa+Jamjoom+Home+-+Malappuram/Final+Handover/VIEWS/DSC04094-01.jpeg",
+    thumbnail: "https://i.ytimg.com/vi/-zwX-gXlphY/hqdefault.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -212,7 +197,7 @@ export const videosData: VideoItem[] = [
     date: "2021",
     type: "youtube",
     youtubeId: "DFQKdMDw95M",
-    thumbnail: "https://img.youtube.com/vi/DFQKdMDw95M/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/DFQKdMDw95M/hq720.jpg",
     className: "md:col-span-1 md:row-span-1 lg:col-span-1 lg:row-span-1",
   },
   {
@@ -226,7 +211,7 @@ export const videosData: VideoItem[] = [
     date: "2021",
     type: "youtube",
     youtubeId: "-3dD2H_K7vg",
-    thumbnail: "https://img.youtube.com/vi/-3dD2H_K7vg/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/-3dD2H_K7vg/hq720.jpg",
     className: "md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-1",
   },
 ];
