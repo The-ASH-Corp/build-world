@@ -12,26 +12,26 @@ export default function VideosPage() {
   return (
     <section className="bg-[#050505] py-20 md:py-32 w-full px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-[8%]">
       <div className="w-full">
-        {/* Header Section (Identical styling to Gallery.tsx) */}
+        {/* Header Section */}
         <div className="text-center mb-16 md:mb-24 flex flex-col items-center w-full">
-          <motion.h2
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-4 lg:mb-6 tracking-tight whitespace-normal lg:whitespace-nowrap"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-4 lg:mb-6 tracking-tight whitespace-normal"
           >
             Captured. In Motion
-          </motion.h2>
+          </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-            className="text-gray-400 text-sm md:text-base lg:text-lg text-center whitespace-normal lg:whitespace-nowrap"
+            className="text-gray-400 text-sm md:text-base lg:text-lg text-center max-w-2xl"
           >
-            Explore the projects, achievements, handovers, and moments that have shaped the Build World journey.
+            Explore architectural walkthroughs, handover ceremonies, and construction milestones in motion.
           </motion.p>
         </div>
 
