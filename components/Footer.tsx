@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaFacebookF, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaXTwitter, FaYoutube, FaLocationDot, FaEnvelope, FaPhone } from "react-icons/fa6";
 
 const socialLinks = [
   {
@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="w-full lg:w-1/3 flex flex-col items-start">
         
           <Image src="/images/GZGE9BLDIEh0JDNrm7SHDbdU8y4.webp" alt="Build World Logo" width={200} height={60} className="h-12 md:h-16 w-auto object-contain" />
-          <p className="text-gray-400 text-sm leading-loose pr-4 lg:pr-8 font-bold text-justify mb-6">
+          <p className="text-sm text-gray-300 leading-loose pr-4 lg:pr-8 mb-6">
             At Build World, we are dedicated to achieving excellence and ensuring customer happiness. With our uncompromising willpower and years of experience, we have built a strong reputation in the construction business.
           </p>
 
@@ -71,7 +71,6 @@ export default function Footer() {
         <div className="w-full lg:w-1/6">
           <h4 className="text-[#2a9df4] text-xs font-bold tracking-widest uppercase mb-6">QUICK LINKS</h4>
           <ul className="flex flex-col gap-4 text-sm text-gray-300">
-            <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
             <li><Link href="/about" className="hover:text-white transition-colors">About us</Link></li>
             <li><Link href="/service" className="hover:text-white transition-colors">Services</Link></li>
             <li><Link href="/projects" className="hover:text-white transition-colors">Projects</Link></li>
@@ -85,15 +84,26 @@ export default function Footer() {
         <div className="w-full lg:w-1/4">
           <h4 className="text-[#2a9df4] text-xs font-bold tracking-widest uppercase mb-6">CONTACT US</h4>
           <div className="text-gray-300 text-sm leading-relaxed flex flex-col gap-4">
-            <p>
-              3rd Floor, 1316, Door No.2/1149 A47,<br />
-              Hilite Business Park, Thondayad Bypass,<br />
-              Kozhikode,Kerala - 673014
-            </p>
-            <p>
-              Email : mail@buildworld.in<br />
-              Mobile : +9190378 63030
-            </p>
+            <div className="flex items-start gap-3">
+              <FaLocationDot className="w-4 h-4 text-[#2a9df4] mt-1 shrink-0" />
+              <p>
+                3rd Floor, 1316, Door No.2/1149 A47,<br />
+                Hilite Business Park, Thondayad Bypass,<br />
+                Kozhikode, Kerala - 673014
+              </p>
+            </div>
+            <div className="flex items-center gap-3">
+              <FaEnvelope className="w-4 h-4 text-[#2a9df4] shrink-0" />
+              <a href="mailto:mail@buildworld.in" className="hover:text-white transition-colors">
+                mail@buildworld.in
+              </a>
+            </div>
+            <div className="flex items-center gap-3">
+              <FaPhone className="w-4 h-4 text-[#2a9df4] shrink-0" />
+              <a href="tel:+919037863030" className="hover:text-white transition-colors">
+                +91 90378 63030
+              </a>
+            </div>
           </div>
         </div>
 
@@ -139,4 +149,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-} 
+}
