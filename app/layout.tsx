@@ -18,7 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Build World Constructions",
-  description: "Build World Constructions",
+  description:
+    "Build World Constructions is an ISO 9001:2015 certified construction company delivering structural engineering, architectural excellence, and turnkey projects across South India and the Middle East.",
 };
 
 export default function RootLayout({

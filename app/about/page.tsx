@@ -1,18 +1,12 @@
-"use client";
+import type { Metadata } from "next";
+import AboutPageContent from "@/components/about/AboutPageContent";
 
-import React from "react";
-import IntroductionSection from "@/components/about/IntroductionSection";
-import LegacySection from "@/components/about/LegacySection";
-import ApproachSection from "@/components/about/ApproachSection";
-import LeadershipSection from "@/components/about/LeadershipSection";
+export const metadata: Metadata = {
+  title: "About Us | Build World Constructions",
+  description:
+    "Learn about Build World Constructions, an ISO 9001:2015 certified company with 25+ years of experience delivering premium residential and commercial landmarks across South India and the Middle East.",
+};
 
 export default function AboutPage() {
-  return (
-    <div className="flex flex-col w-full bg-[#111318] text-white overflow-hidden">
-      <IntroductionSection />
-      <LegacySection />
-      <ApproachSection />
-      <LeadershipSection />
-    </div>
-  );
+  return <AboutPageContent />;
 }
