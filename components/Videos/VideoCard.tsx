@@ -27,11 +27,19 @@ export default function VideoCard({
     ? `https://img.youtube.com/vi/${ytId}/maxresdefault.jpg`
     : undefined;
 
-  // Use provided thumbnail, or default YouTube thumbnail, or fallback image
-  const thumbnailSrc =
-    video.thumbnail ||
-    fallbackYtThumbnail ||
-    (isYt ? "/images/image2gallery.webp" : undefined);
+  const [currentThumb, setCurrentThumb] = useState(
+    video.thumbnail || fallbackYtThumbnail || (isYt ? "/images/image2gallery.webp" : undefined)
+  );
+
+  const handleImageError = () => {
+    // If maxresdefault failed, fallback to hqdefault which is always present
+    if (isYt && ytId && currentThumb?.includes("maxresdefault.jpg")) {
+      setCurrentThumb(`https://i.ytimg.com/vi/${ytId}/hqdefault.jpg`);
+    } else {
+      setImageError(true);
+      setImageLoaded(true);
+    }
+  };
 
   return (
     <motion.div
@@ -56,15 +64,12 @@ export default function VideoCard({
           <div className="skeleton-shimmer z-10 pointer-events-none" />
         )}
 
-        {thumbnailSrc && !imageError ? (
+        {currentThumb && !imageError ? (
           <img
-            src={thumbnailSrc}
+            src={currentThumb}
             alt={video.title}
             onLoad={() => setImageLoaded(true)}
-            onError={() => {
-              setImageError(true);
-              setImageLoaded(true);
-            }}
+            onError={handleImageError}
             className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-108"
           />
         ) : video.videoUrl ? (
@@ -86,7 +91,31 @@ export default function VideoCard({
         )}
 
         {/* Ambient Dark Gradients */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-black/30 group-hover:from-black/90 group-hover:via-black/20 transition-colors duration-500 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/35 group-hover:from-black/90 group-hover:via-black/25 transition-colors duration-500 z-10" />
+      </div>
+
+      {/* Top Badges */}
+      <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-20 pointer-events-none">
+        {video.category ? (
+          <span className="px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-[11px] font-medium tracking-wide text-white/90 border border-white/10 shadow-sm">
+            {video.category}
+          </span>
+        ) : (
+          <span />
+        )}
+
+        {isYt ? (
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#ff0000]/90 backdrop-blur-md text-[10px] font-semibold text-white shadow-md border border-red-500/30">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span>YouTube</span>
+          </div>
+        ) : (
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#2a9df4]/90 backdrop-blur-md text-[10px] font-semibold text-white shadow-md border border-blue-400/30">
+            <span>Walkthrough</span>
+          </div>
+        )}
       </div>
 
       {/* Center Play Button Overlay */}
@@ -95,7 +124,7 @@ export default function VideoCard({
           {/* Subtle Outer Pulsing Halo on Hover */}
           <div className="absolute -inset-3 rounded-2xl bg-[#2a9df4]/30 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-90 group-hover:scale-110" />
 
-          {/* Center Play Icon Button: Red for YouTube, Brand Blue for AWS */}
+          {/* Center Play Icon Button */}
           {isYt ? (
             <div className="relative w-16 h-12 md:w-20 md:h-14 bg-[#ff0000] rounded-2xl flex items-center justify-center shadow-2xl transition-all duration-500 transform group-hover:scale-115 group-hover:bg-[#ff1a1a]">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
@@ -120,22 +149,30 @@ export default function VideoCard({
 
       {/* Bottom Information */}
       <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-20">
-        <div className="flex items-center gap-2 mb-2">
-          <div className="w-6 h-6 rounded-full bg-black/60 border border-white/20 p-1 flex items-center justify-center overflow-hidden shrink-0">
-            <img
-              src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.webp"
-              alt="Logo"
-              className="w-full h-full object-contain brightness-0 invert"
-            />
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2">
+            <div className="w-6 h-6 rounded-full bg-black/60 border border-white/20 p-1 flex items-center justify-center overflow-hidden shrink-0">
+              <img
+                src="/images/xf1KVhd5mSnEPZmJKk1lycYyUc.webp"
+                alt="Logo"
+                className="w-full h-full object-contain brightness-0 invert"
+              />
+            </div>
+            <span className="text-xs font-semibold text-gray-300">
+              {video.channel || "Build World"}
+            </span>
+            {video.date && (
+              <>
+                <span className="text-gray-500 text-xs">•</span>
+                <span className="text-xs text-gray-400">{video.date}</span>
+              </>
+            )}
           </div>
-          <span className="text-xs font-semibold text-gray-300">
-            {video.channel || "Build World"}
-          </span>
-          {video.date && (
-            <>
-              <span className="text-gray-500 text-xs">•</span>
-              <span className="text-xs text-gray-400">{video.date}</span>
-            </>
+
+          {video.duration && (
+            <span className="px-2 py-0.5 rounded-md bg-black/80 backdrop-blur-md text-[11px] font-mono font-semibold text-white/90 border border-white/10 shrink-0">
+              {video.duration}
+            </span>
           )}
         </div>
 
@@ -152,4 +189,3 @@ export default function VideoCard({
     </motion.div>
   );
 }
-
