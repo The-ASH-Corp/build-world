@@ -25,18 +25,21 @@ export const projectsData = {
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image3.webp",
           // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image4.webp",
           "/images/arshad_Exteriorview.webp",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image5.webp",
+          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image5.webp",
+          "/images/bb53685c-b367-4a41-8fd5-f20ce3f69098.png",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image6.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image7.webp",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image8.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image9.webp",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image10.webp",
+          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image10.webp" ,
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image11.webp", 
+          "/images/SLIT HOME_Concetto Design_43.jpg",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image8.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image12.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image13.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image14.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image15.webp",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image16.webp"
+          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image16.webp"
+          "/images/25dd6a48-c642-497e-98e7-9ac47c13613e.png"
         ]
       },
        {

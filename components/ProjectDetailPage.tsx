@@ -112,7 +112,7 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
                               fill
                               sizes="(max-width: 768px) 100vw, 60vw"
                               quality={75}
-                              className="object-cover"
+                              className="object-cover scale-105"
                             />
                           </div>
                         )}
@@ -124,7 +124,7 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
                               fill
                               sizes="(max-width: 768px) 100vw, 60vw"
                               quality={75}
-                              className="object-cover"
+                              className="object-cover scale-105"
                             />
                           </div>
                         )}
@@ -179,7 +179,7 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
                               fill
                               sizes="(max-width: 768px) 100vw, 60vw"
                               quality={75}
-                              className="object-cover"
+                              className="object-cover scale-105"
                             />
                           </div>
                         )}
@@ -191,7 +191,7 @@ export default function ProjectDetailPage({ id }: ProjectDetailPageProps) {
                               fill
                               sizes="(max-width: 768px) 100vw, 60vw"
                               quality={75}
-                              className="object-cover"
+                              className="object-cover scale-105"
                             />
                           </div>
                         )}
