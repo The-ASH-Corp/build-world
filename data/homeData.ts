@@ -79,7 +79,7 @@ export const homeData = {
       {
         id: "The-Heavenly-Daze",
         title: "The Heavenly Daze",
-        client: "Sameer",
+        client: "Mr. Sameer",
         status: "Under Construction",
         bg: "/images/ScreenshotFrom2026-09-0412-09-42.webp",
       },

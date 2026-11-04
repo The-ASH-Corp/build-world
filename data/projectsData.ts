@@ -517,7 +517,7 @@ export const projectsData = {
        {
         id:"The-Heavenly-Daze",
         title:"The Heavenly Daze",
-        client: "Sameer",
+        client: "Mr. Sameer",
         status:"Under Construction",
         category:"Under Construction",
         location: "Pookkottur, Malappuram, Kerala",
@@ -525,7 +525,7 @@ export const projectsData = {
         year:"2026",
         scope:"Architecture and Interior Design",
         bg:"/images/Screenshot From 2026-09-04 12-09-42.webp",
-        description:"A 36,000 sq. ft. luxury residential estate currently under construction in Malappuram. Planned for a multi-generational family, the project includes spacious living areas, integrated recreational facilities, multi-car parking, and landscaped outdoor spaces.",
+        description:"A luxury residential estate currently under construction in Malappuram. Planned for a multi-generational family, the project includes spacious living areas, integrated recreational facilities, multi-car parking, and landscaped outdoor spaces.",
         highlights:[
           "Multi-level layouts with private balconies",
           "Community recreational amenities",
