@@ -23,14 +23,11 @@ export const projectsData = {
         gallery: [
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image2.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image3.webp",
-          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image4.webp",
           "/images/arshad_Exteriorview.webp",
-          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image5.webp",
           "/images/bb53685c-b367-4a41-8fd5-f20ce3f69098.png",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image6.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image7.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image9.webp",
-          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image10.webp" ,
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image11.webp", 
           "/images/SLIT HOME_Concetto Design_43.jpg",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image8.webp",
@@ -38,7 +35,6 @@ export const projectsData = {
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image13.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image14.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image15.webp",
-          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Arshad/Arshad-image16.webp"
           "/images/25dd6a48-c642-497e-98e7-9ac47c13613e.png"
         ]
       },
@@ -61,9 +57,9 @@ export const projectsData = {
           "Premium interior finishes with attention to lighting and experience"
         ],
         gallery: [
-         "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanExterior1.webp",
-         "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanExterior2.webp",
-         "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanExterior3.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanExterior2.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanExterior3.webp",
+          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanExterior1.webp",
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanInterior1.webp",
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanInterior2.webp",
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanInterior3.webp",
@@ -104,17 +100,17 @@ export const projectsData = {
         gallery: [
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg2.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg3.webp",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg4.webp",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg5.webp",
+          "/images/714cd34a-7abd-4131-bd94-74fc1b956c70.png",
+          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg5.webp",
+          "/images/a9e082b7-b621-4f9d-ae11-e0bde3005748.png",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/era_imagee.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg7.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg8.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg9.webp",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg10.webp",
+          "/images/fe65e906-53a5-4323-8f09-ecae2be83168.png",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg11.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg12.webp",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg13.webp",
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/era/eraimg14.webp"
         ]
       },
 
