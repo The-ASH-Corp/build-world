@@ -57,7 +57,8 @@ export const projectsData = {
           "Premium interior finishes with attention to lighting and experience"
         ],
         gallery: [
-          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanExterior3.webp",
+          // "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanExterior3.webp",
+          "/images/Illuminated Neoclassical AJFAN Night façade.png",
           "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanExterior1.webp",
         //  "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanInterior1.webp",
         "/images/Modern Luxury Restaurant Interior.png",
