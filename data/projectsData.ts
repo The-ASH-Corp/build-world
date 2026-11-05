@@ -75,8 +75,8 @@ export const projectsData = {
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/ajfanInterior10.webp",
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/Ajfan-image11.webp",
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/Ajfan-image12.webp",
-         "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/Ajfan-image13.webp",
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/Ajfan-image14.webp",
+         "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/Ajfan-image13.webp",
          "https://buildworld.s3.eu-north-1.amazonaws.com/Buildworld/converted/Ajfan/Ajfan/Ajfan-image15.webp",
          
         
